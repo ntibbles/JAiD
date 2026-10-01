@@ -1,0 +1,750 @@
+{
+  "build.js": {
+    "filename": "build.js",
+    "path": "build.js",
+    "version": "1.2",
+    "contextFile": "5b0d70b2-context.json",
+    "chunks": {
+      "211792": {
+        "user": "Noel Tibbles",
+        "model": "gpt-4.1",
+        "timestamp": 1790789232,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.4.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "e10d0c11"
+        },
+        "hash": "76b16553",
+        "messageId": "system_17d78b40-bcf4-11f1-975a-8d43d55b2f29",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Noel Tibbles\n- **model**: gpt-4.1\n- **timestamp**: 9/30/2026, 1:27:12 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "211792",
+        "hash": "48c76aad",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "211792",
+        "hash": "b4864d18",
+        "encoded": "*%20Build%20script%20for%20AI-Alt%20Text%20Chrome%20Extension",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "211792",
+        "hash": "baa589fd",
+        "encoded": "*%20Copies%20only%20required%20files%20to%20dist%20folder%20for%20distribution",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "211792",
+        "hash": "7c9e86a6",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "211792",
+        "hash": "516b7397",
+        "encoded": "const%20fs%20=%20require('fs');",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "211792",
+        "hash": "856b9976",
+        "encoded": "const%20path%20=%20require('path');",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "211792",
+        "hash": "bc6cd96e",
+        "encoded": "//%20Files%20and%20directories%20to%20include%20in%20the%20distribution",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "211792",
+        "hash": "b2ba9c14",
+        "encoded": "const%20INCLUDE_FILES%20=%20%5B",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "211792",
+        "hash": "471cc843",
+        "encoded": "'manifest.json',",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "211792",
+        "hash": "a6acafef",
+        "encoded": "'background.js',",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "211792",
+        "hash": "b1b3954c",
+        "encoded": "'content.js',",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "211792",
+        "hash": "dedea1d1",
+        "encoded": "'styles.css'",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "211792",
+        "hash": "e1066aaf",
+        "encoded": "%5D;",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "211792",
+        "hash": "8537a5ac",
+        "encoded": "const%20INCLUDE_DIRS%20=%20%5B",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "211792",
+        "hash": "db43da61",
+        "encoded": "'images'",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "211792",
+        "hash": "02308431",
+        "encoded": "%5D;",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "211792",
+        "hash": "90a4d8d4",
+        "encoded": "const%20DIST_DIR%20=%20'dist';",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "211792",
+        "hash": "40c95b3f",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "211792",
+        "hash": "14e6f588",
+        "encoded": "*%20Create%20directory%20if%20it%20doesn't%20exist",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "211792",
+        "hash": "7189984f",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "211792",
+        "hash": "c5ac3d21",
+        "encoded": "function%20ensureDir(dir)%20%7B",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "211792",
+        "hash": "38facdbb",
+        "encoded": "if%20(!fs.existsSync(dir))%20%7B",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "211792",
+        "hash": "addf4e3a",
+        "encoded": "fs.mkdirSync(dir,%20%7B%20recursive:%20true%20%7D);",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "211792",
+        "hash": "4e48ae3f",
+        "encoded": "console.log(%60%E2%9C%93%20Created%20directory:%20$%7Bdir%7D%60);",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "211792",
+        "hash": "7721e417",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "211792",
+        "hash": "cfdac52c",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "211792",
+        "hash": "de2fae64",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "211792",
+        "hash": "98597c77",
+        "encoded": "*%20Remove%20directory%20and%20its%20contents%20recursively",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "211792",
+        "hash": "9358b5e7",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "211792",
+        "hash": "02d7f94d",
+        "encoded": "function%20removeDir(dir)%20%7B",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "211792",
+        "hash": "686639be",
+        "encoded": "if%20(fs.existsSync(dir))%20%7B",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "211792",
+        "hash": "469d5caf",
+        "encoded": "fs.rmSync(dir,%20%7B%20recursive:%20true,%20force:%20true%20%7D);",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "211792",
+        "hash": "423fc963",
+        "encoded": "console.log(%60%E2%9C%93%20Removed%20existing%20directory:%20$%7Bdir%7D%60);",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "211792",
+        "hash": "4771cdac",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "211792",
+        "hash": "792377b1",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "211792",
+        "hash": "6599f70a",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "211792",
+        "hash": "353dbcee",
+        "encoded": "*%20Copy%20file%20to%20destination",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "211792",
+        "hash": "2a068bde",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "211792",
+        "hash": "1ad58388",
+        "encoded": "function%20copyFile(src,%20dest)%20%7B",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "211792",
+        "hash": "e3227f1b",
+        "encoded": "fs.copyFileSync(src,%20dest);",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "211792",
+        "hash": "ee958f7f",
+        "encoded": "const%20stats%20=%20fs.statSync(dest);",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "211792",
+        "hash": "fbc8e147",
+        "encoded": "const%20sizeKB%20=%20(stats.size%20/%201024).toFixed(2);",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "211792",
+        "hash": "d7435567",
+        "encoded": "console.log(%60%20%20%E2%9C%93%20$%7Bsrc%7D%20%E2%86%92%20$%7Bdest%7D%20($%7BsizeKB%7D%20KB)%60);",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "211792",
+        "hash": "6a5bdc1a",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "211792",
+        "hash": "e47331a7",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "211792",
+        "hash": "b0c1ec3a",
+        "encoded": "*%20Copy%20directory%20recursively",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "211792",
+        "hash": "43449f3f",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "211792",
+        "hash": "dd9fa5a2",
+        "encoded": "function%20copyDir(src,%20dest)%20%7B",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "211792",
+        "hash": "cb35bc82",
+        "encoded": "ensureDir(dest);",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "211792",
+        "hash": "1d175643",
+        "encoded": "const%20entries%20=%20fs.readdirSync(src,%20%7B%20withFileTypes:%20true%20%7D);",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "211792",
+        "hash": "23a2b8b7",
+        "encoded": "for%20(const%20entry%20of%20entries)%20%7B",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "211792",
+        "hash": "3f8d90cc",
+        "encoded": "const%20srcPath%20=%20path.join(src,%20entry.name);",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "211792",
+        "hash": "7ede6efd",
+        "encoded": "const%20destPath%20=%20path.join(dest,%20entry.name);",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "211792",
+        "hash": "8a00b176",
+        "encoded": "if%20(entry.isDirectory())%20%7B",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "211792",
+        "hash": "2c2dd7d6",
+        "encoded": "copyDir(srcPath,%20destPath);",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "211792",
+        "hash": "b782efff",
+        "encoded": "%7D%20else%20%7B",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "211792",
+        "hash": "6131e873",
+        "encoded": "copyFile(srcPath,%20destPath);",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "211792",
+        "hash": "bf862585",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "211792",
+        "hash": "e4d82fa4",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "211792",
+        "hash": "9b4a30da",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "211792",
+        "hash": "c462b373",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "211792",
+        "hash": "d630ab58",
+        "encoded": "*%20Main%20build%20function",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "211792",
+        "hash": "fe9dbdbf",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "211792",
+        "hash": "364fe724",
+        "encoded": "function%20build()%20%7B",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "211792",
+        "hash": "d01cc252",
+        "encoded": "console.log('%5Cn%F0%9F%9A%80%20Building%20AI-Alt%20Text%20Extension...%5Cn');",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "211792",
+        "hash": "9b5b41fc",
+        "encoded": "//%20Remove%20existing%20dist%20folder",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "211792",
+        "hash": "e97025a5",
+        "encoded": "removeDir(DIST_DIR);",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "211792",
+        "hash": "0a3ed034",
+        "encoded": "//%20Create%20fresh%20dist%20folder",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "211792",
+        "hash": "c4521ce3",
+        "encoded": "ensureDir(DIST_DIR);",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "211792",
+        "hash": "ae9143ff",
+        "encoded": "console.log('%5Cn%F0%9F%93%A6%20Copying%20files:%5Cn');",
+        "prevChunkIds": []
+      },
+      "85": {
+        "chunkId": "211792",
+        "hash": "8efb284f",
+        "encoded": "//%20Copy%20individual%20files",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "211792",
+        "hash": "cdc05502",
+        "encoded": "for%20(const%20file%20of%20INCLUDE_FILES)%20%7B",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "211792",
+        "hash": "9b98d4a5",
+        "encoded": "const%20src%20=%20path.join(__dirname,%20file);",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "211792",
+        "hash": "67c4b0e8",
+        "encoded": "const%20dest%20=%20path.join(__dirname,%20DIST_DIR,%20file);",
+        "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "211792",
+        "hash": "75f1bd15",
+        "encoded": "if%20(fs.existsSync(src))%20%7B",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "211792",
+        "hash": "f8694139",
+        "encoded": "copyFile(src,%20dest);",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "211792",
+        "hash": "66ff9202",
+        "encoded": "%7D%20else%20%7B",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "211792",
+        "hash": "e63e66dd",
+        "encoded": "console.warn(%60%20%20%E2%9A%A0%20Warning:%20$%7Bfile%7D%20not%20found,%20skipping...%60);",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "211792",
+        "hash": "db89230b",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "211792",
+        "hash": "4cb4c387",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "97": {
+        "chunkId": "211792",
+        "hash": "fad8a131",
+        "encoded": "console.log('%5Cn%F0%9F%93%81%20Copying%20directories:%5Cn');",
+        "prevChunkIds": []
+      },
+      "99": {
+        "chunkId": "211792",
+        "hash": "0515b11e",
+        "encoded": "//%20Copy%20directories",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "211792",
+        "hash": "1da06491",
+        "encoded": "for%20(const%20dir%20of%20INCLUDE_DIRS)%20%7B",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "211792",
+        "hash": "26288f8f",
+        "encoded": "const%20src%20=%20path.join(__dirname,%20dir);",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "211792",
+        "hash": "ca8852e1",
+        "encoded": "const%20dest%20=%20path.join(__dirname,%20DIST_DIR,%20dir);",
+        "prevChunkIds": []
+      },
+      "104": {
+        "chunkId": "211792",
+        "hash": "5f51a11c",
+        "encoded": "if%20(fs.existsSync(src))%20%7B",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "211792",
+        "hash": "bfa093e0",
+        "encoded": "console.log(%60%20%20Copying%20$%7Bdir%7D/...%60);",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "211792",
+        "hash": "3767397e",
+        "encoded": "copyDir(src,%20dest);",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "211792",
+        "hash": "93e1a307",
+        "encoded": "%7D%20else%20%7B",
+        "prevChunkIds": []
+      },
+      "108": {
+        "chunkId": "211792",
+        "hash": "829d2ce1",
+        "encoded": "console.warn(%60%20%20%E2%9A%A0%20Warning:%20$%7Bdir%7D/%20not%20found,%20skipping...%60);",
+        "prevChunkIds": []
+      },
+      "109": {
+        "chunkId": "211792",
+        "hash": "7e03f6ac",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "110": {
+        "chunkId": "211792",
+        "hash": "a4ba47af",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "112": {
+        "chunkId": "211792",
+        "hash": "0ba40ef7",
+        "encoded": "//%20Calculate%20total%20size",
+        "prevChunkIds": []
+      },
+      "113": {
+        "chunkId": "211792",
+        "hash": "bb110442",
+        "encoded": "const%20getTotalSize%20=%20(dir)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "114": {
+        "chunkId": "211792",
+        "hash": "b7e03cf9",
+        "encoded": "let%20size%20=%200;",
+        "prevChunkIds": []
+      },
+      "115": {
+        "chunkId": "211792",
+        "hash": "d48c82da",
+        "encoded": "const%20entries%20=%20fs.readdirSync(dir,%20%7B%20withFileTypes:%20true%20%7D);",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "211792",
+        "hash": "78dbffeb",
+        "encoded": "for%20(const%20entry%20of%20entries)%20%7B",
+        "prevChunkIds": []
+      },
+      "118": {
+        "chunkId": "211792",
+        "hash": "297b374f",
+        "encoded": "const%20fullPath%20=%20path.join(dir,%20entry.name);",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "211792",
+        "hash": "fba9f529",
+        "encoded": "if%20(entry.isDirectory())%20%7B",
+        "prevChunkIds": []
+      },
+      "120": {
+        "chunkId": "211792",
+        "hash": "814eeb03",
+        "encoded": "size%20+=%20getTotalSize(fullPath);",
+        "prevChunkIds": []
+      },
+      "121": {
+        "chunkId": "211792",
+        "hash": "3724db21",
+        "encoded": "%7D%20else%20%7B",
+        "prevChunkIds": []
+      },
+      "122": {
+        "chunkId": "211792",
+        "hash": "d055c103",
+        "encoded": "size%20+=%20fs.statSync(fullPath).size;",
+        "prevChunkIds": []
+      },
+      "123": {
+        "chunkId": "211792",
+        "hash": "2bf02615",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "211792",
+        "hash": "331ddc52",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "211792",
+        "hash": "7560b543",
+        "encoded": "return%20size;",
+        "prevChunkIds": []
+      },
+      "126": {
+        "chunkId": "211792",
+        "hash": "4fee5f5a",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      },
+      "128": {
+        "chunkId": "211792",
+        "hash": "9ef8fa05",
+        "encoded": "const%20totalSize%20=%20getTotalSize(path.join(__dirname,%20DIST_DIR));",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "211792",
+        "hash": "be15e18f",
+        "encoded": "const%20totalKB%20=%20(totalSize%20/%201024).toFixed(2);",
+        "prevChunkIds": []
+      },
+      "131": {
+        "chunkId": "211792",
+        "hash": "5086426a",
+        "encoded": "console.log('%5Cn%E2%9C%85%20Build%20completed%20successfully!');",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "211792",
+        "hash": "0324a636",
+        "encoded": "console.log(%60%F0%9F%93%8A%20Total%20size:%20$%7BtotalKB%7D%20KB%5Cn%60);",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "211792",
+        "hash": "374f3e31",
+        "encoded": "console.log(%60%F0%9F%93%82%20Distribution%20files%20are%20in:%20./$%7BDIST_DIR%7D/%5Cn%60);",
+        "prevChunkIds": []
+      },
+      "134": {
+        "chunkId": "211792",
+        "hash": "59c23335",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "136": {
+        "chunkId": "211792",
+        "hash": "661fdf22",
+        "encoded": "//%20Run%20build",
+        "prevChunkIds": []
+      },
+      "137": {
+        "chunkId": "211792",
+        "hash": "5f901424",
+        "encoded": "try%20%7B",
+        "prevChunkIds": []
+      },
+      "138": {
+        "chunkId": "211792",
+        "hash": "b97630f2",
+        "encoded": "build();",
+        "prevChunkIds": []
+      },
+      "139": {
+        "chunkId": "211792",
+        "hash": "b2311d30",
+        "encoded": "process.exit(0);",
+        "prevChunkIds": []
+      },
+      "140": {
+        "chunkId": "211792",
+        "hash": "2a8776aa",
+        "encoded": "%7D%20catch%20(error)%20%7B",
+        "prevChunkIds": []
+      },
+      "141": {
+        "chunkId": "211792",
+        "hash": "e8235372",
+        "encoded": "console.error('%5Cn%E2%9D%8C%20Build%20failed:',%20error.message);",
+        "prevChunkIds": []
+      },
+      "142": {
+        "chunkId": "211792",
+        "hash": "99322f86",
+        "encoded": "process.exit(1);",
+        "prevChunkIds": []
+      },
+      "143": {
+        "chunkId": "211792",
+        "hash": "52c5d6be",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

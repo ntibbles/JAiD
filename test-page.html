@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI-Alt Text Extension Test Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.6;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #1a73e8;
+      margin-bottom: 10px;
+    }
+
+    .intro {
+      background: #e8f4fd;
+      padding: 15px;
+      border-radius: 4px;
+      border-left: 4px solid #1a73e8;
+      margin-bottom: 30px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h2 {
+      color: #333;
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #e0e0e0;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .image-item {
+      background: #fafafa;
+      padding: 15px;
+      border-radius: 4px;
+      border: 1px solid #e0e0e0;
+    }
+
+    .image-item img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto 10px;
+      border-radius: 4px;
+    }
+
+    .image-label {
+      font-size: 14px;
+      color: #666;
+      text-align: center;
+    }
+
+    .status {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 3px;
+      font-size: 12px;
+      font-weight: 600;
+      margin-left: 8px;
+    }
+
+    .status.eligible {
+      background: #d4edda;
+      color: #155724;
+    }
+
+    .status.too-small {
+      background: #fff3cd;
+      color: #856404;
+    }
+
+    .status.too-large {
+      background: #f8d7da;
+      color: #721c24;
+    }
+
+    .status.wrong-format {
+      background: #d6d8db;
+      color: #383d41;
+    }
+
+    .instructions {
+      background: #fff8e1;
+      padding: 15px;
+      border-radius: 4px;
+      border-left: 4px solid #ffc107;
+      margin-bottom: 20px;
+    }
+
+    .instructions ol {
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+
+    .instructions li {
+      margin-bottom: 8px;
+    }
+
+    code {
+      background: #f5f5f5;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-family: 'Courier New', monospace;
+      font-size: 13px;
+    }
+  </style>
+  <script>
+    // Generate a random seed number from 1 to 100 for picsum.photos
+    // This ensures different images on each page load, but same images during the session
+    const PICSUM_SEED = Math.floor(Math.random() * 100) + 1;
+    
+    // Function to update all picsum.photos URLs with the random seed
+    function updatePicsumUrls() {
+      const images = document.querySelectorAll('img[src*="picsum.photos"]');
+      images.forEach(img => {
+        const currentSrc = img.getAttribute('src');
+        // Extract dimensions from URL like https://picsum.photos/300/300
+        const match = currentSrc.match(/picsum\.photos\/(\d+)\/(\d+)(\.webp)?/);
+        if (match) {
+          const width = match[1];
+          const height = match[2];
+          const extension = match[3] || ''; // .webp if present
+          // Update URL with seed: https://picsum.photos/seed/{PICSUM_SEED}/{width}/{height}
+          img.src = `https://picsum.photos/seed/${PICSUM_SEED}/${width}/${height}${extension}`;
+        }
+      });
+    }
+    
+    // Run when DOM is loaded
+    document.addEventListener('DOMContentLoaded', updatePicsumUrls);
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>🤖 AI-Alt Text Extension Test Page</h1>
+    
+    <div class="intro">
+      <p><strong>Purpose:</strong> This page contains various images to test the AI-Alt Text Chrome extension's functionality.</p>
+    </div>
+
+    <div class="instructions">
+      <strong>📘 Testing Instructions:</strong>
+      <ol>
+        <li>Load the AI-Alt Text extension in Chrome (see README.md)</li>
+        <li>Click the extension icon in the toolbar</li>
+        <li>Look for info buttons (ℹ️) on eligible images below</li>
+        <li>Click a button to generate AI alt text</li>
+        <li>Verify accessibility with keyboard navigation (Tab, Enter, Esc)</li>
+      </ol>
+    </div>
+
+    <!-- Eligible Images Section -->
+    <div class="section">
+      <h2>✅ Eligible Images <span class="status eligible">Should Have Buttons</span></h2>
+      <p>These images meet all criteria: valid format (PNG/JPG/JPEG/WEBP), 125-1499px wide, ≥125px tall</p>
+      
+      <div class="image-grid">
+        <div class="image-item">
+          <img src="https://picsum.photos/seed/alt1/300/300.jpg" alt="Test image 1">
+          <div class="image-label">300x300 JPG</div>
+        </div>
+        <div class="image-item">
+          <img src="https://picsum.photos/seed/alt2/400/250.jpg" alt="Test image 2">
+          <div class="image-label">400x250 JPG</div>
+        </div>
+        <div class="image-item">
+          <img src="https://picsum.photos/seed/alt3/500/500.webp" alt="Test image 3">
+          <div class="image-label">500x500 WEBP</div>
+        </div>
+        <div class="image-item">
+          <img src="https://picsum.photos/seed/alt4/800/600.jpg" alt="Test image 4">
+          <div class="image-label">800x600 JPG</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Too Small Section -->
+    <div class="section">
+      <h2>❌ Too Small <span class="status too-small">Should Be Ignored</span></h2>
+      <p>These images are smaller than 125x125px minimum</p>
+      
+      <div class="image-grid">
+        <div class="image-item">
+          <img src="https://picsum.photos/seed/alt5/100/100.jpg" alt="Too small image 1">
+          <div class="image-label">100x100 JPG</div>
+        </div>
+        <div class="image-item">
+          <img src="https://picsum.photos/seed/alt6/120/120.jpg" alt="Too small image 2">
+          <div class="image-label">120x120 JPG</div>
+        </div>
+        <div class="image-item">
+          <img src="https://picsum.photos/seed/alt7/200/100.jpg" alt="Too short image">
+          <div class="image-label">200x100 JPG (height &lt; 125)</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Too Large Section -->
+    <div class="section">
+      <h2>❌ Too Large <span class="status too-large">Should Be Ignored</span></h2>
+      <p>These images are 1500px or wider</p>
+      
+      <div class="image-grid">
+        <div class="image-item">
+          <img src="https://picsum.photos/seed/alt8/1500/300.jpg" alt="Too wide image 1" style="max-width: 100%;">
+          <div class="image-label">1500x300 JPG (width = 1500)</div>
+        </div>
+        <div class="image-item">
+          <img src="https://picsum.photos/seed/alt9/2000/400.jpg" alt="Too wide image 2" style="max-width: 100%;">
+          <div class="image-label">2000x400 JPG (width &gt; 1500)</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Edge Cases Section -->
+    <div class="section">
+      <h2>⚠️ Edge Cases</h2>
+      
+      <h3 style="margin: 20px 0 10px;">Minimum Size <span class="status eligible">Should Have Buttons</span></h3>
+      <div class="image-grid">
+        <div class="image-item">
+          <img src="https://picsum.photos/seed/alt10/125/125.jpg" alt="Minimum size image">
+          <div class="image-label">125x125 JPG (exactly minimum)</div>
+        </div>
+        <div class="image-item">
+          <img src="https://picsum.photos/seed/alt11/126/126.jpg" alt="Just above minimum">
+          <div class="image-label">126x126 JPG (just above minimum)</div>
+        </div>
+      </div>
+
+      <h3 style="margin: 20px 0 10px;">Maximum Width <span class="status eligible">Should Have Buttons</span></h3>
+      <div class="image-grid">
+        <div class="image-item">
+          <img src="https://picsum.photos/seed/alt12/1499/300.jpg" alt="Maximum width image" style="max-width: 100%;">
+          <div class="image-label">1499x300 JPG (just under limit)</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Formats Section -->
+    <div class="section">
+      <h2>🖼️ Image Formats</h2>
+      
+      <h3 style="margin: 20px 0 10px;">Supported Formats <span class="status eligible">Should Have Buttons</span></h3>
+      <div class="image-grid">
+        <div class="image-item">
+          <img src="https://picsum.photos/seed/alt13/300/300.jpg" alt="JPG format">
+          <div class="image-label">JPG format</div>
+        </div>
+        <div class="image-item">
+          <img src="https://picsum.photos/seed/alt14/300/300.webp" alt="WEBP format">
+          <div class="image-label">WEBP format</div>
+        </div>
+      </div>
+
+      <h3 style="margin: 20px 0 10px;">Unsupported Formats <span class="status wrong-format">Should Be Ignored</span></h3>
+      <div class="image-grid">
+        <div class="image-item">
+          <svg width="300" height="300" style="background: #e0e0e0;">
+            <rect width="300" height="300" fill="#ccc"/>
+            <text x="150" y="150" text-anchor="middle" fill="#666">SVG Image</text>
+          </svg>
+          <div class="image-label">SVG format (not supported)</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dynamic Images Section -->
+    <div class="section">
+      <h2>⚡ Dynamic Image Loading</h2>
+      <p>Use the button below to test dynamic image detection:</p>
+      <button onclick="addDynamicImage()" style="
+        background: #1a73e8;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+        margin-top: 10px;
+      ">Add Dynamic Image</button>
+      <div id="dynamic-container" style="margin-top: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;"></div>
+    </div>
+
+    <!-- Testing Checklist -->
+    <div class="section">
+      <h2>✅ Testing Checklist</h2>
+      <div style="background: #f5f5f5; padding: 15px; border-radius: 4px;">
+        <p style="margin-bottom: 10px;"><strong>Verify the following:</strong></p>
+        <ul style="margin-left: 20px;">
+          <li>Info buttons appear only on eligible images</li>
+          <li>Each button has a unique accessible label</li>
+          <li>Clicking a button opens a popover dialog</li>
+          <li>Popover shows loading indicator initially</li>
+          <li>Alt text is generated and displayed</li>
+          <li>Escape key closes the popover</li>
+          <li>Clicking the button again closes the popover</li>
+          <li>Screen readers announce the alt text</li>
+          <li>Tab navigation works correctly</li>
+          <li>Dynamically added images get buttons</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let dynamicImageCount = 0;
+
+    function addDynamicImage() {
+      dynamicImageCount++;
+      const container = document.getElementById('dynamic-container');
+      const item = document.createElement('div');
+      item.className = 'image-item';
+      
+      // Use a different seed for each dynamic image to get variety
+      const dynamicSeed = PICSUM_SEED + dynamicImageCount;
+      
+      item.innerHTML = `
+        <img src="https://picsum.photos/seed/${dynamicSeed}/350/350.jpg" alt="Dynamic image ${dynamicImageCount}">
+        <div class="image-label">Dynamic Image ${dynamicImageCount} (350x350 JPG, seed: ${dynamicSeed})</div>
+      `;
+      container.appendChild(item);
+    }
+  </script>
+</body>
+</html>

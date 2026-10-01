@@ -1,0 +1,183 @@
+{
+  "package.json": {
+    "filename": "package.json",
+    "path": "package.json",
+    "version": "1.2",
+    "contextFile": "99d112f8-context.json",
+    "chunks": {
+      "fe70c5": {
+        "user": "Noel Tibbles",
+        "model": "gpt-4.1",
+        "timestamp": 1790788849,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.4.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "5fa31f09"
+        },
+        "hash": "c98bb188",
+        "messageId": "system_0754d170-bcf3-11f1-975a-8d43d55b2f29",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Noel Tibbles\n- **model**: gpt-4.1\n- **timestamp**: 9/30/2026, 1:20:49 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      },
+      "0c1e4b": {
+        "user": "Noel Tibbles",
+        "model": "gpt-4.1",
+        "timestamp": 1790789246,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.4.0",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "e10d0c11"
+        },
+        "hash": "81923246",
+        "messageId": "system_17d78b40-bcf4-11f1-975a-8d43d55b2f29",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Noel Tibbles\n- **model**: gpt-4.1\n- **timestamp**: 9/30/2026, 1:27:26 PM\n- **source**: agent\n- **type**: agentEditTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "fe70c5",
+        "hash": "47009686",
+        "encoded": "%7B",
+        "prevChunkIds": [
+          "fe70c5"
+        ]
+      },
+      "1": {
+        "chunkId": "fe70c5",
+        "hash": "53c83d37",
+        "encoded": "%22name%22:%20%22ai-alt-text%22,",
+        "prevChunkIds": [
+          "fe70c5"
+        ]
+      },
+      "2": {
+        "chunkId": "fe70c5",
+        "hash": "bde4980f",
+        "encoded": "%22version%22:%20%221.0.0%22,",
+        "prevChunkIds": [
+          "fe70c5"
+        ]
+      },
+      "3": {
+        "chunkId": "fe70c5",
+        "hash": "317302bf",
+        "encoded": "%22description%22:%20%22Chrome%20extension%20for%20AI-powered%20alt%20text%20generation%22,",
+        "prevChunkIds": [
+          "fe70c5"
+        ]
+      },
+      "4": {
+        "chunkId": "0c1e4b",
+        "hash": "54549bc6",
+        "encoded": "%22scripts%22:%20%7B",
+        "prevChunkIds": [
+          "fe70c5"
+        ]
+      },
+      "6": {
+        "chunkId": "0c1e4b",
+        "hash": "b732f7b3",
+        "encoded": "%22test:watch%22:%20%22jest%20--watch%22,",
+        "prevChunkIds": [
+          "fe70c5"
+        ]
+      },
+      "7": {
+        "chunkId": "0c1e4b",
+        "hash": "8b334891",
+        "encoded": "%22test:coverage%22:%20%22jest%20--coverage%22,",
+        "prevChunkIds": [
+          "fe70c5"
+        ]
+      },
+      "8": {
+        "chunkId": "0c1e4b",
+        "hash": "f0e44037",
+        "encoded": "%22build%22:%20%22node%20build.js%22,",
+        "prevChunkIds": [
+          "fe70c5"
+        ]
+      },
+      "9": {
+        "chunkId": "0c1e4b",
+        "hash": "268c10f2",
+        "encoded": "%22clean%22:%20%22rm%20-rf%20dist%22,",
+        "prevChunkIds": [
+          "fe70c5"
+        ]
+      },
+      "10": {
+        "chunkId": "0c1e4b",
+        "hash": "c6a18093",
+        "encoded": "%22rebuild%22:%20%22npm%20run%20clean%20&&%20npm%20run%20build%22",
+        "prevChunkIds": [
+          "fe70c5"
+        ]
+      },
+      "11": {
+        "chunkId": "0c1e4b",
+        "hash": "23312e7d",
+        "encoded": "%7D,",
+        "prevChunkIds": [
+          "fe70c5"
+        ]
+      },
+      "12": {
+        "chunkId": "fe70c5",
+        "hash": "33d49017",
+        "encoded": "%22devDependencies%22:%20%7B",
+        "prevChunkIds": [
+          "fe70c5"
+        ]
+      },
+      "13": {
+        "chunkId": "fe70c5",
+        "hash": "92ba2833",
+        "encoded": "%22@jest/globals%22:%20%22%5E29.7.0%22,",
+        "prevChunkIds": [
+          "fe70c5"
+        ]
+      },
+      "14": {
+        "chunkId": "fe70c5",
+        "hash": "8f3a69e3",
+        "encoded": "%22jest%22:%20%22%5E29.7.0%22,",
+        "prevChunkIds": [
+          "fe70c5"
+        ]
+      },
+      "15": {
+        "chunkId": "fe70c5",
+        "hash": "43bb5f7f",
+        "encoded": "%22jest-environment-jsdom%22:%20%22%5E29.7.0%22",
+        "prevChunkIds": [
+          "fe70c5"
+        ]
+      },
+      "16": {
+        "chunkId": "fe70c5",
+        "hash": "e0024018",
+        "encoded": "%7D,",
+        "prevChunkIds": [
+          "fe70c5"
+        ]
+      },
+      "17": {
+        "chunkId": "fe70c5",
+        "hash": "76477189",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    },
+    "_prevLineCount": 18
+  }
+}

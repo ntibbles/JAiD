@@ -1,0 +1,15 @@
+{
+  "filename": "CONTRIBUTING.md",
+  "path": "CONTRIBUTING.md",
+  "version": "1.1",
+  "files": {},
+  "promptMessage": {
+    "e10d0c11": {
+      "value": "Add the functionality to copy and move only the required files into a 'dist' folder."
+    }
+  },
+  "localPrompts": {},
+  "remotePrompts": {},
+  "figma": {},
+  "jira": {}
+}

@@ -1,0 +1,15 @@
+{
+  "filename": "DIMENSION-CHECKING.md",
+  "path": "docs/DIMENSION-CHECKING.md",
+  "version": "1.1",
+  "files": {},
+  "promptMessage": {
+    "fd1f98d7": {
+      "value": "Update the image check functionality to check for both the natural width and the rendered width."
+    }
+  },
+  "localPrompts": {},
+  "remotePrompts": {},
+  "figma": {},
+  "jira": {}
+}

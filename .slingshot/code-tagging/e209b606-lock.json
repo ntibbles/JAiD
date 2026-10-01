@@ -1,0 +1,2245 @@
+{
+  "docs/INTERACTIVE-PARENT-HANDLING.md": {
+    "filename": "INTERACTIVE-PARENT-HANDLING.md",
+    "path": "docs/INTERACTIVE-PARENT-HANDLING.md",
+    "version": "1.2",
+    "contextFile": "e209b606-context.json",
+    "chunks": {
+      "7735f5": {
+        "user": "Noel Tibbles",
+        "model": "gpt-4.1",
+        "timestamp": 1790866430,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.4.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "0b9c2e39",
+          "files": "20e3148f"
+        },
+        "hash": "e288eddd",
+        "messageId": "system_fbac9b50-bda6-11f1-975a-8d43d55b2f29",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Noel Tibbles\n- **model**: gpt-4.1\n- **timestamp**: 10/1/2026, 10:53:50 AM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "7735f5",
+        "hash": "1c0adecb",
+        "encoded": "#%20Interactive%20Parent%20Handling",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "7735f5",
+        "hash": "a9c57537",
+        "encoded": "This%20document%20explains%20how%20the%20AI-Alt%20Text%20extension%20handles%20images%20nested%20inside%20interactive%20elements%20(links,%20buttons)%20to%20maintain%20WCAG%20accessibility%20compliance.",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "7735f5",
+        "hash": "bb863859",
+        "encoded": "##%20Overview",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "7735f5",
+        "hash": "fa25e460",
+        "encoded": "When%20an%20image%20is%20a%20child%20of%20an%20interactive%20element%20like%20%60%3Ca%3E%60%20(link)%20or%20%60%3Cbutton%3E%60,%20the%20extension%20must%20position%20the%20info%20button%20**outside**%20the%20interactive%20parent%20to%20avoid%20creating%20nested%20interactive%20controls,%20which%20violates%20**WCAG%204.1.2%20Level%20A**%20(Parsing%20/%20Name,%20Role,%20Value).",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "7735f5",
+        "hash": "2a4f44a8",
+        "encoded": "##%20WCAG%204.1.2%20Requirement",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "7735f5",
+        "hash": "ce49456e",
+        "encoded": "**Success%20Criterion%204.1.2:%20Name,%20Role,%20Value%20(Level%20A)**",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "7735f5",
+        "hash": "416f1439",
+        "encoded": "%3E%20For%20all%20user%20interface%20components,%20the%20name%20and%20role%20can%20be%20programmatically%20determined;%20states,%20properties,%20and%20values%20that%20can%20be%20set%20by%20the%20user%20can%20be%20programmatically%20set;%20and%20notification%20of%20changes%20to%20these%20items%20is%20available%20to%20user%20agents,%20including%20assistive%20technologies.",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "7735f5",
+        "hash": "2e79bbc3",
+        "encoded": "**Key%20Point:**%20Interactive%20elements%20cannot%20be%20nested%20inside%20other%20interactive%20elements.",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "7735f5",
+        "hash": "9ab354cb",
+        "encoded": "###%20Why%20Nested%20Interactive%20Controls%20Are%20Problematic",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "7735f5",
+        "hash": "b8eb3ec1",
+        "encoded": "%60%60%60html",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "7735f5",
+        "hash": "4977de1c",
+        "encoded": "%3C!--%20%E2%9D%8C%20VIOLATION:%20Button%20inside%20link%20--%3E",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "7735f5",
+        "hash": "d5de8c0d",
+        "encoded": "%3Ca%20href=%22/product%22%3E",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "7735f5",
+        "hash": "dc18e3f2",
+        "encoded": "%3Cimg%20src=%22product.jpg%22%20alt=%22Product%22%3E",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "7735f5",
+        "hash": "81c3a958",
+        "encoded": "%3Cbutton%3EGenerate%20Alt%20Text%3C/button%3E",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "7735f5",
+        "hash": "cc810a2f",
+        "encoded": "%3C/a%3E",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "7735f5",
+        "hash": "149ea669",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "7735f5",
+        "hash": "4467520b",
+        "encoded": "**Issues:**",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "7735f5",
+        "hash": "39768a56",
+        "encoded": "1.%20**Keyboard%20navigation:**%20Tab%20key%20lands%20on%20link,%20but%20cannot%20access%20inner%20button",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "7735f5",
+        "hash": "d0158a8f",
+        "encoded": "2.%20**Screen%20readers:**%20Announce%20%22link%22%20OR%20%22button%22,%20not%20both%20clearly",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "7735f5",
+        "hash": "777bbe22",
+        "encoded": "3.%20**Click%20ambiguity:**%20Which%20action%20fires%20-%20link%20navigation%20or%20button%20action?",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "7735f5",
+        "hash": "dfad3567",
+        "encoded": "4.%20**Focus%20management:**%20Cannot%20focus%20inner%20button%20without%20activating%20outer%20link",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "7735f5",
+        "hash": "b500f086",
+        "encoded": "5.%20**ARIA%20confusion:**%20Conflicting%20roles%20confuse%20assistive%20technology",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "7735f5",
+        "hash": "ac863482",
+        "encoded": "##%20Solution:%20Position%20Button%20Outside%20Interactive%20Parent",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "7735f5",
+        "hash": "b970bc95",
+        "encoded": "The%20extension%20detects%20interactive%20parents%20and%20positions%20the%20button%20wrapper%20outside:",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "7735f5",
+        "hash": "3e4ce8a1",
+        "encoded": "%60%60%60html",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "7735f5",
+        "hash": "0c15313f",
+        "encoded": "%3C!--%20%E2%9C%85%20CORRECT:%20Button%20outside%20link%20--%3E",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "7735f5",
+        "hash": "8891e44a",
+        "encoded": "%3Ca%20href=%22/product%22%3E",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "7735f5",
+        "hash": "45f1eb05",
+        "encoded": "%3Cimg%20src=%22product.jpg%22%20id=%22ai-alt-image-1%22%20alt=%22Product%22%3E",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "7735f5",
+        "hash": "0c5ac597",
+        "encoded": "%3C/a%3E",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "7735f5",
+        "hash": "cdc679b0",
+        "encoded": "%3Cdiv%20class=%22ai-alt-image-wrapper%22%20style=%22position:%20absolute;%20...%22%3E",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "7735f5",
+        "hash": "6b56b73f",
+        "encoded": "%3Cbutton%20class=%22ai-alt-info-button%22%3EGenerate%20Alt%20Text%3C/button%3E",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "7735f5",
+        "hash": "be7aac31",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "7735f5",
+        "hash": "5daefab5",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "7735f5",
+        "hash": "315c7716",
+        "encoded": "##%20Implementation",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "7735f5",
+        "hash": "6b2bb8fc",
+        "encoded": "###%201.%20Interactive%20Parent%20Detection",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "7735f5",
+        "hash": "4ce36bd6",
+        "encoded": "%60%60%60javascript",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "7735f5",
+        "hash": "99f55ee3",
+        "encoded": "function%20findInteractiveParent(element)%20%7B",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "7735f5",
+        "hash": "849a1d42",
+        "encoded": "let%20current%20=%20element.parentElement;",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "7735f5",
+        "hash": "832d633a",
+        "encoded": "while%20(current%20&&%20current%20!==%20document.body)%20%7B",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "7735f5",
+        "hash": "fb0415b3",
+        "encoded": "const%20tagName%20=%20current.tagName.toLowerCase();",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "7735f5",
+        "hash": "37b7b8fd",
+        "encoded": "const%20role%20=%20current.getAttribute('role');",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "7735f5",
+        "hash": "5ff44ab6",
+        "encoded": "//%20Check%20for%20interactive%20elements",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "7735f5",
+        "hash": "b7668566",
+        "encoded": "if%20(tagName%20===%20'a'%20%7C%7C",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "7735f5",
+        "hash": "40625515",
+        "encoded": "tagName%20===%20'button'%20%7C%7C",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "7735f5",
+        "hash": "89e662ed",
+        "encoded": "role%20===%20'button'%20%7C%7C",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "7735f5",
+        "hash": "624947d6",
+        "encoded": "role%20===%20'link')%20%7B",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "7735f5",
+        "hash": "a0cbb8a0",
+        "encoded": "return%20current;",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "7735f5",
+        "hash": "912d88e4",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "7735f5",
+        "hash": "9bf43a23",
+        "encoded": "current%20=%20current.parentElement;",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "7735f5",
+        "hash": "e4d82fa4",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "7735f5",
+        "hash": "add8b947",
+        "encoded": "return%20null;",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "7735f5",
+        "hash": "f064f9d6",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "7735f5",
+        "hash": "d2d592b3",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "7735f5",
+        "hash": "5f755529",
+        "encoded": "**Detects:**",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "7735f5",
+        "hash": "e8e61d83",
+        "encoded": "-%20%60%3Ca%3E%60%20elements%20(links)",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "7735f5",
+        "hash": "51a79350",
+        "encoded": "-%20%60%3Cbutton%3E%60%20elements",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "7735f5",
+        "hash": "c1ad2d37",
+        "encoded": "-%20Elements%20with%20%60role=%22button%22%60",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "7735f5",
+        "hash": "d04f58b5",
+        "encoded": "-%20Elements%20with%20%60role=%22link%22%60",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "7735f5",
+        "hash": "7fcfcff5",
+        "encoded": "###%202.%20Conditional%20Positioning",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "7735f5",
+        "hash": "f0529788",
+        "encoded": "%60%60%60javascript",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "7735f5",
+        "hash": "b1f670e7",
+        "encoded": "const%20interactiveParent%20=%20findInteractiveParent(img);",
+        "prevChunkIds": []
+      },
+      "85": {
+        "chunkId": "7735f5",
+        "hash": "44b6e021",
+        "encoded": "if%20(interactiveParent)%20%7B",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "7735f5",
+        "hash": "a05c2fcb",
+        "encoded": "//%20Position%20wrapper%20absolutely%20over%20image",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "7735f5",
+        "hash": "399bfb33",
+        "encoded": "wrapper.style.position%20=%20'absolute';",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "7735f5",
+        "hash": "96d413b6",
+        "encoded": "wrapper.style.pointerEvents%20=%20'none';",
+        "prevChunkIds": []
+      },
+      "89": {
+        "chunkId": "7735f5",
+        "hash": "73d3546f",
+        "encoded": "wrapper.style.zIndex%20=%20'1000';",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "7735f5",
+        "hash": "e7c49a56",
+        "encoded": "//%20Insert%20wrapper%20as%20sibling%20to%20interactive%20parent%20(not%20child)",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "7735f5",
+        "hash": "026accb3",
+        "encoded": "interactiveParent.parentNode.insertBefore(wrapper,%20interactiveParent);",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "7735f5",
+        "hash": "2cebf5c8",
+        "encoded": "//%20Position%20wrapper%20to%20match%20image%20location",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "7735f5",
+        "hash": "5d24abf7",
+        "encoded": "positionWrapperOverImage(wrapper,%20img);",
+        "prevChunkIds": []
+      },
+      "96": {
+        "chunkId": "7735f5",
+        "hash": "315da9a1",
+        "encoded": "%7D%20else%20%7B",
+        "prevChunkIds": []
+      },
+      "97": {
+        "chunkId": "7735f5",
+        "hash": "ff645fc1",
+        "encoded": "//%20Normal%20wrapping%20for%20non-interactive%20parents",
+        "prevChunkIds": []
+      },
+      "98": {
+        "chunkId": "7735f5",
+        "hash": "d25a7e00",
+        "encoded": "wrapper.style.position%20=%20'relative';",
+        "prevChunkIds": []
+      },
+      "99": {
+        "chunkId": "7735f5",
+        "hash": "a1a12307",
+        "encoded": "wrapper.style.display%20=%20'inline-block';",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "7735f5",
+        "hash": "5491f961",
+        "encoded": "img.parentNode.insertBefore(wrapper,%20img);",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "7735f5",
+        "hash": "d109623a",
+        "encoded": "wrapper.appendChild(img);",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "7735f5",
+        "hash": "79409de0",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "7735f5",
+        "hash": "d273f303",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "7735f5",
+        "hash": "505120d7",
+        "encoded": "###%203.%20Absolute%20Positioning%20Over%20Image",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "7735f5",
+        "hash": "19e49c3f",
+        "encoded": "%60%60%60javascript",
+        "prevChunkIds": []
+      },
+      "108": {
+        "chunkId": "7735f5",
+        "hash": "18cff494",
+        "encoded": "function%20positionWrapperOverImage(wrapper,%20img)%20%7B",
+        "prevChunkIds": []
+      },
+      "109": {
+        "chunkId": "7735f5",
+        "hash": "303dcd2e",
+        "encoded": "const%20imgRect%20=%20img.getBoundingClientRect();",
+        "prevChunkIds": []
+      },
+      "110": {
+        "chunkId": "7735f5",
+        "hash": "b25ce173",
+        "encoded": "const%20scrollTop%20=%20window.pageYOffset%20%7C%7C%20document.documentElement.scrollTop;",
+        "prevChunkIds": []
+      },
+      "111": {
+        "chunkId": "7735f5",
+        "hash": "b5ac8851",
+        "encoded": "const%20scrollLeft%20=%20window.pageXOffset%20%7C%7C%20document.documentElement.scrollLeft;",
+        "prevChunkIds": []
+      },
+      "113": {
+        "chunkId": "7735f5",
+        "hash": "fd759d46",
+        "encoded": "wrapper.style.top%20=%20%60$%7BimgRect.top%20+%20scrollTop%7Dpx%60;",
+        "prevChunkIds": []
+      },
+      "114": {
+        "chunkId": "7735f5",
+        "hash": "8112a1f1",
+        "encoded": "wrapper.style.left%20=%20%60$%7BimgRect.left%20+%20scrollLeft%7Dpx%60;",
+        "prevChunkIds": []
+      },
+      "115": {
+        "chunkId": "7735f5",
+        "hash": "36287305",
+        "encoded": "wrapper.style.width%20=%20%60$%7BimgRect.width%7Dpx%60;",
+        "prevChunkIds": []
+      },
+      "116": {
+        "chunkId": "7735f5",
+        "hash": "c43c1ea2",
+        "encoded": "wrapper.style.height%20=%20%60$%7BimgRect.height%7Dpx%60;",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "7735f5",
+        "hash": "056477bc",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "118": {
+        "chunkId": "7735f5",
+        "hash": "34ee810d",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "120": {
+        "chunkId": "7735f5",
+        "hash": "83492913",
+        "encoded": "###%204.%20Pointer%20Events%20Management",
+        "prevChunkIds": []
+      },
+      "122": {
+        "chunkId": "7735f5",
+        "hash": "32f048a5",
+        "encoded": "%60%60%60javascript",
+        "prevChunkIds": []
+      },
+      "123": {
+        "chunkId": "7735f5",
+        "hash": "062f9348",
+        "encoded": "if%20(interactiveParent)%20%7B",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "7735f5",
+        "hash": "d78b4d3e",
+        "encoded": "//%20Wrapper%20blocks%20clicks%20(allows%20clicks%20through%20to%20interactive%20parent)",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "7735f5",
+        "hash": "fc428b95",
+        "encoded": "wrapper.style.pointerEvents%20=%20'none';",
+        "prevChunkIds": []
+      },
+      "127": {
+        "chunkId": "7735f5",
+        "hash": "bd550e42",
+        "encoded": "//%20Button%20re-enables%20clicks",
+        "prevChunkIds": []
+      },
+      "128": {
+        "chunkId": "7735f5",
+        "hash": "7dc1a4f9",
+        "encoded": "button.style.pointerEvents%20=%20'auto';",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "7735f5",
+        "hash": "ff6991dc",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "130": {
+        "chunkId": "7735f5",
+        "hash": "1dde459f",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "7735f5",
+        "hash": "dd5092cb",
+        "encoded": "**Why:**",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "7735f5",
+        "hash": "52e6f36f",
+        "encoded": "-%20%60wrapper%60%20has%20%60pointer-events:%20none%60%20%E2%86%92%20clicks%20pass%20through%20to%20the%20link/button%20below",
+        "prevChunkIds": []
+      },
+      "134": {
+        "chunkId": "7735f5",
+        "hash": "a8fc4134",
+        "encoded": "-%20%60button%60%20has%20%60pointer-events:%20auto%60%20%E2%86%92%20the%20info%20button%20can%20be%20clicked",
+        "prevChunkIds": []
+      },
+      "135": {
+        "chunkId": "7735f5",
+        "hash": "0cf4e54e",
+        "encoded": "-%20Image%20remains%20clickable%20as%20part%20of%20the%20interactive%20parent",
+        "prevChunkIds": []
+      },
+      "137": {
+        "chunkId": "7735f5",
+        "hash": "dbc68cd5",
+        "encoded": "###%205.%20Dynamic%20Repositioning",
+        "prevChunkIds": []
+      },
+      "139": {
+        "chunkId": "7735f5",
+        "hash": "ae35100f",
+        "encoded": "%60%60%60javascript",
+        "prevChunkIds": []
+      },
+      "140": {
+        "chunkId": "7735f5",
+        "hash": "4f48ee42",
+        "encoded": "if%20(interactiveParent)%20%7B",
+        "prevChunkIds": []
+      },
+      "141": {
+        "chunkId": "7735f5",
+        "hash": "6fce8f20",
+        "encoded": "//%20Reposition%20on%20scroll%20or%20resize",
+        "prevChunkIds": []
+      },
+      "142": {
+        "chunkId": "7735f5",
+        "hash": "32ff6766",
+        "encoded": "const%20repositionHandler%20=%20()%20=%3E%20positionWrapperOverImage(wrapper,%20img);",
+        "prevChunkIds": []
+      },
+      "143": {
+        "chunkId": "7735f5",
+        "hash": "f6cd48b3",
+        "encoded": "window.addEventListener('scroll',%20repositionHandler,%20true);",
+        "prevChunkIds": []
+      },
+      "144": {
+        "chunkId": "7735f5",
+        "hash": "0b203f59",
+        "encoded": "window.addEventListener('resize',%20repositionHandler);",
+        "prevChunkIds": []
+      },
+      "145": {
+        "chunkId": "7735f5",
+        "hash": "48cab207",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "146": {
+        "chunkId": "7735f5",
+        "hash": "5b532b7f",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "148": {
+        "chunkId": "7735f5",
+        "hash": "f431fb0a",
+        "encoded": "**Ensures:**%20Button%20stays%20positioned%20over%20the%20image%20even%20when:",
+        "prevChunkIds": []
+      },
+      "149": {
+        "chunkId": "7735f5",
+        "hash": "4c9d0378",
+        "encoded": "-%20User%20scrolls%20the%20page",
+        "prevChunkIds": []
+      },
+      "150": {
+        "chunkId": "7735f5",
+        "hash": "a7525f40",
+        "encoded": "-%20Viewport%20is%20resized",
+        "prevChunkIds": []
+      },
+      "151": {
+        "chunkId": "7735f5",
+        "hash": "ed00904d",
+        "encoded": "-%20Responsive%20layouts%20reflow",
+        "prevChunkIds": []
+      },
+      "152": {
+        "chunkId": "7735f5",
+        "hash": "5da4cca2",
+        "encoded": "-%20Interactive%20parent%20moves%20(e.g.,%20animations)",
+        "prevChunkIds": []
+      },
+      "154": {
+        "chunkId": "7735f5",
+        "hash": "474ee049",
+        "encoded": "##%20Examples",
+        "prevChunkIds": []
+      },
+      "156": {
+        "chunkId": "7735f5",
+        "hash": "d0b0f3c1",
+        "encoded": "###%20Example%201:%20Image%20in%20Link",
+        "prevChunkIds": []
+      },
+      "158": {
+        "chunkId": "7735f5",
+        "hash": "0503c814",
+        "encoded": "**HTML:**",
+        "prevChunkIds": []
+      },
+      "159": {
+        "chunkId": "7735f5",
+        "hash": "14ed5d5c",
+        "encoded": "%60%60%60html",
+        "prevChunkIds": []
+      },
+      "160": {
+        "chunkId": "7735f5",
+        "hash": "f42561c5",
+        "encoded": "%3Ca%20href=%22/gallery/photo1%22%3E",
+        "prevChunkIds": []
+      },
+      "161": {
+        "chunkId": "7735f5",
+        "hash": "7bab3075",
+        "encoded": "%3Cimg%20src=%22photo1.jpg%22%20width=%22400%22%20height=%22300%22%3E",
+        "prevChunkIds": []
+      },
+      "162": {
+        "chunkId": "7735f5",
+        "hash": "f03fa842",
+        "encoded": "%3C/a%3E",
+        "prevChunkIds": []
+      },
+      "163": {
+        "chunkId": "7735f5",
+        "hash": "3f4e2600",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "165": {
+        "chunkId": "7735f5",
+        "hash": "01df0262",
+        "encoded": "**After%20Extension%20Processes:**",
+        "prevChunkIds": []
+      },
+      "166": {
+        "chunkId": "7735f5",
+        "hash": "2421ce60",
+        "encoded": "%60%60%60html",
+        "prevChunkIds": []
+      },
+      "167": {
+        "chunkId": "7735f5",
+        "hash": "7fc7163f",
+        "encoded": "%3Cdiv%20class=%22ai-alt-image-wrapper%22",
+        "prevChunkIds": []
+      },
+      "168": {
+        "chunkId": "7735f5",
+        "hash": "d5b98fa2",
+        "encoded": "style=%22position:%20absolute;%20top:%20100px;%20left:%2050px;",
+        "prevChunkIds": []
+      },
+      "169": {
+        "chunkId": "7735f5",
+        "hash": "fcb3c671",
+        "encoded": "width:%20400px;%20height:%20300px;%20pointer-events:%20none;%20z-index:%201000;%22",
+        "prevChunkIds": []
+      },
+      "170": {
+        "chunkId": "7735f5",
+        "hash": "4f404a47",
+        "encoded": "data-target-image=%22ai-alt-image-1%22%3E",
+        "prevChunkIds": []
+      },
+      "171": {
+        "chunkId": "7735f5",
+        "hash": "74d61f3d",
+        "encoded": "%3Cbutton%20class=%22ai-alt-info-button%22",
+        "prevChunkIds": []
+      },
+      "172": {
+        "chunkId": "7735f5",
+        "hash": "cff6f37e",
+        "encoded": "style=%22pointer-events:%20auto;%22",
+        "prevChunkIds": []
+      },
+      "173": {
+        "chunkId": "7735f5",
+        "hash": "f46c92ff",
+        "encoded": "aria-label=%22Generate%20AI%20alt%20text%20for%20image%201%22",
+        "prevChunkIds": []
+      },
+      "174": {
+        "chunkId": "7735f5",
+        "hash": "5db90e49",
+        "encoded": "aria-haspopup=%22dialog%22",
+        "prevChunkIds": []
+      },
+      "175": {
+        "chunkId": "7735f5",
+        "hash": "475ba881",
+        "encoded": "popovertarget=%22ai-alt-popover-1%22%3E",
+        "prevChunkIds": []
+      },
+      "176": {
+        "chunkId": "7735f5",
+        "hash": "55328d53",
+        "encoded": "%3C!--%20SVG%20icon%20--%3E",
+        "prevChunkIds": []
+      },
+      "177": {
+        "chunkId": "7735f5",
+        "hash": "e73c6df3",
+        "encoded": "%3C/button%3E",
+        "prevChunkIds": []
+      },
+      "178": {
+        "chunkId": "7735f5",
+        "hash": "0a815fe4",
+        "encoded": "%3Cdiv%20id=%22ai-alt-popover-1%22%20popover=%22auto%22%3E...%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "179": {
+        "chunkId": "7735f5",
+        "hash": "1b8690dd",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "180": {
+        "chunkId": "7735f5",
+        "hash": "2469381e",
+        "encoded": "%3Ca%20href=%22/gallery/photo1%22%3E",
+        "prevChunkIds": []
+      },
+      "181": {
+        "chunkId": "7735f5",
+        "hash": "ec7c160c",
+        "encoded": "%3Cimg%20src=%22photo1.jpg%22%20width=%22400%22%20height=%22300%22%20id=%22ai-alt-image-1%22%3E",
+        "prevChunkIds": []
+      },
+      "182": {
+        "chunkId": "7735f5",
+        "hash": "334faa42",
+        "encoded": "%3C/a%3E",
+        "prevChunkIds": []
+      },
+      "183": {
+        "chunkId": "7735f5",
+        "hash": "db6147e8",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "185": {
+        "chunkId": "7735f5",
+        "hash": "5105d4a4",
+        "encoded": "**DOM%20Structure:**",
+        "prevChunkIds": []
+      },
+      "186": {
+        "chunkId": "7735f5",
+        "hash": "20018b99",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "187": {
+        "chunkId": "7735f5",
+        "hash": "fd13b6e3",
+        "encoded": "body",
+        "prevChunkIds": []
+      },
+      "188": {
+        "chunkId": "7735f5",
+        "hash": "599e24c9",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20div.ai-alt-image-wrapper%20(absolute,%20positioned%20over%20image)",
+        "prevChunkIds": []
+      },
+      "189": {
+        "chunkId": "7735f5",
+        "hash": "50de3f45",
+        "encoded": "%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20button.ai-alt-info-button",
+        "prevChunkIds": []
+      },
+      "190": {
+        "chunkId": "7735f5",
+        "hash": "06179a18",
+        "encoded": "%E2%94%82%20%20%20%E2%94%94%E2%94%80%E2%94%80%20div.ai-alt-popover",
+        "prevChunkIds": []
+      },
+      "191": {
+        "chunkId": "7735f5",
+        "hash": "ea108edb",
+        "encoded": "%E2%94%94%E2%94%80%E2%94%80%20a%20(link)",
+        "prevChunkIds": []
+      },
+      "192": {
+        "chunkId": "7735f5",
+        "hash": "fba172fd",
+        "encoded": "%E2%94%94%E2%94%80%E2%94%80%20img%20(remains%20inside%20link,%20clickable)",
+        "prevChunkIds": []
+      },
+      "193": {
+        "chunkId": "7735f5",
+        "hash": "174c1906",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "195": {
+        "chunkId": "7735f5",
+        "hash": "6d0629a9",
+        "encoded": "**Benefits:**",
+        "prevChunkIds": []
+      },
+      "196": {
+        "chunkId": "7735f5",
+        "hash": "b83f434b",
+        "encoded": "-%20%E2%9C%85%20Link%20and%20button%20are%20siblings,%20not%20nested",
+        "prevChunkIds": []
+      },
+      "197": {
+        "chunkId": "7735f5",
+        "hash": "0301faea",
+        "encoded": "-%20%E2%9C%85%20Clicking%20image%20%E2%86%92%20navigates%20to%20link",
+        "prevChunkIds": []
+      },
+      "198": {
+        "chunkId": "7735f5",
+        "hash": "54ea6b6c",
+        "encoded": "-%20%E2%9C%85%20Clicking%20info%20button%20%E2%86%92%20opens%20dialog",
+        "prevChunkIds": []
+      },
+      "199": {
+        "chunkId": "7735f5",
+        "hash": "c526ce45",
+        "encoded": "-%20%E2%9C%85%20No%20interaction%20conflict",
+        "prevChunkIds": []
+      },
+      "200": {
+        "chunkId": "7735f5",
+        "hash": "fe7fc656",
+        "encoded": "-%20%E2%9C%85%20WCAG%204.1.2%20compliant",
+        "prevChunkIds": []
+      },
+      "202": {
+        "chunkId": "7735f5",
+        "hash": "0b05389b",
+        "encoded": "###%20Example%202:%20Image%20in%20Button",
+        "prevChunkIds": []
+      },
+      "204": {
+        "chunkId": "7735f5",
+        "hash": "8ac6e1ef",
+        "encoded": "**HTML:**",
+        "prevChunkIds": []
+      },
+      "205": {
+        "chunkId": "7735f5",
+        "hash": "c4650ff5",
+        "encoded": "%60%60%60html",
+        "prevChunkIds": []
+      },
+      "206": {
+        "chunkId": "7735f5",
+        "hash": "29e6cb1a",
+        "encoded": "%3Cbutton%20onclick=%22openLightbox()%22%3E",
+        "prevChunkIds": []
+      },
+      "207": {
+        "chunkId": "7735f5",
+        "hash": "1ecc681a",
+        "encoded": "%3Cimg%20src=%22thumbnail.jpg%22%20width=%22150%22%20height=%22150%22%3E",
+        "prevChunkIds": []
+      },
+      "208": {
+        "chunkId": "7735f5",
+        "hash": "53cd97ed",
+        "encoded": "%3C/button%3E",
+        "prevChunkIds": []
+      },
+      "209": {
+        "chunkId": "7735f5",
+        "hash": "3158379a",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "211": {
+        "chunkId": "7735f5",
+        "hash": "6a6468dd",
+        "encoded": "**After%20Extension%20Processes:**",
+        "prevChunkIds": []
+      },
+      "212": {
+        "chunkId": "7735f5",
+        "hash": "afcdaccb",
+        "encoded": "%60%60%60html",
+        "prevChunkIds": []
+      },
+      "213": {
+        "chunkId": "7735f5",
+        "hash": "9a5ce39a",
+        "encoded": "%3Cdiv%20class=%22ai-alt-image-wrapper%22",
+        "prevChunkIds": []
+      },
+      "214": {
+        "chunkId": "7735f5",
+        "hash": "b560171b",
+        "encoded": "style=%22position:%20absolute;%20...%22",
+        "prevChunkIds": []
+      },
+      "215": {
+        "chunkId": "7735f5",
+        "hash": "ba471825",
+        "encoded": "data-target-image=%22ai-alt-image-2%22%3E",
+        "prevChunkIds": []
+      },
+      "216": {
+        "chunkId": "7735f5",
+        "hash": "d9f0f064",
+        "encoded": "%3Cbutton%20class=%22ai-alt-info-button%22%20style=%22pointer-events:%20auto;%22%3E...%3C/button%3E",
+        "prevChunkIds": []
+      },
+      "217": {
+        "chunkId": "7735f5",
+        "hash": "af6db4b0",
+        "encoded": "%3Cdiv%20id=%22ai-alt-popover-2%22%20popover=%22auto%22%3E...%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "218": {
+        "chunkId": "7735f5",
+        "hash": "76890218",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "219": {
+        "chunkId": "7735f5",
+        "hash": "6db8184e",
+        "encoded": "%3Cbutton%20onclick=%22openLightbox()%22%3E",
+        "prevChunkIds": []
+      },
+      "220": {
+        "chunkId": "7735f5",
+        "hash": "88896e1c",
+        "encoded": "%3Cimg%20src=%22thumbnail.jpg%22%20width=%22150%22%20height=%22150%22%20id=%22ai-alt-image-2%22%3E",
+        "prevChunkIds": []
+      },
+      "221": {
+        "chunkId": "7735f5",
+        "hash": "17283ff4",
+        "encoded": "%3C/button%3E",
+        "prevChunkIds": []
+      },
+      "222": {
+        "chunkId": "7735f5",
+        "hash": "4781336d",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "224": {
+        "chunkId": "7735f5",
+        "hash": "80875c7a",
+        "encoded": "**DOM%20Structure:**",
+        "prevChunkIds": []
+      },
+      "225": {
+        "chunkId": "7735f5",
+        "hash": "793b03c9",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "226": {
+        "chunkId": "7735f5",
+        "hash": "7cbb7480",
+        "encoded": "body",
+        "prevChunkIds": []
+      },
+      "227": {
+        "chunkId": "7735f5",
+        "hash": "300951ce",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20div.ai-alt-image-wrapper%20(absolute)",
+        "prevChunkIds": []
+      },
+      "228": {
+        "chunkId": "7735f5",
+        "hash": "3962504f",
+        "encoded": "%E2%94%82%20%20%20%E2%94%9C%E2%94%80%E2%94%80%20button.ai-alt-info-button%20(info%20button)",
+        "prevChunkIds": []
+      },
+      "229": {
+        "chunkId": "7735f5",
+        "hash": "19424021",
+        "encoded": "%E2%94%82%20%20%20%E2%94%94%E2%94%80%E2%94%80%20div.ai-alt-popover",
+        "prevChunkIds": []
+      },
+      "230": {
+        "chunkId": "7735f5",
+        "hash": "5231287b",
+        "encoded": "%E2%94%94%E2%94%80%E2%94%80%20button%20(lightbox%20trigger)",
+        "prevChunkIds": []
+      },
+      "231": {
+        "chunkId": "7735f5",
+        "hash": "305a43db",
+        "encoded": "%E2%94%94%E2%94%80%E2%94%80%20img",
+        "prevChunkIds": []
+      },
+      "232": {
+        "chunkId": "7735f5",
+        "hash": "89131f8b",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "234": {
+        "chunkId": "7735f5",
+        "hash": "6a75d686",
+        "encoded": "**Benefits:**",
+        "prevChunkIds": []
+      },
+      "235": {
+        "chunkId": "7735f5",
+        "hash": "d2bae4d3",
+        "encoded": "-%20%E2%9C%85%20Two%20independent%20buttons%20(not%20nested)",
+        "prevChunkIds": []
+      },
+      "236": {
+        "chunkId": "7735f5",
+        "hash": "6f7e276d",
+        "encoded": "-%20%E2%9C%85%20Clicking%20image%20%E2%86%92%20opens%20lightbox",
+        "prevChunkIds": []
+      },
+      "237": {
+        "chunkId": "7735f5",
+        "hash": "2571f688",
+        "encoded": "-%20%E2%9C%85%20Clicking%20info%20icon%20%E2%86%92%20generates%20alt%20text",
+        "prevChunkIds": []
+      },
+      "238": {
+        "chunkId": "7735f5",
+        "hash": "fb0aa270",
+        "encoded": "-%20%E2%9C%85%20Clear%20separation%20of%20concerns",
+        "prevChunkIds": []
+      },
+      "240": {
+        "chunkId": "7735f5",
+        "hash": "f917fdd0",
+        "encoded": "###%20Example%203:%20Image%20in%20Regular%20Div%20(No%20Interactive%20Parent)",
+        "prevChunkIds": []
+      },
+      "242": {
+        "chunkId": "7735f5",
+        "hash": "e61106c5",
+        "encoded": "**HTML:**",
+        "prevChunkIds": []
+      },
+      "243": {
+        "chunkId": "7735f5",
+        "hash": "98e3d6b6",
+        "encoded": "%60%60%60html",
+        "prevChunkIds": []
+      },
+      "244": {
+        "chunkId": "7735f5",
+        "hash": "604573da",
+        "encoded": "%3Cdiv%20class=%22photo-container%22%3E",
+        "prevChunkIds": []
+      },
+      "245": {
+        "chunkId": "7735f5",
+        "hash": "d0e4ef33",
+        "encoded": "%3Cimg%20src=%22photo.jpg%22%20width=%22500%22%20height=%22400%22%3E",
+        "prevChunkIds": []
+      },
+      "246": {
+        "chunkId": "7735f5",
+        "hash": "9d41698b",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "247": {
+        "chunkId": "7735f5",
+        "hash": "4f560dd2",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "249": {
+        "chunkId": "7735f5",
+        "hash": "15674618",
+        "encoded": "**After%20Extension%20Processes:**",
+        "prevChunkIds": []
+      },
+      "250": {
+        "chunkId": "7735f5",
+        "hash": "fc4733ee",
+        "encoded": "%60%60%60html",
+        "prevChunkIds": []
+      },
+      "251": {
+        "chunkId": "7735f5",
+        "hash": "4c25a24c",
+        "encoded": "%3Cdiv%20class=%22photo-container%22%3E",
+        "prevChunkIds": []
+      },
+      "252": {
+        "chunkId": "7735f5",
+        "hash": "0ceaa04f",
+        "encoded": "%3Cdiv%20class=%22ai-alt-image-wrapper%22%20style=%22position:%20relative;%20display:%20inline-block;%22%3E",
+        "prevChunkIds": []
+      },
+      "253": {
+        "chunkId": "7735f5",
+        "hash": "68f575dc",
+        "encoded": "%3Cimg%20src=%22photo.jpg%22%20width=%22500%22%20height=%22400%22%20id=%22ai-alt-image-3%22%3E",
+        "prevChunkIds": []
+      },
+      "254": {
+        "chunkId": "7735f5",
+        "hash": "447fcc09",
+        "encoded": "%3Cbutton%20class=%22ai-alt-info-button%22%3E...%3C/button%3E",
+        "prevChunkIds": []
+      },
+      "255": {
+        "chunkId": "7735f5",
+        "hash": "6447879b",
+        "encoded": "%3Cdiv%20id=%22ai-alt-popover-3%22%20popover=%22auto%22%3E...%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "256": {
+        "chunkId": "7735f5",
+        "hash": "6aff45ba",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "257": {
+        "chunkId": "7735f5",
+        "hash": "bcb10048",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "258": {
+        "chunkId": "7735f5",
+        "hash": "d612ec24",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "260": {
+        "chunkId": "7735f5",
+        "hash": "3d781d7a",
+        "encoded": "**DOM%20Structure:**",
+        "prevChunkIds": []
+      },
+      "261": {
+        "chunkId": "7735f5",
+        "hash": "d17316a1",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "262": {
+        "chunkId": "7735f5",
+        "hash": "c28a0432",
+        "encoded": "div.photo-container",
+        "prevChunkIds": []
+      },
+      "263": {
+        "chunkId": "7735f5",
+        "hash": "fc5f652d",
+        "encoded": "%E2%94%94%E2%94%80%E2%94%80%20div.ai-alt-image-wrapper%20(relative,%20wraps%20image)",
+        "prevChunkIds": []
+      },
+      "264": {
+        "chunkId": "7735f5",
+        "hash": "a71dbbbe",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20img",
+        "prevChunkIds": []
+      },
+      "265": {
+        "chunkId": "7735f5",
+        "hash": "5fc31262",
+        "encoded": "%E2%94%9C%E2%94%80%E2%94%80%20button.ai-alt-info-button",
+        "prevChunkIds": []
+      },
+      "266": {
+        "chunkId": "7735f5",
+        "hash": "f7399e18",
+        "encoded": "%E2%94%94%E2%94%80%E2%94%80%20div.ai-alt-popover",
+        "prevChunkIds": []
+      },
+      "267": {
+        "chunkId": "7735f5",
+        "hash": "93d36adb",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "269": {
+        "chunkId": "7735f5",
+        "hash": "95ce3933",
+        "encoded": "**Difference:**",
+        "prevChunkIds": []
+      },
+      "270": {
+        "chunkId": "7735f5",
+        "hash": "313e9698",
+        "encoded": "-%20Normal%20wrapping%20(wrapper%20contains%20image)",
+        "prevChunkIds": []
+      },
+      "271": {
+        "chunkId": "7735f5",
+        "hash": "ff34c1af",
+        "encoded": "-%20%60position:%20relative%60%20(not%20absolute)",
+        "prevChunkIds": []
+      },
+      "272": {
+        "chunkId": "7735f5",
+        "hash": "86178584",
+        "encoded": "-%20No%20special%20pointer-events%20handling",
+        "prevChunkIds": []
+      },
+      "273": {
+        "chunkId": "7735f5",
+        "hash": "d2355895",
+        "encoded": "-%20Simpler%20structure%20since%20no%20interactive%20parent%20detected",
+        "prevChunkIds": []
+      },
+      "275": {
+        "chunkId": "7735f5",
+        "hash": "b0fc24f5",
+        "encoded": "###%20Example%204:%20Deeply%20Nested%20Image",
+        "prevChunkIds": []
+      },
+      "277": {
+        "chunkId": "7735f5",
+        "hash": "9491f426",
+        "encoded": "**HTML:**",
+        "prevChunkIds": []
+      },
+      "278": {
+        "chunkId": "7735f5",
+        "hash": "9054e784",
+        "encoded": "%60%60%60html",
+        "prevChunkIds": []
+      },
+      "279": {
+        "chunkId": "7735f5",
+        "hash": "f1dd43e5",
+        "encoded": "%3Ca%20href=%22/article%22%3E",
+        "prevChunkIds": []
+      },
+      "280": {
+        "chunkId": "7735f5",
+        "hash": "e1b075e8",
+        "encoded": "%3Cdiv%20class=%22card%22%3E",
+        "prevChunkIds": []
+      },
+      "281": {
+        "chunkId": "7735f5",
+        "hash": "e633c081",
+        "encoded": "%3Cdiv%20class=%22card-image%22%3E",
+        "prevChunkIds": []
+      },
+      "282": {
+        "chunkId": "7735f5",
+        "hash": "218f62bc",
+        "encoded": "%3Cimg%20src=%22article-preview.jpg%22%3E",
+        "prevChunkIds": []
+      },
+      "283": {
+        "chunkId": "7735f5",
+        "hash": "4b56816c",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "284": {
+        "chunkId": "7735f5",
+        "hash": "3781687b",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "285": {
+        "chunkId": "7735f5",
+        "hash": "7aaaf8c9",
+        "encoded": "%3C/a%3E",
+        "prevChunkIds": []
+      },
+      "286": {
+        "chunkId": "7735f5",
+        "hash": "0309a247",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "288": {
+        "chunkId": "7735f5",
+        "hash": "b6171378",
+        "encoded": "**Detection:**",
+        "prevChunkIds": []
+      },
+      "289": {
+        "chunkId": "7735f5",
+        "hash": "a570480a",
+        "encoded": "%60%60%60javascript",
+        "prevChunkIds": []
+      },
+      "290": {
+        "chunkId": "7735f5",
+        "hash": "a313897a",
+        "encoded": "findInteractiveParent(img)",
+        "prevChunkIds": []
+      },
+      "291": {
+        "chunkId": "7735f5",
+        "hash": "2186a385",
+        "encoded": "//%20Checks%20img.parentElement%20%E2%86%92%20div.card-image%20(not%20interactive)",
+        "prevChunkIds": []
+      },
+      "292": {
+        "chunkId": "7735f5",
+        "hash": "3b250ac7",
+        "encoded": "//%20Checks%20div.card-image.parentElement%20%E2%86%92%20div.card%20(not%20interactive)",
+        "prevChunkIds": []
+      },
+      "293": {
+        "chunkId": "7735f5",
+        "hash": "71aa0132",
+        "encoded": "//%20Checks%20div.card.parentElement%20%E2%86%92%20a%20(INTERACTIVE!%20Return%20this)",
+        "prevChunkIds": []
+      },
+      "294": {
+        "chunkId": "7735f5",
+        "hash": "65524479",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "296": {
+        "chunkId": "7735f5",
+        "hash": "528605ad",
+        "encoded": "**After%20Extension%20Processes:**",
+        "prevChunkIds": []
+      },
+      "297": {
+        "chunkId": "7735f5",
+        "hash": "4a469ed8",
+        "encoded": "%60%60%60html",
+        "prevChunkIds": []
+      },
+      "298": {
+        "chunkId": "7735f5",
+        "hash": "651f2f02",
+        "encoded": "%3Cdiv%20class=%22ai-alt-image-wrapper%22%20style=%22position:%20absolute;%20...%22%3E...%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "299": {
+        "chunkId": "7735f5",
+        "hash": "cf9f2fe3",
+        "encoded": "%3Ca%20href=%22/article%22%3E",
+        "prevChunkIds": []
+      },
+      "300": {
+        "chunkId": "7735f5",
+        "hash": "b3a6eeb0",
+        "encoded": "%3Cdiv%20class=%22card%22%3E",
+        "prevChunkIds": []
+      },
+      "301": {
+        "chunkId": "7735f5",
+        "hash": "9f27c41e",
+        "encoded": "%3Cdiv%20class=%22card-image%22%3E",
+        "prevChunkIds": []
+      },
+      "302": {
+        "chunkId": "7735f5",
+        "hash": "de18bae2",
+        "encoded": "%3Cimg%20src=%22article-preview.jpg%22%20id=%22ai-alt-image-4%22%3E",
+        "prevChunkIds": []
+      },
+      "303": {
+        "chunkId": "7735f5",
+        "hash": "74d0f631",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "304": {
+        "chunkId": "7735f5",
+        "hash": "4c1f18ed",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "305": {
+        "chunkId": "7735f5",
+        "hash": "796daa3c",
+        "encoded": "%3C/a%3E",
+        "prevChunkIds": []
+      },
+      "306": {
+        "chunkId": "7735f5",
+        "hash": "0f5d1418",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "308": {
+        "chunkId": "7735f5",
+        "hash": "68c377ae",
+        "encoded": "**Result:**%20Even%20deeply%20nested%20images%20are%20handled%20correctly!",
+        "prevChunkIds": []
+      },
+      "310": {
+        "chunkId": "7735f5",
+        "hash": "51f69c06",
+        "encoded": "##%20Edge%20Cases",
+        "prevChunkIds": []
+      },
+      "312": {
+        "chunkId": "7735f5",
+        "hash": "919d8a9d",
+        "encoded": "###%20Edge%20Case%201:%20Multiple%20Images%20in%20Same%20Link",
+        "prevChunkIds": []
+      },
+      "314": {
+        "chunkId": "7735f5",
+        "hash": "607352d7",
+        "encoded": "%60%60%60html",
+        "prevChunkIds": []
+      },
+      "315": {
+        "chunkId": "7735f5",
+        "hash": "92f946e0",
+        "encoded": "%3Ca%20href=%22/gallery%22%3E",
+        "prevChunkIds": []
+      },
+      "316": {
+        "chunkId": "7735f5",
+        "hash": "2b661b96",
+        "encoded": "%3Cimg%20src=%22thumb1.jpg%22%20width=%22200%22%20height=%22200%22%3E",
+        "prevChunkIds": []
+      },
+      "317": {
+        "chunkId": "7735f5",
+        "hash": "3c49cbff",
+        "encoded": "%3Cimg%20src=%22thumb2.jpg%22%20width=%22200%22%20height=%22200%22%3E",
+        "prevChunkIds": []
+      },
+      "318": {
+        "chunkId": "7735f5",
+        "hash": "e654fc72",
+        "encoded": "%3C/a%3E",
+        "prevChunkIds": []
+      },
+      "319": {
+        "chunkId": "7735f5",
+        "hash": "d82b9d3f",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "321": {
+        "chunkId": "7735f5",
+        "hash": "d5e697d9",
+        "encoded": "**Result:**",
+        "prevChunkIds": []
+      },
+      "322": {
+        "chunkId": "7735f5",
+        "hash": "d28c7bc8",
+        "encoded": "-%20Two%20separate%20wrappers,%20both%20positioned%20absolutely",
+        "prevChunkIds": []
+      },
+      "323": {
+        "chunkId": "7735f5",
+        "hash": "4a5dd57b",
+        "encoded": "-%20Each%20wrapper%20is%20sibling%20to%20the%20link",
+        "prevChunkIds": []
+      },
+      "324": {
+        "chunkId": "7735f5",
+        "hash": "6e3157f8",
+        "encoded": "-%20Each%20button%20positioned%20over%20its%20respective%20image",
+        "prevChunkIds": []
+      },
+      "326": {
+        "chunkId": "7735f5",
+        "hash": "2937924d",
+        "encoded": "###%20Edge%20Case%202:%20Link%20Inside%20Link%20(Already%20Invalid)",
+        "prevChunkIds": []
+      },
+      "328": {
+        "chunkId": "7735f5",
+        "hash": "d5cb5d45",
+        "encoded": "%60%60%60html",
+        "prevChunkIds": []
+      },
+      "329": {
+        "chunkId": "7735f5",
+        "hash": "328887ce",
+        "encoded": "%3C!--%20Already%20invalid%20HTML%20--%3E",
+        "prevChunkIds": []
+      },
+      "330": {
+        "chunkId": "7735f5",
+        "hash": "467155f8",
+        "encoded": "%3Ca%20href=%22/outer%22%3E",
+        "prevChunkIds": []
+      },
+      "331": {
+        "chunkId": "7735f5",
+        "hash": "50935daa",
+        "encoded": "%3Ca%20href=%22/inner%22%3E",
+        "prevChunkIds": []
+      },
+      "332": {
+        "chunkId": "7735f5",
+        "hash": "9fd0df8d",
+        "encoded": "%3Cimg%20src=%22photo.jpg%22%3E",
+        "prevChunkIds": []
+      },
+      "333": {
+        "chunkId": "7735f5",
+        "hash": "231660bd",
+        "encoded": "%3C/a%3E",
+        "prevChunkIds": []
+      },
+      "334": {
+        "chunkId": "7735f5",
+        "hash": "3256684c",
+        "encoded": "%3C/a%3E",
+        "prevChunkIds": []
+      },
+      "335": {
+        "chunkId": "7735f5",
+        "hash": "855e992f",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "337": {
+        "chunkId": "7735f5",
+        "hash": "64cfd91c",
+        "encoded": "**Detection:**",
+        "prevChunkIds": []
+      },
+      "338": {
+        "chunkId": "7735f5",
+        "hash": "9b1ff95f",
+        "encoded": "-%20Finds%20innermost%20interactive%20parent%20first",
+        "prevChunkIds": []
+      },
+      "339": {
+        "chunkId": "7735f5",
+        "hash": "6de25fe9",
+        "encoded": "-%20Wrapper%20positioned%20as%20sibling%20to%20inner%20link",
+        "prevChunkIds": []
+      },
+      "340": {
+        "chunkId": "7735f5",
+        "hash": "57c177d8",
+        "encoded": "-%20Extension%20doesn't%20fix%20existing%20violations,%20but%20doesn't%20create%20new%20ones",
+        "prevChunkIds": []
+      },
+      "342": {
+        "chunkId": "7735f5",
+        "hash": "503a221d",
+        "encoded": "###%20Edge%20Case%203:%20%60role=%22button%22%60%20on%20Div",
+        "prevChunkIds": []
+      },
+      "344": {
+        "chunkId": "7735f5",
+        "hash": "8f4879df",
+        "encoded": "%60%60%60html",
+        "prevChunkIds": []
+      },
+      "345": {
+        "chunkId": "7735f5",
+        "hash": "db806b09",
+        "encoded": "%3Cdiv%20role=%22button%22%20tabindex=%220%22%20onclick=%22handleClick()%22%3E",
+        "prevChunkIds": []
+      },
+      "346": {
+        "chunkId": "7735f5",
+        "hash": "df47dec4",
+        "encoded": "%3Cimg%20src=%22photo.jpg%22%3E",
+        "prevChunkIds": []
+      },
+      "347": {
+        "chunkId": "7735f5",
+        "hash": "e4750f1f",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "348": {
+        "chunkId": "7735f5",
+        "hash": "43d96861",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "350": {
+        "chunkId": "7735f5",
+        "hash": "e25e0fce",
+        "encoded": "**Detection:**",
+        "prevChunkIds": []
+      },
+      "351": {
+        "chunkId": "7735f5",
+        "hash": "7b7b6b0f",
+        "encoded": "-%20%60findInteractiveParent()%60%20detects%20%60role=%22button%22%60",
+        "prevChunkIds": []
+      },
+      "352": {
+        "chunkId": "7735f5",
+        "hash": "62811a20",
+        "encoded": "-%20Treated%20same%20as%20native%20%60%3Cbutton%3E%60%20element",
+        "prevChunkIds": []
+      },
+      "353": {
+        "chunkId": "7735f5",
+        "hash": "cb2fd375",
+        "encoded": "-%20Wrapper%20positioned%20outside%20div",
+        "prevChunkIds": []
+      },
+      "355": {
+        "chunkId": "7735f5",
+        "hash": "dc731561",
+        "encoded": "###%20Edge%20Case%204:%20Image%20Moves/Resizes",
+        "prevChunkIds": []
+      },
+      "357": {
+        "chunkId": "7735f5",
+        "hash": "2d4df0a8",
+        "encoded": "**Scenario:**%20Responsive%20image%20changes%20size%20on%20viewport%20resize",
+        "prevChunkIds": []
+      },
+      "359": {
+        "chunkId": "7735f5",
+        "hash": "7500c4f0",
+        "encoded": "**Solution:**",
+        "prevChunkIds": []
+      },
+      "360": {
+        "chunkId": "7735f5",
+        "hash": "98bb83c3",
+        "encoded": "%60%60%60javascript",
+        "prevChunkIds": []
+      },
+      "361": {
+        "chunkId": "7735f5",
+        "hash": "cf020488",
+        "encoded": "window.addEventListener('resize',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "362": {
+        "chunkId": "7735f5",
+        "hash": "6fc58dc6",
+        "encoded": "positionWrapperOverImage(wrapper,%20img);",
+        "prevChunkIds": []
+      },
+      "363": {
+        "chunkId": "7735f5",
+        "hash": "9184bf1b",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "364": {
+        "chunkId": "7735f5",
+        "hash": "79c7f02b",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "366": {
+        "chunkId": "7735f5",
+        "hash": "d6edbb38",
+        "encoded": "**Result:**%20Wrapper%20automatically%20repositions%20to%20match%20new%20image%20dimensions",
+        "prevChunkIds": []
+      },
+      "368": {
+        "chunkId": "7735f5",
+        "hash": "a96a5004",
+        "encoded": "###%20Edge%20Case%205:%20Lazy-Loaded%20Images",
+        "prevChunkIds": []
+      },
+      "370": {
+        "chunkId": "7735f5",
+        "hash": "c22fed78",
+        "encoded": "**Scenario:**%20Image%20loads%20after%20extension%20runs",
+        "prevChunkIds": []
+      },
+      "372": {
+        "chunkId": "7735f5",
+        "hash": "0e38263b",
+        "encoded": "**Detection:**",
+        "prevChunkIds": []
+      },
+      "373": {
+        "chunkId": "7735f5",
+        "hash": "9ed7f386",
+        "encoded": "%60%60%60javascript",
+        "prevChunkIds": []
+      },
+      "374": {
+        "chunkId": "7735f5",
+        "hash": "8ede5831",
+        "encoded": "const%20observer%20=%20new%20MutationObserver((mutations)%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "375": {
+        "chunkId": "7735f5",
+        "hash": "fcfbbb63",
+        "encoded": "//%20Process%20newly%20loaded%20images",
+        "prevChunkIds": []
+      },
+      "376": {
+        "chunkId": "7735f5",
+        "hash": "161d5e07",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "377": {
+        "chunkId": "7735f5",
+        "hash": "a718bb8f",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "379": {
+        "chunkId": "7735f5",
+        "hash": "db68fc31",
+        "encoded": "**Result:**%20Works%20with%20dynamic/lazy-loaded%20images",
+        "prevChunkIds": []
+      },
+      "381": {
+        "chunkId": "7735f5",
+        "hash": "10ee06b4",
+        "encoded": "##%20Testing",
+        "prevChunkIds": []
+      },
+      "383": {
+        "chunkId": "7735f5",
+        "hash": "7f6b07c2",
+        "encoded": "See%20%5B__tests__/interactive-parent.test.js%5D(/__tests__/interactive-parent.test.js)%20for%20comprehensive%20tests:",
+        "prevChunkIds": []
+      },
+      "385": {
+        "chunkId": "7735f5",
+        "hash": "71b635d1",
+        "encoded": "-%20%E2%9C%85%20Detect%20%60%3Ca%3E%60%20as%20interactive%20parent",
+        "prevChunkIds": []
+      },
+      "386": {
+        "chunkId": "7735f5",
+        "hash": "e4e831b3",
+        "encoded": "-%20%E2%9C%85%20Detect%20%60%3Cbutton%3E%60%20as%20interactive%20parent",
+        "prevChunkIds": []
+      },
+      "387": {
+        "chunkId": "7735f5",
+        "hash": "8c903cf1",
+        "encoded": "-%20%E2%9C%85%20Detect%20%60role=%22button%22%60%20as%20interactive",
+        "prevChunkIds": []
+      },
+      "388": {
+        "chunkId": "7735f5",
+        "hash": "d1391ef2",
+        "encoded": "-%20%E2%9C%85%20Detect%20%60role=%22link%22%60%20as%20interactive",
+        "prevChunkIds": []
+      },
+      "389": {
+        "chunkId": "7735f5",
+        "hash": "44681b0f",
+        "encoded": "-%20%E2%9C%85%20Handle%20deeply%20nested%20images",
+        "prevChunkIds": []
+      },
+      "390": {
+        "chunkId": "7735f5",
+        "hash": "4691d558",
+        "encoded": "-%20%E2%9C%85%20Ignore%20non-interactive%20parents%20(divs,%20sections,%20etc.)",
+        "prevChunkIds": []
+      },
+      "391": {
+        "chunkId": "7735f5",
+        "hash": "3beb752c",
+        "encoded": "-%20%E2%9C%85%20Position%20wrapper%20outside%20interactive%20parent",
+        "prevChunkIds": []
+      },
+      "392": {
+        "chunkId": "7735f5",
+        "hash": "f1139d5c",
+        "encoded": "-%20%E2%9C%85%20Set%20%60pointer-events:%20none%60%20on%20wrapper",
+        "prevChunkIds": []
+      },
+      "393": {
+        "chunkId": "7735f5",
+        "hash": "da60b69e",
+        "encoded": "-%20%E2%9C%85%20Set%20%60pointer-events:%20auto%60%20on%20button",
+        "prevChunkIds": []
+      },
+      "394": {
+        "chunkId": "7735f5",
+        "hash": "8633e908",
+        "encoded": "-%20%E2%9C%85%20Prevent%20nested%20interactive%20controls%20(WCAG%204.1.2)",
+        "prevChunkIds": []
+      },
+      "395": {
+        "chunkId": "7735f5",
+        "hash": "f4737889",
+        "encoded": "-%20%E2%9C%85%20Handle%20multiple%20images%20with%20mixed%20parent%20types",
+        "prevChunkIds": []
+      },
+      "397": {
+        "chunkId": "7735f5",
+        "hash": "bead8bd9",
+        "encoded": "##%20Benefits",
+        "prevChunkIds": []
+      },
+      "399": {
+        "chunkId": "7735f5",
+        "hash": "842cf354",
+        "encoded": "###%20Accessibility",
+        "prevChunkIds": []
+      },
+      "401": {
+        "chunkId": "7735f5",
+        "hash": "8f7d2b9c",
+        "encoded": "1.%20**WCAG%204.1.2%20Compliance:**%20No%20nested%20interactive%20controls",
+        "prevChunkIds": []
+      },
+      "402": {
+        "chunkId": "7735f5",
+        "hash": "de9be60c",
+        "encoded": "2.%20**Clear%20Focus%20Management:**%20Each%20interactive%20element%20is%20independently%20focusable",
+        "prevChunkIds": []
+      },
+      "403": {
+        "chunkId": "7735f5",
+        "hash": "48258074",
+        "encoded": "3.%20**Unambiguous%20Screen%20Reader%20Announcements:**%20%22Link%22%20or%20%22Button%22,%20never%20both",
+        "prevChunkIds": []
+      },
+      "404": {
+        "chunkId": "7735f5",
+        "hash": "be6b71a3",
+        "encoded": "4.%20**Keyboard%20Navigation:**%20Tab%20reaches%20each%20control%20separately",
+        "prevChunkIds": []
+      },
+      "405": {
+        "chunkId": "7735f5",
+        "hash": "4c1e3d6f",
+        "encoded": "5.%20**Predictable%20Behavior:**%20Click%20target%20is%20always%20clear",
+        "prevChunkIds": []
+      },
+      "407": {
+        "chunkId": "7735f5",
+        "hash": "e43d56dc",
+        "encoded": "###%20User%20Experience",
+        "prevChunkIds": []
+      },
+      "409": {
+        "chunkId": "7735f5",
+        "hash": "d57a22e9",
+        "encoded": "1.%20**No%20Interaction%20Conflicts:**%20Clicking%20image%20vs.%20button%20is%20unambiguous",
+        "prevChunkIds": []
+      },
+      "410": {
+        "chunkId": "7735f5",
+        "hash": "dec8fc57",
+        "encoded": "2.%20**Visual%20Overlay:**%20Button%20appears%20over%20image%20regardless%20of%20parent%20structure",
+        "prevChunkIds": []
+      },
+      "411": {
+        "chunkId": "7735f5",
+        "hash": "c0ba0286",
+        "encoded": "3.%20**Maintains%20Original%20Functionality:**%20Link/button%20parent%20still%20works%20normally",
+        "prevChunkIds": []
+      },
+      "412": {
+        "chunkId": "7735f5",
+        "hash": "b032f1d5",
+        "encoded": "4.%20**Responsive:**%20Works%20with%20responsive%20images%20and%20layouts",
+        "prevChunkIds": []
+      },
+      "413": {
+        "chunkId": "7735f5",
+        "hash": "94805d1d",
+        "encoded": "5.%20**Dynamic:**%20Repositions%20on%20scroll/resize",
+        "prevChunkIds": []
+      },
+      "415": {
+        "chunkId": "7735f5",
+        "hash": "256a7add",
+        "encoded": "###%20Developer%20Experience",
+        "prevChunkIds": []
+      },
+      "417": {
+        "chunkId": "7735f5",
+        "hash": "ac204a66",
+        "encoded": "1.%20**No%20Code%20Changes%20Required:**%20Works%20with%20existing%20HTML",
+        "prevChunkIds": []
+      },
+      "418": {
+        "chunkId": "7735f5",
+        "hash": "c7f42770",
+        "encoded": "2.%20**Handles%20Edge%20Cases:**%20Deep%20nesting,%20role%20attributes,%20etc.",
+        "prevChunkIds": []
+      },
+      "419": {
+        "chunkId": "7735f5",
+        "hash": "96e2dd29",
+        "encoded": "3.%20**Non-Intrusive:**%20Doesn't%20modify%20original%20DOM%20structure",
+        "prevChunkIds": []
+      },
+      "420": {
+        "chunkId": "7735f5",
+        "hash": "aad1d243",
+        "encoded": "4.%20**Well-Tested:**%20Comprehensive%20test%20coverage",
+        "prevChunkIds": []
+      },
+      "421": {
+        "chunkId": "7735f5",
+        "hash": "7c5a791e",
+        "encoded": "5.%20**Standards-Compliant:**%20Follows%20WCAG%20best%20practices",
+        "prevChunkIds": []
+      },
+      "423": {
+        "chunkId": "7735f5",
+        "hash": "b1d64fb2",
+        "encoded": "##%20Browser%20Support",
+        "prevChunkIds": []
+      },
+      "425": {
+        "chunkId": "7735f5",
+        "hash": "a5c81aa3",
+        "encoded": "-%20%E2%9C%85%20Chrome/Edge%20(Chromium-based)",
+        "prevChunkIds": []
+      },
+      "426": {
+        "chunkId": "7735f5",
+        "hash": "a3209fad",
+        "encoded": "-%20%E2%9C%85%20%60getBoundingClientRect()%60%20-%20Universal%20support",
+        "prevChunkIds": []
+      },
+      "427": {
+        "chunkId": "7735f5",
+        "hash": "05d97981",
+        "encoded": "-%20%E2%9C%85%20%60position:%20absolute%60%20with%20%60top/left%60%20-%20Universal%20support",
+        "prevChunkIds": []
+      },
+      "428": {
+        "chunkId": "7735f5",
+        "hash": "a93091e0",
+        "encoded": "-%20%E2%9C%85%20%60pointer-events%60%20-%20IE11+,%20all%20modern%20browsers",
+        "prevChunkIds": []
+      },
+      "429": {
+        "chunkId": "7735f5",
+        "hash": "f45a61e8",
+        "encoded": "-%20%E2%9C%85%20%60insertBefore()%60%20-%20Universal%20support",
+        "prevChunkIds": []
+      },
+      "431": {
+        "chunkId": "7735f5",
+        "hash": "5cdb9460",
+        "encoded": "##%20Performance",
+        "prevChunkIds": []
+      },
+      "433": {
+        "chunkId": "7735f5",
+        "hash": "68d20fb2",
+        "encoded": "**Efficient%20Detection:**",
+        "prevChunkIds": []
+      },
+      "434": {
+        "chunkId": "7735f5",
+        "hash": "6b2da133",
+        "encoded": "-%20%60findInteractiveParent()%60%20traverses%20up%20to%20%60%3Cbody%3E%60%20(usually%202-5%20iterations)",
+        "prevChunkIds": []
+      },
+      "435": {
+        "chunkId": "7735f5",
+        "hash": "d96b5143",
+        "encoded": "-%20Early%20exit%20on%20first%20interactive%20parent%20found",
+        "prevChunkIds": []
+      },
+      "436": {
+        "chunkId": "7735f5",
+        "hash": "4f9f5a38",
+        "encoded": "-%20No%20heavy%20DOM%20queries",
+        "prevChunkIds": []
+      },
+      "438": {
+        "chunkId": "7735f5",
+        "hash": "7da752ab",
+        "encoded": "**Minimal%20Overhead:**",
+        "prevChunkIds": []
+      },
+      "439": {
+        "chunkId": "7735f5",
+        "hash": "28ebb89b",
+        "encoded": "-%20Absolute%20positioning%20only%20when%20needed",
+        "prevChunkIds": []
+      },
+      "440": {
+        "chunkId": "7735f5",
+        "hash": "e721c2f8",
+        "encoded": "-%20Event%20listeners%20cleaned%20up%20properly",
+        "prevChunkIds": []
+      },
+      "441": {
+        "chunkId": "7735f5",
+        "hash": "d59020e8",
+        "encoded": "-%20No%20continuous%20polling",
+        "prevChunkIds": []
+      },
+      "443": {
+        "chunkId": "7735f5",
+        "hash": "24afebf4",
+        "encoded": "**Memory%20Management:**",
+        "prevChunkIds": []
+      },
+      "444": {
+        "chunkId": "7735f5",
+        "hash": "03bbc902",
+        "encoded": "-%20Listeners%20removed%20when%20popover%20closes",
+        "prevChunkIds": []
+      },
+      "445": {
+        "chunkId": "7735f5",
+        "hash": "b09daec3",
+        "encoded": "-%20References%20stored%20in%20element%20data%20attributes",
+        "prevChunkIds": []
+      },
+      "446": {
+        "chunkId": "7735f5",
+        "hash": "c1137c77",
+        "encoded": "-%20No%20memory%20leaks",
+        "prevChunkIds": []
+      },
+      "448": {
+        "chunkId": "7735f5",
+        "hash": "08848f0d",
+        "encoded": "##%20Future%20Enhancements",
+        "prevChunkIds": []
+      },
+      "450": {
+        "chunkId": "7735f5",
+        "hash": "154cd6bd",
+        "encoded": "###%20Consider%20Detection%20of:",
+        "prevChunkIds": []
+      },
+      "451": {
+        "chunkId": "7735f5",
+        "hash": "40d943fc",
+        "encoded": "-%20%60%3Csummary%3E%60%20elements%20(disclosure%20widgets)",
+        "prevChunkIds": []
+      },
+      "452": {
+        "chunkId": "7735f5",
+        "hash": "00ac7a4a",
+        "encoded": "-%20%60role=%22tab%22%60%20(tab%20interfaces)",
+        "prevChunkIds": []
+      },
+      "453": {
+        "chunkId": "7735f5",
+        "hash": "69fff428",
+        "encoded": "-%20%60role=%22menuitem%22%60%20(menu%20items)",
+        "prevChunkIds": []
+      },
+      "454": {
+        "chunkId": "7735f5",
+        "hash": "3f0a49ae",
+        "encoded": "-%20Custom%20interactive%20elements%20with%20%60tabindex=%220%22%60",
+        "prevChunkIds": []
+      },
+      "456": {
+        "chunkId": "7735f5",
+        "hash": "011b3690",
+        "encoded": "###%20Possible%20Improvements:",
+        "prevChunkIds": []
+      },
+      "457": {
+        "chunkId": "7735f5",
+        "hash": "7dc327ba",
+        "encoded": "-%20Intersection%20Observer%20for%20visibility-based%20repositioning",
+        "prevChunkIds": []
+      },
+      "458": {
+        "chunkId": "7735f5",
+        "hash": "e9f521cc",
+        "encoded": "-%20ResizeObserver%20for%20more%20efficient%20size%20tracking",
+        "prevChunkIds": []
+      },
+      "459": {
+        "chunkId": "7735f5",
+        "hash": "8e776e21",
+        "encoded": "-%20Configurable%20z-index%20levels",
+        "prevChunkIds": []
+      },
+      "460": {
+        "chunkId": "7735f5",
+        "hash": "5a533c1e",
+        "encoded": "-%20Option%20to%20disable%20for%20specific%20interactive%20parents",
+        "prevChunkIds": []
+      },
+      "462": {
+        "chunkId": "7735f5",
+        "hash": "aee865d2",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "464": {
+        "chunkId": "7735f5",
+        "hash": "db600cef",
+        "encoded": "**Questions%20about%20interactive%20parent%20handling?**%20Open%20an%20issue%20on%20GitHub.",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

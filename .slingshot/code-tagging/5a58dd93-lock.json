@@ -1,0 +1,1620 @@
+{
+  "USAGE.md": {
+    "filename": "USAGE.md",
+    "path": "USAGE.md",
+    "version": "1.2",
+    "contextFile": "5a58dd93-context.json",
+    "chunks": {
+      "a73bae": {
+        "user": "Noel Tibbles",
+        "model": "gpt-4.1",
+        "timestamp": 1790791551,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.4.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "fdedc78b"
+        },
+        "hash": "2e8211e4",
+        "messageId": "system_057442e0-bcf9-11f1-975a-8d43d55b2f29",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Noel Tibbles\n- **model**: gpt-4.1\n- **timestamp**: 9/30/2026, 2:05:51 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "a73bae",
+        "hash": "f2f28c02",
+        "encoded": "#%20Using%20AI-Alt%20Text%20Extension",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "a73bae",
+        "hash": "eda6d532",
+        "encoded": "This%20guide%20provides%20detailed%20instructions%20for%20using%20the%20AI-Alt%20Text%20Chrome%20extension.",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "a73bae",
+        "hash": "42e0d10e",
+        "encoded": "##%20First-Time%20Setup",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "a73bae",
+        "hash": "c624015a",
+        "encoded": "###%201.%20Enable%20Chrome%20AI%20Features",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "a73bae",
+        "hash": "e9cfa67e",
+        "encoded": "**Before%20using%20the%20extension**,%20you%20must%20enable%20Chrome's%20experimental%20AI%20features:",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "a73bae",
+        "hash": "89c843bd",
+        "encoded": "1.%20Open%20Chrome%20Canary%20or%20Chrome%20Dev",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "a73bae",
+        "hash": "dfbc315f",
+        "encoded": "2.%20Navigate%20to:%20%60chrome://flags/#optimization-guide-on-device-model%60",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "a73bae",
+        "hash": "24cae61c",
+        "encoded": "3.%20Set%20to%20**Enabled**",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "a73bae",
+        "hash": "6ebeb1b7",
+        "encoded": "4.%20Navigate%20to:%20%60chrome://flags/#prompt-api-for-gemini-nano%60",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "a73bae",
+        "hash": "1d77a984",
+        "encoded": "5.%20Set%20to%20**Enabled**",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "a73bae",
+        "hash": "d2bb069f",
+        "encoded": "6.%20**Restart%20Chrome**",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "a73bae",
+        "hash": "af7f6a29",
+        "encoded": "###%202.%20Load%20the%20Extension",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "a73bae",
+        "hash": "71b47858",
+        "encoded": "1.%20Open%20Chrome%20and%20go%20to:%20%60chrome://extensions%60",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "a73bae",
+        "hash": "6b7f39ae",
+        "encoded": "2.%20Enable%20**Developer%20mode**%20(toggle%20in%20top-right%20corner)",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "a73bae",
+        "hash": "868dcb37",
+        "encoded": "3.%20Click%20**Load%20unpacked**",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "a73bae",
+        "hash": "8c91bd43",
+        "encoded": "4.%20Select%20the%20extension%20folder%20(or%20%60dist/%60%20folder%20if%20using%20the%20built%20version)",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "a73bae",
+        "hash": "ce5e97b5",
+        "encoded": "###%203.%20First%20Model%20Download",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "a73bae",
+        "hash": "d6b2a170",
+        "encoded": "**Important**:%20The%20first%20time%20you%20use%20the%20extension,%20Chrome%20needs%20to%20download%20the%20Gemini%20Nano%20AI%20model.",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "a73bae",
+        "hash": "8d5949d9",
+        "encoded": "**What%20to%20expect**:",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "a73bae",
+        "hash": "9ceedc13",
+        "encoded": "-%20First%20click%20on%20an%20info%20button%20will%20trigger%20the%20model%20download",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "a73bae",
+        "hash": "76fd8b47",
+        "encoded": "-%20Download%20size:%20~1-2%20GB%20(varies%20by%20version)",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "a73bae",
+        "hash": "fdd1ab86",
+        "encoded": "-%20Download%20time:%202-10%20minutes%20(depends%20on%20internet%20speed)",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "a73bae",
+        "hash": "b2f8654b",
+        "encoded": "-%20Progress%20is%20shown%20in%20real-time%20in%20the%20dialog",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "a73bae",
+        "hash": "6238a574",
+        "encoded": "-%20Download%20only%20happens%20**once**%20-%20model%20persists%20across%20sessions",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "a73bae",
+        "hash": "aebcc5c8",
+        "encoded": "**Download%20Process**:",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "a73bae",
+        "hash": "f164efe7",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "a73bae",
+        "hash": "39dcf3cb",
+        "encoded": "1.%20Click%20extension%20icon%20%E2%86%92%20info%20buttons%20appear%20on%20images",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "a73bae",
+        "hash": "a55eae13",
+        "encoded": "2.%20Click%20an%20info%20button%20%E2%86%92%20dialog%20opens",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "a73bae",
+        "hash": "592f0491",
+        "encoded": "3.%20Dialog%20shows:%20%22Downloading%20AI%20model:%20X%25%22",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "a73bae",
+        "hash": "82ccabbf",
+        "encoded": "4.%20Progress%20updates:%2025%25,%2050%25,%2075%25,%20100%25",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "a73bae",
+        "hash": "90c43310",
+        "encoded": "5.%20After%20download:%20%22Generating%20alt%20text...%22",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "a73bae",
+        "hash": "8034f3cf",
+        "encoded": "6.%20Alt%20text%20appears%20in%20dialog",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "a73bae",
+        "hash": "bac32708",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "a73bae",
+        "hash": "f8a708a9",
+        "encoded": "##%20Daily%20Usage",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "a73bae",
+        "hash": "029923d4",
+        "encoded": "After%20the%20initial%20model%20download,%20usage%20is%20fast%20and%20simple:",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "a73bae",
+        "hash": "8413f8da",
+        "encoded": "###%20Activating%20the%20Extension",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "a73bae",
+        "hash": "955efa49",
+        "encoded": "1.%20**Navigate**%20to%20any%20webpage%20with%20images",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "a73bae",
+        "hash": "c033b3ff",
+        "encoded": "2.%20**Click**%20the%20AI-Alt%20Text%20icon%20in%20your%20Chrome%20toolbar",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "a73bae",
+        "hash": "490dfd03",
+        "encoded": "3.%20**Look**%20for%20info%20buttons%20(%E2%84%B9%EF%B8%8F)%20on%20eligible%20images",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "a73bae",
+        "hash": "c7f45a2c",
+        "encoded": "###%20Generating%20Alt%20Text",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "a73bae",
+        "hash": "8d5cdbba",
+        "encoded": "**Method%201:%20Mouse**",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "a73bae",
+        "hash": "d7413211",
+        "encoded": "1.%20Click%20an%20info%20button",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "a73bae",
+        "hash": "36bdee58",
+        "encoded": "2.%20Dialog%20opens%20with%20loading%20indicator",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "a73bae",
+        "hash": "93820eec",
+        "encoded": "3.%20Alt%20text%20appears%20within%201-3%20seconds",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "a73bae",
+        "hash": "09dcb86d",
+        "encoded": "4.%20Click%20%C3%97%20to%20close,%20or%20click%20button%20again",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "a73bae",
+        "hash": "61742275",
+        "encoded": "**Method%202:%20Keyboard**",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "a73bae",
+        "hash": "523c42be",
+        "encoded": "1.%20Tab%20to%20an%20info%20button",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "a73bae",
+        "hash": "28b6888f",
+        "encoded": "2.%20Press%20**Enter**%20to%20open%20dialog",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "a73bae",
+        "hash": "12c75aa0",
+        "encoded": "3.%20Alt%20text%20generates%20and%20is%20announced%20by%20screen%20reader",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "a73bae",
+        "hash": "90552c05",
+        "encoded": "4.%20Press%20**Escape**%20to%20close%20dialog",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "a73bae",
+        "hash": "cbc38b8b",
+        "encoded": "###%20Understanding%20Image%20Eligibility",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "a73bae",
+        "hash": "56ad32a1",
+        "encoded": "The%20extension%20only%20processes%20images%20that%20meet%20**all**%20criteria:",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "a73bae",
+        "hash": "f93936f5",
+        "encoded": "%E2%9C%85%20**Eligible%20Images**:",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "a73bae",
+        "hash": "68b45e82",
+        "encoded": "-%20Format:%20PNG,%20JPEG,%20JPG,%20or%20WebP",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "a73bae",
+        "hash": "85c161f0",
+        "encoded": "-%20Size:%20125px%20%C3%97%20125px%20minimum",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "a73bae",
+        "hash": "60041e97",
+        "encoded": "-%20Width:%20Less%20than%201500px",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "a73bae",
+        "hash": "9d83ca3e",
+        "encoded": "-%20Type:%20%60%3Cimg%3E%60%20HTML%20elements%20(not%20background%20images)",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "a73bae",
+        "hash": "bfa9a60d",
+        "encoded": "%E2%9D%8C%20**Ignored%20Images**:",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "a73bae",
+        "hash": "2d350d48",
+        "encoded": "-%20GIF,%20SVG,%20BMP,%20TIFF%20files",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "a73bae",
+        "hash": "acd30365",
+        "encoded": "-%20Images%20smaller%20than%20125%20%C3%97%20125px",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "a73bae",
+        "hash": "9ccce63e",
+        "encoded": "-%20Images%201500px%20wide%20or%20larger",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "a73bae",
+        "hash": "458a89d6",
+        "encoded": "-%20CSS%20background%20images",
+        "prevChunkIds": []
+      },
+      "84": {
+        "chunkId": "a73bae",
+        "hash": "1646148e",
+        "encoded": "-%20Invisible%20images%20(display:none,%20etc.)",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "a73bae",
+        "hash": "4d07b374",
+        "encoded": "##%20Features%20and%20Capabilities",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "a73bae",
+        "hash": "690e5213",
+        "encoded": "###%20What%20the%20AI%20Can%20Do",
+        "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "a73bae",
+        "hash": "708469cc",
+        "encoded": "%E2%9C%85%20Generate%20descriptive%20alt%20text%20based%20on:",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "a73bae",
+        "hash": "db7fdfb6",
+        "encoded": "-%20Image%20URL%20and%20filename%20context",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "a73bae",
+        "hash": "1797c928",
+        "encoded": "-%20Image%20dimensions",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "a73bae",
+        "hash": "3e7f66d5",
+        "encoded": "-%20Surrounding%20page%20content%20(future)",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "a73bae",
+        "hash": "4f09cfb7",
+        "encoded": "%E2%9C%85%20Create%20concise%20descriptions:",
+        "prevChunkIds": []
+      },
+      "96": {
+        "chunkId": "a73bae",
+        "hash": "08927ad8",
+        "encoded": "-%20Under%20125%20characters",
+        "prevChunkIds": []
+      },
+      "97": {
+        "chunkId": "a73bae",
+        "hash": "3d767a17",
+        "encoded": "-%20No%20redundant%20phrases%20(%22image%20of%22,%20%22picture%20of%22)",
+        "prevChunkIds": []
+      },
+      "98": {
+        "chunkId": "a73bae",
+        "hash": "6611eb58",
+        "encoded": "-%20Screen-reader%20friendly",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "a73bae",
+        "hash": "8f4f1dc2",
+        "encoded": "###%20What%20the%20AI%20Cannot%20Do",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "a73bae",
+        "hash": "6adffacb",
+        "encoded": "%E2%9D%8C%20Currently%20cannot:",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "a73bae",
+        "hash": "08ae1440",
+        "encoded": "-%20Analyze%20actual%20image%20content/pixels",
+        "prevChunkIds": []
+      },
+      "104": {
+        "chunkId": "a73bae",
+        "hash": "e519afe3",
+        "encoded": "-%20Read%20text%20within%20images%20(OCR)",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "a73bae",
+        "hash": "af9c7c0c",
+        "encoded": "-%20Identify%20specific%20people%20or%20brands",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "a73bae",
+        "hash": "2e325287",
+        "encoded": "-%20Access%20image%20metadata%20(EXIF)",
+        "prevChunkIds": []
+      },
+      "108": {
+        "chunkId": "a73bae",
+        "hash": "fadba708",
+        "encoded": "**Note**:%20Future%20versions%20may%20support%20image%20analysis%20when%20Chrome's%20multimodal%20AI%20becomes%20available.",
+        "prevChunkIds": []
+      },
+      "110": {
+        "chunkId": "a73bae",
+        "hash": "4120ad8c",
+        "encoded": "##%20Accessibility%20Features",
+        "prevChunkIds": []
+      },
+      "112": {
+        "chunkId": "a73bae",
+        "hash": "5ec2835a",
+        "encoded": "###%20Screen%20Reader%20Support",
+        "prevChunkIds": []
+      },
+      "114": {
+        "chunkId": "a73bae",
+        "hash": "f58d39b6",
+        "encoded": "The%20extension%20is%20fully%20compatible%20with%20screen%20readers:",
+        "prevChunkIds": []
+      },
+      "116": {
+        "chunkId": "a73bae",
+        "hash": "5a573caf",
+        "encoded": "-%20**NVDA**%20(Windows)",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "a73bae",
+        "hash": "0c32c1ed",
+        "encoded": "-%20**JAWS**%20(Windows)",
+        "prevChunkIds": []
+      },
+      "118": {
+        "chunkId": "a73bae",
+        "hash": "0a240c2c",
+        "encoded": "-%20**VoiceOver**%20(macOS)",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "a73bae",
+        "hash": "1f03a275",
+        "encoded": "-%20**TalkBack**%20(Android%20Chrome)",
+        "prevChunkIds": []
+      },
+      "121": {
+        "chunkId": "a73bae",
+        "hash": "27666dfd",
+        "encoded": "**What%20screen%20readers%20announce**:",
+        "prevChunkIds": []
+      },
+      "122": {
+        "chunkId": "a73bae",
+        "hash": "c7c2086c",
+        "encoded": "1.%20**Button%20focus**:%20%22Generate%20AI%20alt%20text%20for%20image%20%5Bnumber%5D,%20button,%20has%20popup%20dialog%22",
+        "prevChunkIds": []
+      },
+      "123": {
+        "chunkId": "a73bae",
+        "hash": "2e20ed1e",
+        "encoded": "2.%20**Dialog%20opens**:%20%22AI-Generated%20Alt%20Text,%20dialog%22",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "a73bae",
+        "hash": "631dac79",
+        "encoded": "3.%20**Loading**:%20%22Generating%20alt%20text,%20status%22",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "a73bae",
+        "hash": "7c746804",
+        "encoded": "4.%20**Result**:%20%22Alt%20text%20generated:%20%5Bdescription%5D%22",
+        "prevChunkIds": []
+      },
+      "127": {
+        "chunkId": "a73bae",
+        "hash": "eee19a20",
+        "encoded": "###%20Keyboard%20Navigation",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "a73bae",
+        "hash": "fbc68ff3",
+        "encoded": "%7C%20Key%20%7C%20Action%20%7C",
+        "prevChunkIds": []
+      },
+      "130": {
+        "chunkId": "a73bae",
+        "hash": "9dabb325",
+        "encoded": "%7C-----%7C--------%7C",
+        "prevChunkIds": []
+      },
+      "131": {
+        "chunkId": "a73bae",
+        "hash": "9dc63e09",
+        "encoded": "%7C%20**Tab**%20%7C%20Navigate%20to%20next%20info%20button%20%7C",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "a73bae",
+        "hash": "b45ddbfb",
+        "encoded": "%7C%20**Shift+Tab**%20%7C%20Navigate%20to%20previous%20info%20button%20%7C",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "a73bae",
+        "hash": "04195fa1",
+        "encoded": "%7C%20**Enter**%20%7C%20Open%20dialog%20/%20Generate%20alt%20text%20%7C",
+        "prevChunkIds": []
+      },
+      "134": {
+        "chunkId": "a73bae",
+        "hash": "39bb2f80",
+        "encoded": "%7C%20**Escape**%20%7C%20Close%20dialog%20%7C",
+        "prevChunkIds": []
+      },
+      "135": {
+        "chunkId": "a73bae",
+        "hash": "771504bf",
+        "encoded": "%7C%20**Space**%20%7C%20Activate%20focused%20button%20%7C",
+        "prevChunkIds": []
+      },
+      "137": {
+        "chunkId": "a73bae",
+        "hash": "e611ff89",
+        "encoded": "###%20High%20Contrast%20Mode",
+        "prevChunkIds": []
+      },
+      "139": {
+        "chunkId": "a73bae",
+        "hash": "f355f778",
+        "encoded": "The%20extension%20respects%20system%20high%20contrast%20settings%20and%20provides:",
+        "prevChunkIds": []
+      },
+      "140": {
+        "chunkId": "a73bae",
+        "hash": "554ad701",
+        "encoded": "-%20Clear%20focus%20indicators%20(2px%20blue%20outline)",
+        "prevChunkIds": []
+      },
+      "141": {
+        "chunkId": "a73bae",
+        "hash": "0e4392b4",
+        "encoded": "-%20Sufficient%20color%20contrast%20(WCAG%20AA%20compliant)",
+        "prevChunkIds": []
+      },
+      "142": {
+        "chunkId": "a73bae",
+        "hash": "65432f73",
+        "encoded": "-%20Hover%20states%20with%20increased%20contrast",
+        "prevChunkIds": []
+      },
+      "144": {
+        "chunkId": "a73bae",
+        "hash": "11b180d5",
+        "encoded": "##%20Troubleshooting",
+        "prevChunkIds": []
+      },
+      "146": {
+        "chunkId": "a73bae",
+        "hash": "4af907a1",
+        "encoded": "###%20Extension%20Icon%20Not%20Appearing",
+        "prevChunkIds": []
+      },
+      "148": {
+        "chunkId": "a73bae",
+        "hash": "b49403de",
+        "encoded": "**Problem**:%20Can't%20find%20the%20extension%20icon%20in%20toolbar.",
+        "prevChunkIds": []
+      },
+      "150": {
+        "chunkId": "a73bae",
+        "hash": "266cecdf",
+        "encoded": "**Solution**:",
+        "prevChunkIds": []
+      },
+      "151": {
+        "chunkId": "a73bae",
+        "hash": "424da0f1",
+        "encoded": "1.%20Go%20to%20%60chrome://extensions%60",
+        "prevChunkIds": []
+      },
+      "152": {
+        "chunkId": "a73bae",
+        "hash": "b4d5cc99",
+        "encoded": "2.%20Verify%20extension%20is%20**enabled**",
+        "prevChunkIds": []
+      },
+      "153": {
+        "chunkId": "a73bae",
+        "hash": "3a80eb0c",
+        "encoded": "3.%20Click%20the%20puzzle%20icon%20in%20Chrome%20toolbar",
+        "prevChunkIds": []
+      },
+      "154": {
+        "chunkId": "a73bae",
+        "hash": "67a90a03",
+        "encoded": "4.%20Pin%20the%20AI-Alt%20Text%20extension",
+        "prevChunkIds": []
+      },
+      "156": {
+        "chunkId": "a73bae",
+        "hash": "059302a6",
+        "encoded": "###%20No%20Info%20Buttons%20on%20Images",
+        "prevChunkIds": []
+      },
+      "158": {
+        "chunkId": "a73bae",
+        "hash": "c32e0cef",
+        "encoded": "**Problem**:%20Clicked%20extension%20icon%20but%20no%20buttons%20appear.",
+        "prevChunkIds": []
+      },
+      "160": {
+        "chunkId": "a73bae",
+        "hash": "c1e087a8",
+        "encoded": "**Possible%20causes**:",
+        "prevChunkIds": []
+      },
+      "162": {
+        "chunkId": "a73bae",
+        "hash": "a1f25e36",
+        "encoded": "1.%20**No%20eligible%20images%20on%20page**",
+        "prevChunkIds": []
+      },
+      "163": {
+        "chunkId": "a73bae",
+        "hash": "06c8e919",
+        "encoded": "-%20Check%20if%20images%20meet%20size/format%20criteria",
+        "prevChunkIds": []
+      },
+      "164": {
+        "chunkId": "a73bae",
+        "hash": "8d260964",
+        "encoded": "-%20Try%20a%20different%20webpage%20with%20larger%20images",
+        "prevChunkIds": []
+      },
+      "166": {
+        "chunkId": "a73bae",
+        "hash": "6d6171e8",
+        "encoded": "2.%20**Images%20not%20loaded%20yet**",
+        "prevChunkIds": []
+      },
+      "167": {
+        "chunkId": "a73bae",
+        "hash": "969c3283",
+        "encoded": "-%20Wait%20for%20page%20to%20finish%20loading",
+        "prevChunkIds": []
+      },
+      "168": {
+        "chunkId": "a73bae",
+        "hash": "9dcccc0a",
+        "encoded": "-%20Refresh%20and%20try%20again",
+        "prevChunkIds": []
+      },
+      "170": {
+        "chunkId": "a73bae",
+        "hash": "510b9d33",
+        "encoded": "3.%20**Extension%20not%20activated**",
+        "prevChunkIds": []
+      },
+      "171": {
+        "chunkId": "a73bae",
+        "hash": "90adb91b",
+        "encoded": "-%20Click%20the%20extension%20icon%20again",
+        "prevChunkIds": []
+      },
+      "172": {
+        "chunkId": "a73bae",
+        "hash": "c365a751",
+        "encoded": "-%20Check%20if%20error%20appears%20in%20console",
+        "prevChunkIds": []
+      },
+      "174": {
+        "chunkId": "a73bae",
+        "hash": "683f0e89",
+        "encoded": "###%20Model%20Download%20Stuck",
+        "prevChunkIds": []
+      },
+      "176": {
+        "chunkId": "a73bae",
+        "hash": "145aaf29",
+        "encoded": "**Problem**:%20Download%20progress%20frozen%20at%20X%25.",
+        "prevChunkIds": []
+      },
+      "178": {
+        "chunkId": "a73bae",
+        "hash": "68474834",
+        "encoded": "**Solution**:",
+        "prevChunkIds": []
+      },
+      "179": {
+        "chunkId": "a73bae",
+        "hash": "3bb1eed4",
+        "encoded": "1.%20**Check%20internet%20connection**",
+        "prevChunkIds": []
+      },
+      "180": {
+        "chunkId": "a73bae",
+        "hash": "2f37fcda",
+        "encoded": "2.%20**Wait%205%20minutes**%20(large%20file,%20may%20appear%20stuck)",
+        "prevChunkIds": []
+      },
+      "181": {
+        "chunkId": "a73bae",
+        "hash": "f53b7008",
+        "encoded": "3.%20**Close%20and%20reopen%20dialog**%20to%20retry",
+        "prevChunkIds": []
+      },
+      "182": {
+        "chunkId": "a73bae",
+        "hash": "d45ff45a",
+        "encoded": "4.%20**Restart%20Chrome**%20if%20still%20stuck",
+        "prevChunkIds": []
+      },
+      "183": {
+        "chunkId": "a73bae",
+        "hash": "20b811e7",
+        "encoded": "5.%20**Check%20Chrome%20flags**%20are%20enabled%20correctly",
+        "prevChunkIds": []
+      },
+      "185": {
+        "chunkId": "a73bae",
+        "hash": "0faa1465",
+        "encoded": "###%20%22Chrome%20AI%20is%20not%20available%22%20Error",
+        "prevChunkIds": []
+      },
+      "187": {
+        "chunkId": "a73bae",
+        "hash": "07c2df04",
+        "encoded": "**Problem**:%20Error%20message%20appears%20instead%20of%20alt%20text.",
+        "prevChunkIds": []
+      },
+      "189": {
+        "chunkId": "a73bae",
+        "hash": "a4ebcf47",
+        "encoded": "**Solution**:",
+        "prevChunkIds": []
+      },
+      "190": {
+        "chunkId": "a73bae",
+        "hash": "148f9af6",
+        "encoded": "1.%20Verify%20you're%20using%20**Chrome%20Canary**%20or%20**Chrome%20Dev**",
+        "prevChunkIds": []
+      },
+      "191": {
+        "chunkId": "a73bae",
+        "hash": "91e2288c",
+        "encoded": "2.%20Check%20Chrome%20flags%20are%20enabled%20(see%20First-Time%20Setup)",
+        "prevChunkIds": []
+      },
+      "192": {
+        "chunkId": "a73bae",
+        "hash": "5c6c42c2",
+        "encoded": "3.%20Restart%20Chrome%20after%20enabling%20flags",
+        "prevChunkIds": []
+      },
+      "193": {
+        "chunkId": "a73bae",
+        "hash": "be2e0dd8",
+        "encoded": "4.%20Update%20Chrome%20to%20latest%20version",
+        "prevChunkIds": []
+      },
+      "194": {
+        "chunkId": "a73bae",
+        "hash": "63898ec4",
+        "encoded": "5.%20Check%20%60chrome://components%60%20-%20look%20for%20%22Optimization%20Guide%20On%20Device%20Model%22",
+        "prevChunkIds": []
+      },
+      "196": {
+        "chunkId": "a73bae",
+        "hash": "fa12f124",
+        "encoded": "###%20Alt%20Text%20Quality%20Issues",
+        "prevChunkIds": []
+      },
+      "198": {
+        "chunkId": "a73bae",
+        "hash": "6e866ad5",
+        "encoded": "**Problem**:%20Generated%20text%20is%20generic%20or%20unhelpful.",
+        "prevChunkIds": []
+      },
+      "200": {
+        "chunkId": "a73bae",
+        "hash": "9a62f7f8",
+        "encoded": "**Explanation**:%20The%20AI%20currently%20uses%20limited%20context%20(URL,%20dimensions)%20as%20it%20cannot%20analyze%20actual%20image%20content%20yet.",
+        "prevChunkIds": []
+      },
+      "202": {
+        "chunkId": "a73bae",
+        "hash": "dce8d386",
+        "encoded": "**Workarounds**:",
+        "prevChunkIds": []
+      },
+      "203": {
+        "chunkId": "a73bae",
+        "hash": "a6eae6b9",
+        "encoded": "-%20Images%20with%20descriptive%20filenames%20produce%20better%20results",
+        "prevChunkIds": []
+      },
+      "204": {
+        "chunkId": "a73bae",
+        "hash": "5f7de63a",
+        "encoded": "-%20Future%20versions%20will%20support%20image%20analysis",
+        "prevChunkIds": []
+      },
+      "205": {
+        "chunkId": "a73bae",
+        "hash": "a1690543",
+        "encoded": "-%20For%20now,%20use%20as%20a%20starting%20point%20and%20manually%20refine",
+        "prevChunkIds": []
+      },
+      "207": {
+        "chunkId": "a73bae",
+        "hash": "2c5f1d6a",
+        "encoded": "###%20Slow%20Generation%20(After%20Download)",
+        "prevChunkIds": []
+      },
+      "209": {
+        "chunkId": "a73bae",
+        "hash": "f6347ea9",
+        "encoded": "**Problem**:%20Alt%20text%20takes%20%3E5%20seconds%20to%20generate.",
+        "prevChunkIds": []
+      },
+      "211": {
+        "chunkId": "a73bae",
+        "hash": "20301f6b",
+        "encoded": "**Possible%20causes**:",
+        "prevChunkIds": []
+      },
+      "212": {
+        "chunkId": "a73bae",
+        "hash": "23151d8b",
+        "encoded": "1.%20**System%20resources**%20-%20Close%20other%20tabs/apps",
+        "prevChunkIds": []
+      },
+      "213": {
+        "chunkId": "a73bae",
+        "hash": "46820cb0",
+        "encoded": "2.%20**Model%20warming%20up**%20-%20First%20generation%20after%20restart%20is%20slower",
+        "prevChunkIds": []
+      },
+      "214": {
+        "chunkId": "a73bae",
+        "hash": "be8f2b49",
+        "encoded": "3.%20**Complex%20page**%20-%20Many%20images%20competing%20for%20resources",
+        "prevChunkIds": []
+      },
+      "216": {
+        "chunkId": "a73bae",
+        "hash": "3a54368e",
+        "encoded": "**Normal%20speed**:%201-3%20seconds%20per%20image%20after%20initial%20warmup",
+        "prevChunkIds": []
+      },
+      "218": {
+        "chunkId": "a73bae",
+        "hash": "fbc05fae",
+        "encoded": "##%20Performance%20Tips",
+        "prevChunkIds": []
+      },
+      "220": {
+        "chunkId": "a73bae",
+        "hash": "3a165dd4",
+        "encoded": "###%20Optimize%20for%20Speed",
+        "prevChunkIds": []
+      },
+      "222": {
+        "chunkId": "a73bae",
+        "hash": "6768d1a3",
+        "encoded": "1.%20**Process%20fewer%20images%20at%20once**",
+        "prevChunkIds": []
+      },
+      "223": {
+        "chunkId": "a73bae",
+        "hash": "67962f05",
+        "encoded": "-%20Don't%20open%20multiple%20dialogs%20simultaneously",
+        "prevChunkIds": []
+      },
+      "224": {
+        "chunkId": "a73bae",
+        "hash": "bf05083a",
+        "encoded": "-%20Generate%20alt%20text%20for%20one%20image%20at%20a%20time",
+        "prevChunkIds": []
+      },
+      "226": {
+        "chunkId": "a73bae",
+        "hash": "f2667b97",
+        "encoded": "2.%20**Keep%20Chrome%20updated**",
+        "prevChunkIds": []
+      },
+      "227": {
+        "chunkId": "a73bae",
+        "hash": "2cf8928e",
+        "encoded": "-%20Newer%20versions%20have%20performance%20improvements",
+        "prevChunkIds": []
+      },
+      "228": {
+        "chunkId": "a73bae",
+        "hash": "65dcfa55",
+        "encoded": "-%20Update%20Chrome%20Canary%20weekly",
+        "prevChunkIds": []
+      },
+      "230": {
+        "chunkId": "a73bae",
+        "hash": "c716b279",
+        "encoded": "3.%20**Close%20unused%20tabs**",
+        "prevChunkIds": []
+      },
+      "231": {
+        "chunkId": "a73bae",
+        "hash": "65a8da7e",
+        "encoded": "-%20AI%20model%20uses%20system%20resources",
+        "prevChunkIds": []
+      },
+      "232": {
+        "chunkId": "a73bae",
+        "hash": "9746d297",
+        "encoded": "-%20More%20RAM%20=%20faster%20generation",
+        "prevChunkIds": []
+      },
+      "234": {
+        "chunkId": "a73bae",
+        "hash": "6419ded8",
+        "encoded": "###%20Reduce%20Data%20Usage",
+        "prevChunkIds": []
+      },
+      "236": {
+        "chunkId": "a73bae",
+        "hash": "eaf69021",
+        "encoded": "-%20**Model%20downloads%20once**%20-%20No%20ongoing%20data%20usage",
+        "prevChunkIds": []
+      },
+      "237": {
+        "chunkId": "a73bae",
+        "hash": "e4118c51",
+        "encoded": "-%20**Extension%20works%20offline**%20after%20model%20download",
+        "prevChunkIds": []
+      },
+      "238": {
+        "chunkId": "a73bae",
+        "hash": "37f4a611",
+        "encoded": "-%20**No%20external%20API%20calls**%20-%20Everything%20runs%20locally",
+        "prevChunkIds": []
+      },
+      "240": {
+        "chunkId": "a73bae",
+        "hash": "de3a2192",
+        "encoded": "##%20Privacy%20and%20Security",
+        "prevChunkIds": []
+      },
+      "242": {
+        "chunkId": "a73bae",
+        "hash": "7ec5b033",
+        "encoded": "###%20What%20Gets%20Sent%20Where?",
+        "prevChunkIds": []
+      },
+      "244": {
+        "chunkId": "a73bae",
+        "hash": "bdecb61a",
+        "encoded": "**Local%20Processing**:",
+        "prevChunkIds": []
+      },
+      "245": {
+        "chunkId": "a73bae",
+        "hash": "04317834",
+        "encoded": "-%20%E2%9C%85%20All%20AI%20processing%20happens%20**on%20your%20device**",
+        "prevChunkIds": []
+      },
+      "246": {
+        "chunkId": "a73bae",
+        "hash": "c4de7989",
+        "encoded": "-%20%E2%9C%85%20No%20image%20data%20sent%20to%20external%20servers",
+        "prevChunkIds": []
+      },
+      "247": {
+        "chunkId": "a73bae",
+        "hash": "9a56ca83",
+        "encoded": "-%20%E2%9C%85%20No%20personal%20information%20collected",
+        "prevChunkIds": []
+      },
+      "248": {
+        "chunkId": "a73bae",
+        "hash": "1693c80e",
+        "encoded": "-%20%E2%9C%85%20No%20analytics%20or%20tracking",
+        "prevChunkIds": []
+      },
+      "250": {
+        "chunkId": "a73bae",
+        "hash": "a906f593",
+        "encoded": "**What%20the%20Extension%20Accesses**:",
+        "prevChunkIds": []
+      },
+      "251": {
+        "chunkId": "a73bae",
+        "hash": "b9654f51",
+        "encoded": "-%20Image%20URLs%20and%20dimensions%20(from%20current%20page)",
+        "prevChunkIds": []
+      },
+      "252": {
+        "chunkId": "a73bae",
+        "hash": "7470f1e3",
+        "encoded": "-%20Page%20DOM%20to%20find%20%60%3Cimg%3E%60%20elements",
+        "prevChunkIds": []
+      },
+      "253": {
+        "chunkId": "a73bae",
+        "hash": "a35ecc3e",
+        "encoded": "-%20Chrome%20AI%20API%20(local%20only)",
+        "prevChunkIds": []
+      },
+      "255": {
+        "chunkId": "a73bae",
+        "hash": "0d5c0352",
+        "encoded": "**What%20it%20Does%20NOT%20Access**:",
+        "prevChunkIds": []
+      },
+      "256": {
+        "chunkId": "a73bae",
+        "hash": "9a7e62d6",
+        "encoded": "-%20Browsing%20history",
+        "prevChunkIds": []
+      },
+      "257": {
+        "chunkId": "a73bae",
+        "hash": "5bf3a24b",
+        "encoded": "-%20Other%20tabs%20or%20windows",
+        "prevChunkIds": []
+      },
+      "258": {
+        "chunkId": "a73bae",
+        "hash": "46720b7c",
+        "encoded": "-%20Personal%20files",
+        "prevChunkIds": []
+      },
+      "259": {
+        "chunkId": "a73bae",
+        "hash": "f5d52522",
+        "encoded": "-%20Network%20requests",
+        "prevChunkIds": []
+      },
+      "260": {
+        "chunkId": "a73bae",
+        "hash": "78574041",
+        "encoded": "-%20Cookies%20or%20storage",
+        "prevChunkIds": []
+      },
+      "262": {
+        "chunkId": "a73bae",
+        "hash": "9ff4be7d",
+        "encoded": "###%20Data%20Storage",
+        "prevChunkIds": []
+      },
+      "264": {
+        "chunkId": "a73bae",
+        "hash": "5e971e94",
+        "encoded": "**Model%20Storage**:",
+        "prevChunkIds": []
+      },
+      "265": {
+        "chunkId": "a73bae",
+        "hash": "bf00797d",
+        "encoded": "-%20Gemini%20Nano%20model%20stored%20in%20Chrome's%20component%20directory",
+        "prevChunkIds": []
+      },
+      "266": {
+        "chunkId": "a73bae",
+        "hash": "89148eeb",
+        "encoded": "-%20Managed%20by%20Chrome,%20not%20the%20extension",
+        "prevChunkIds": []
+      },
+      "267": {
+        "chunkId": "a73bae",
+        "hash": "eb95b99e",
+        "encoded": "-%20Approximately%201-2%20GB",
+        "prevChunkIds": []
+      },
+      "269": {
+        "chunkId": "a73bae",
+        "hash": "89d1cdee",
+        "encoded": "**Extension%20Storage**:",
+        "prevChunkIds": []
+      },
+      "270": {
+        "chunkId": "a73bae",
+        "hash": "6a69b0ca",
+        "encoded": "-%20No%20persistent%20data%20stored",
+        "prevChunkIds": []
+      },
+      "271": {
+        "chunkId": "a73bae",
+        "hash": "3a5b28a8",
+        "encoded": "-%20No%20cache%20or%20history",
+        "prevChunkIds": []
+      },
+      "272": {
+        "chunkId": "a73bae",
+        "hash": "2aff9c60",
+        "encoded": "-%20Temporary%20DOM%20modifications%20only",
+        "prevChunkIds": []
+      },
+      "274": {
+        "chunkId": "a73bae",
+        "hash": "11346e4b",
+        "encoded": "##%20Advanced%20Usage",
+        "prevChunkIds": []
+      },
+      "276": {
+        "chunkId": "a73bae",
+        "hash": "2e03a723",
+        "encoded": "###%20Testing%20the%20Extension",
+        "prevChunkIds": []
+      },
+      "278": {
+        "chunkId": "a73bae",
+        "hash": "69626bae",
+        "encoded": "Use%20the%20included%20test%20page:",
+        "prevChunkIds": []
+      },
+      "280": {
+        "chunkId": "a73bae",
+        "hash": "79820435",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "281": {
+        "chunkId": "a73bae",
+        "hash": "4e53e3b0",
+        "encoded": "#%20Open%20test-page.html%20in%20Chrome",
+        "prevChunkIds": []
+      },
+      "282": {
+        "chunkId": "a73bae",
+        "hash": "74d3ab6b",
+        "encoded": "open%20test-page.html",
+        "prevChunkIds": []
+      },
+      "283": {
+        "chunkId": "a73bae",
+        "hash": "bd95dfa0",
+        "encoded": "#%20or",
+        "prevChunkIds": []
+      },
+      "284": {
+        "chunkId": "a73bae",
+        "hash": "e20acf97",
+        "encoded": "chrome%20test-page.html",
+        "prevChunkIds": []
+      },
+      "285": {
+        "chunkId": "a73bae",
+        "hash": "49992ac4",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "287": {
+        "chunkId": "a73bae",
+        "hash": "b6371bc7",
+        "encoded": "The%20test%20page%20includes:",
+        "prevChunkIds": []
+      },
+      "288": {
+        "chunkId": "a73bae",
+        "hash": "abe95230",
+        "encoded": "-%20Eligible%20images%20(various%20sizes/formats)",
+        "prevChunkIds": []
+      },
+      "289": {
+        "chunkId": "a73bae",
+        "hash": "7e33ed21",
+        "encoded": "-%20Too-small%20images%20(should%20be%20ignored)",
+        "prevChunkIds": []
+      },
+      "290": {
+        "chunkId": "a73bae",
+        "hash": "e63d4e88",
+        "encoded": "-%20Too-large%20images%20(should%20be%20ignored)",
+        "prevChunkIds": []
+      },
+      "291": {
+        "chunkId": "a73bae",
+        "hash": "47da19a4",
+        "encoded": "-%20Wrong%20formats%20(should%20be%20ignored)",
+        "prevChunkIds": []
+      },
+      "292": {
+        "chunkId": "a73bae",
+        "hash": "8c66acd1",
+        "encoded": "-%20Dynamic%20image%20loading%20test",
+        "prevChunkIds": []
+      },
+      "294": {
+        "chunkId": "a73bae",
+        "hash": "a95fe06d",
+        "encoded": "###%20Developer%20Mode",
+        "prevChunkIds": []
+      },
+      "296": {
+        "chunkId": "a73bae",
+        "hash": "9cfbdb6d",
+        "encoded": "View%20extension%20logs:",
+        "prevChunkIds": []
+      },
+      "298": {
+        "chunkId": "a73bae",
+        "hash": "c32bf628",
+        "encoded": "1.%20Right-click%20extension%20icon",
+        "prevChunkIds": []
+      },
+      "299": {
+        "chunkId": "a73bae",
+        "hash": "ce6e2881",
+        "encoded": "2.%20Select%20%22Inspect%20popup%22%20(if%20applicable)",
+        "prevChunkIds": []
+      },
+      "300": {
+        "chunkId": "a73bae",
+        "hash": "1c544885",
+        "encoded": "3.%20Or%20open%20DevTools%20Console%20on%20any%20page",
+        "prevChunkIds": []
+      },
+      "301": {
+        "chunkId": "a73bae",
+        "hash": "d39becda",
+        "encoded": "4.%20Look%20for%20messages%20prefixed%20with%20extension%20ID",
+        "prevChunkIds": []
+      },
+      "303": {
+        "chunkId": "a73bae",
+        "hash": "96fc82c5",
+        "encoded": "**Useful%20console%20messages**:",
+        "prevChunkIds": []
+      },
+      "304": {
+        "chunkId": "a73bae",
+        "hash": "3a44685c",
+        "encoded": "%60%60%60javascript",
+        "prevChunkIds": []
+      },
+      "305": {
+        "chunkId": "a73bae",
+        "hash": "4f5087e5",
+        "encoded": "%22Gemini%20Nano%20model%20is%20downloading...%22",
+        "prevChunkIds": []
+      },
+      "306": {
+        "chunkId": "a73bae",
+        "hash": "76e465d8",
+        "encoded": "%22Model%20download%20progress:%20X%25%22",
+        "prevChunkIds": []
+      },
+      "307": {
+        "chunkId": "a73bae",
+        "hash": "a2f1233e",
+        "encoded": "%22Error%20generating%20alt%20text:%20%5Bdetails%5D%22",
+        "prevChunkIds": []
+      },
+      "308": {
+        "chunkId": "a73bae",
+        "hash": "17dd5299",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "310": {
+        "chunkId": "a73bae",
+        "hash": "c0e88255",
+        "encoded": "##%20Frequently%20Asked%20Questions",
+        "prevChunkIds": []
+      },
+      "312": {
+        "chunkId": "a73bae",
+        "hash": "2e96bb50",
+        "encoded": "###%20Q:%20Does%20this%20work%20on%20all%20websites?",
+        "prevChunkIds": []
+      },
+      "313": {
+        "chunkId": "a73bae",
+        "hash": "6360bc9d",
+        "encoded": "A:%20Yes,%20on%20any%20website%20with%20eligible%20images.%20Some%20sites%20may%20have%20security%20policies%20that%20interfere.",
+        "prevChunkIds": []
+      },
+      "315": {
+        "chunkId": "a73bae",
+        "hash": "78b20f12",
+        "encoded": "###%20Q:%20Can%20I%20use%20this%20in%20production/work?",
+        "prevChunkIds": []
+      },
+      "316": {
+        "chunkId": "a73bae",
+        "hash": "2eeacc95",
+        "encoded": "A:%20Currently%20experimental%20only.%20Not%20recommended%20for%20production%20until%20Chrome%20AI%20exits%20beta.",
+        "prevChunkIds": []
+      },
+      "318": {
+        "chunkId": "a73bae",
+        "hash": "6330e1a2",
+        "encoded": "###%20Q:%20Will%20this%20work%20in%20stable%20Chrome?",
+        "prevChunkIds": []
+      },
+      "319": {
+        "chunkId": "a73bae",
+        "hash": "7378850e",
+        "encoded": "A:%20Not%20yet.%20Requires%20Chrome%20Canary%20or%20Dev%20with%20experimental%20flags%20enabled.",
+        "prevChunkIds": []
+      },
+      "321": {
+        "chunkId": "a73bae",
+        "hash": "0d35b8ab",
+        "encoded": "###%20Q:%20How%20accurate%20is%20the%20alt%20text?",
+        "prevChunkIds": []
+      },
+      "322": {
+        "chunkId": "a73bae",
+        "hash": "892b8661",
+        "encoded": "A:%20Currently%20limited%20by%20lack%20of%20image%20analysis.%20Quality%20will%20improve%20when%20Chrome%20adds%20multimodal%20AI%20support.",
+        "prevChunkIds": []
+      },
+      "324": {
+        "chunkId": "a73bae",
+        "hash": "60218868",
+        "encoded": "###%20Q:%20Can%20I%20edit%20the%20generated%20text?",
+        "prevChunkIds": []
+      },
+      "325": {
+        "chunkId": "a73bae",
+        "hash": "bbb71f36",
+        "encoded": "A:%20Not%20yet.%20Planned%20for%20future%20release.%20Currently%20read-only.",
+        "prevChunkIds": []
+      },
+      "327": {
+        "chunkId": "a73bae",
+        "hash": "eb868218",
+        "encoded": "###%20Q:%20Does%20it%20remember%20previous%20alt%20text?",
+        "prevChunkIds": []
+      },
+      "328": {
+        "chunkId": "a73bae",
+        "hash": "6e0d0b95",
+        "encoded": "A:%20No.%20Each%20generation%20is%20fresh.%20Caching%20planned%20for%20future%20version.",
+        "prevChunkIds": []
+      },
+      "330": {
+        "chunkId": "a73bae",
+        "hash": "4c0d578c",
+        "encoded": "###%20Q:%20Why%20does%20download%20take%20so%20long?",
+        "prevChunkIds": []
+      },
+      "331": {
+        "chunkId": "a73bae",
+        "hash": "e22242b3",
+        "encoded": "A:%20The%20Gemini%20Nano%20model%20is%201-2%20GB.%20This%20is%20a%20one-time%20download%20that%20persists.",
+        "prevChunkIds": []
+      },
+      "333": {
+        "chunkId": "a73bae",
+        "hash": "07f06ba2",
+        "encoded": "###%20Q:%20Can%20I%20use%20this%20offline?",
+        "prevChunkIds": []
+      },
+      "334": {
+        "chunkId": "a73bae",
+        "hash": "c444aea8",
+        "encoded": "A:%20Yes,%20after%20the%20initial%20model%20download,%20everything%20works%20offline.",
+        "prevChunkIds": []
+      },
+      "336": {
+        "chunkId": "a73bae",
+        "hash": "6597f9b1",
+        "encoded": "##%20Getting%20Help",
+        "prevChunkIds": []
+      },
+      "338": {
+        "chunkId": "a73bae",
+        "hash": "b342b68a",
+        "encoded": "###%20Report%20a%20Bug",
+        "prevChunkIds": []
+      },
+      "340": {
+        "chunkId": "a73bae",
+        "hash": "9e9753a5",
+        "encoded": "1.%20Go%20to%20the%20%5BGitHub%20Issues%20page%5D(https://github.com/YOUR-ORG/ai-alt-text/issues)",
+        "prevChunkIds": []
+      },
+      "341": {
+        "chunkId": "a73bae",
+        "hash": "c31f1aed",
+        "encoded": "2.%20Click%20**New%20Issue**",
+        "prevChunkIds": []
+      },
+      "342": {
+        "chunkId": "a73bae",
+        "hash": "5ed04c2f",
+        "encoded": "3.%20Include:",
+        "prevChunkIds": []
+      },
+      "343": {
+        "chunkId": "a73bae",
+        "hash": "0427324c",
+        "encoded": "-%20Chrome%20version%20(%60chrome://version%60)",
+        "prevChunkIds": []
+      },
+      "344": {
+        "chunkId": "a73bae",
+        "hash": "c63c9d41",
+        "encoded": "-%20Operating%20system",
+        "prevChunkIds": []
+      },
+      "345": {
+        "chunkId": "a73bae",
+        "hash": "bec0034d",
+        "encoded": "-%20Steps%20to%20reproduce",
+        "prevChunkIds": []
+      },
+      "346": {
+        "chunkId": "a73bae",
+        "hash": "c5da3b35",
+        "encoded": "-%20Screenshots%20if%20applicable",
+        "prevChunkIds": []
+      },
+      "347": {
+        "chunkId": "a73bae",
+        "hash": "e06cb97c",
+        "encoded": "-%20Console%20errors%20(if%20any)",
+        "prevChunkIds": []
+      },
+      "349": {
+        "chunkId": "a73bae",
+        "hash": "d10e153c",
+        "encoded": "###%20Request%20a%20Feature",
+        "prevChunkIds": []
+      },
+      "351": {
+        "chunkId": "a73bae",
+        "hash": "d113faba",
+        "encoded": "1.%20Check%20%5Bexisting%20issues%5D(https://github.com/YOUR-ORG/ai-alt-text/issues)%20first",
+        "prevChunkIds": []
+      },
+      "352": {
+        "chunkId": "a73bae",
+        "hash": "e576171e",
+        "encoded": "2.%20Open%20a%20new%20issue%20with%20%22Feature%20Request%22%20label",
+        "prevChunkIds": []
+      },
+      "353": {
+        "chunkId": "a73bae",
+        "hash": "19a2739d",
+        "encoded": "3.%20Describe:",
+        "prevChunkIds": []
+      },
+      "354": {
+        "chunkId": "a73bae",
+        "hash": "4a688909",
+        "encoded": "-%20What%20you%20want%20to%20achieve",
+        "prevChunkIds": []
+      },
+      "355": {
+        "chunkId": "a73bae",
+        "hash": "11d73c6c",
+        "encoded": "-%20Why%20it%20would%20be%20useful",
+        "prevChunkIds": []
+      },
+      "356": {
+        "chunkId": "a73bae",
+        "hash": "f6eea74b",
+        "encoded": "-%20How%20you%20envision%20it%20working",
+        "prevChunkIds": []
+      },
+      "358": {
+        "chunkId": "a73bae",
+        "hash": "a3e06e9e",
+        "encoded": "###%20Ask%20Questions",
+        "prevChunkIds": []
+      },
+      "360": {
+        "chunkId": "a73bae",
+        "hash": "9d5e86fa",
+        "encoded": "Use%20%5BGitHub%20Discussions%5D(https://github.com/YOUR-ORG/ai-alt-text/discussions)%20for:",
+        "prevChunkIds": []
+      },
+      "361": {
+        "chunkId": "a73bae",
+        "hash": "4aaa43b1",
+        "encoded": "-%20General%20questions",
+        "prevChunkIds": []
+      },
+      "362": {
+        "chunkId": "a73bae",
+        "hash": "d97b5719",
+        "encoded": "-%20Usage%20tips",
+        "prevChunkIds": []
+      },
+      "363": {
+        "chunkId": "a73bae",
+        "hash": "34314b9b",
+        "encoded": "-%20Best%20practices",
+        "prevChunkIds": []
+      },
+      "364": {
+        "chunkId": "a73bae",
+        "hash": "4e29f3b9",
+        "encoded": "-%20Feature%20ideas",
+        "prevChunkIds": []
+      },
+      "366": {
+        "chunkId": "a73bae",
+        "hash": "ecee4540",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "368": {
+        "chunkId": "a73bae",
+        "hash": "2e76572c",
+        "encoded": "**Happy%20alt-texting!**%20%E2%99%BF",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

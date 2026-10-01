@@ -1,0 +1,1398 @@
+{
+  "docs/TESTING.md": {
+    "filename": "TESTING.md",
+    "path": "docs/TESTING.md",
+    "version": "1.2",
+    "contextFile": "130ec514-context.json",
+    "chunks": {
+      "daac35": {
+        "user": "Noel Tibbles",
+        "model": "gpt-4.1",
+        "timestamp": 1790789058,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.4.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "5fa31f09"
+        },
+        "hash": "6d3b5a2d",
+        "messageId": "system_0754d170-bcf3-11f1-975a-8d43d55b2f29",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Noel Tibbles\n- **model**: gpt-4.1\n- **timestamp**: 9/30/2026, 1:24:18 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "daac35",
+        "hash": "f9c5e238",
+        "encoded": "#%20Testing%20Guide%20for%20AI-Alt%20Text%20Extension",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "daac35",
+        "hash": "c70f56c4",
+        "encoded": "This%20document%20provides%20comprehensive%20information%20about%20testing%20the%20AI-Alt%20Text%20Chrome%20extension.",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "daac35",
+        "hash": "7e193703",
+        "encoded": "##%20Test%20Suite%20Overview",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "daac35",
+        "hash": "d38bea95",
+        "encoded": "The%20extension%20includes%20a%20comprehensive%20Jest-based%20test%20suite%20covering:",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "daac35",
+        "hash": "0cbafb7d",
+        "encoded": "-%20**Background%20Script%20Tests**:%20Service%20worker%20functionality",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "daac35",
+        "hash": "bae276c1",
+        "encoded": "-%20**Content%20Script%20Tests**:%20Image%20detection,%20UI%20creation,%20accessibility",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "daac35",
+        "hash": "d757a2b5",
+        "encoded": "-%20**Integration%20Tests**:%20End-to-end%20workflows",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "daac35",
+        "hash": "df175b6a",
+        "encoded": "##%20Running%20Tests",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "daac35",
+        "hash": "a846eca4",
+        "encoded": "###%20Prerequisites",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "daac35",
+        "hash": "582a4326",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "daac35",
+        "hash": "f56787c2",
+        "encoded": "npm%20install",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "daac35",
+        "hash": "0380e888",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "daac35",
+        "hash": "ee33c18e",
+        "encoded": "###%20Commands",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "daac35",
+        "hash": "1848f8f9",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "daac35",
+        "hash": "0493b82e",
+        "encoded": "#%20Run%20all%20tests%20once",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "daac35",
+        "hash": "80aa796d",
+        "encoded": "npm%20test",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "daac35",
+        "hash": "583135f0",
+        "encoded": "#%20Run%20tests%20in%20watch%20mode%20(auto-rerun%20on%20file%20changes)",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "daac35",
+        "hash": "95e9711c",
+        "encoded": "npm%20run%20test:watch",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "daac35",
+        "hash": "2e2b6e07",
+        "encoded": "#%20Generate%20coverage%20report",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "daac35",
+        "hash": "5dffec56",
+        "encoded": "npm%20run%20test:coverage",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "daac35",
+        "hash": "19df1310",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "daac35",
+        "hash": "66e7a1cd",
+        "encoded": "###%20Coverage%20Goals",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "daac35",
+        "hash": "e7d5f6d3",
+        "encoded": "We%20aim%20for:",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "daac35",
+        "hash": "5b649c4a",
+        "encoded": "-%20**Statements**:%20%3E%2080%25",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "daac35",
+        "hash": "9f75189b",
+        "encoded": "-%20**Branches**:%20%3E%2075%25",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "daac35",
+        "hash": "d0afbba4",
+        "encoded": "-%20**Functions**:%20%3E%2080%25",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "daac35",
+        "hash": "057936ba",
+        "encoded": "-%20**Lines**:%20%3E%2080%25",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "daac35",
+        "hash": "c630c570",
+        "encoded": "##%20Test%20Files",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "daac35",
+        "hash": "9d147afa",
+        "encoded": "###%20%60__tests__/setup.js%60",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "daac35",
+        "hash": "ce58cb08",
+        "encoded": "Configures%20the%20test%20environment:",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "daac35",
+        "hash": "5f30c07e",
+        "encoded": "-%20Mocks%20Chrome%20APIs%20(%60chrome.action%60,%20%60chrome.scripting%60)",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "daac35",
+        "hash": "5f94ec3f",
+        "encoded": "-%20Mocks%20Chrome%20AI%20API%20(%60self.ai.languageModel%60)",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "daac35",
+        "hash": "41ac91ed",
+        "encoded": "-%20Sets%20up%20custom%20matchers",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "daac35",
+        "hash": "1e807c05",
+        "encoded": "-%20Configures%20JSDOM%20environment",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "daac35",
+        "hash": "235b16a7",
+        "encoded": "###%20%60__tests__/background.test.js%60",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "daac35",
+        "hash": "33d906bc",
+        "encoded": "Tests%20for%20%60background.js%60:",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "daac35",
+        "hash": "49649672",
+        "encoded": "####%20Test%20Cases:",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "daac35",
+        "hash": "141a2db9",
+        "encoded": "1.%20**Listener%20Registration**:%20Verifies%20action%20click%20listener%20is%20registered",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "daac35",
+        "hash": "71dbb3fc",
+        "encoded": "2.%20**Script%20Injection**:%20Ensures%20content.js%20is%20injected%20on%20icon%20click",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "daac35",
+        "hash": "d8196078",
+        "encoded": "3.%20**CSS%20Injection**:%20Ensures%20styles.css%20is%20injected",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "daac35",
+        "hash": "34639aea",
+        "encoded": "4.%20**Injection%20Order**:%20Verifies%20script%20loads%20before%20CSS",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "daac35",
+        "hash": "38f26b93",
+        "encoded": "5.%20**Error%20Handling**:%20Tests%20error%20scenarios",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "daac35",
+        "hash": "764533e8",
+        "encoded": "6.%20**Multiple%20Tabs**:%20Verifies%20functionality%20across%20different%20tabs",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "daac35",
+        "hash": "537c2342",
+        "encoded": "####%20Example:",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "daac35",
+        "hash": "3a53ef8d",
+        "encoded": "%60%60%60javascript",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "daac35",
+        "hash": "8d535129",
+        "encoded": "test('should%20inject%20content%20script%20when%20extension%20icon%20is%20clicked',%20async%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "daac35",
+        "hash": "147e2eb5",
+        "encoded": "await%20actionClickListener(mockTab);",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "daac35",
+        "hash": "b4a9891c",
+        "encoded": "expect(chrome.scripting.executeScript).toHaveBeenCalledWith(%7B",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "daac35",
+        "hash": "25f31bac",
+        "encoded": "target:%20%7B%20tabId:%20mockTab.id%20%7D,",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "daac35",
+        "hash": "51d473ff",
+        "encoded": "files:%20%5B'content.js'%5D",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "daac35",
+        "hash": "ebaf9923",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "daac35",
+        "hash": "80aa1e64",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "daac35",
+        "hash": "d2d592b3",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "daac35",
+        "hash": "42b4e7eb",
+        "encoded": "###%20%60__tests__/content.test.js%60",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "daac35",
+        "hash": "be76b2a7",
+        "encoded": "Tests%20for%20%60content.js%60:",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "daac35",
+        "hash": "5b29966c",
+        "encoded": "####%20Test%20Suites:",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "daac35",
+        "hash": "9d3aebf5",
+        "encoded": "**1.%20Image%20Detection**",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "daac35",
+        "hash": "7ffc9847",
+        "encoded": "-%20Multiple%20injection%20prevention",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "daac35",
+        "hash": "445d6253",
+        "encoded": "-%20Eligible%20image%20identification",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "daac35",
+        "hash": "fd6871eb",
+        "encoded": "-%20Valid%20format%20acceptance%20(png,%20jpg,%20jpeg,%20webp)",
+        "prevChunkIds": []
+      },
+      "84": {
+        "chunkId": "daac35",
+        "hash": "da2d0d81",
+        "encoded": "-%20Invalid%20format%20rejection%20(gif,%20svg,%20bmp,%20tiff)",
+        "prevChunkIds": []
+      },
+      "85": {
+        "chunkId": "daac35",
+        "hash": "d32004aa",
+        "encoded": "-%20Minimum%20dimension%20validation%20(125%C3%97125px)",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "daac35",
+        "hash": "fe6181cc",
+        "encoded": "-%20Maximum%20width%20validation%20(%3C1500px)",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "daac35",
+        "hash": "71a2dd89",
+        "encoded": "**2.%20Button%20and%20Popover%20Creation**",
+        "prevChunkIds": []
+      },
+      "89": {
+        "chunkId": "daac35",
+        "hash": "186fa399",
+        "encoded": "-%20Button%20attribute%20verification",
+        "prevChunkIds": []
+      },
+      "90": {
+        "chunkId": "daac35",
+        "hash": "d26e3726",
+        "encoded": "-%20Unique%20ID%20generation",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "daac35",
+        "hash": "483b3eaa",
+        "encoded": "-%20Popover%20structure",
+        "prevChunkIds": []
+      },
+      "92": {
+        "chunkId": "daac35",
+        "hash": "9e747799",
+        "encoded": "-%20Image%20wrapper%20creation",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "daac35",
+        "hash": "55348837",
+        "encoded": "-%20Button%20positioning",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "daac35",
+        "hash": "aa378deb",
+        "encoded": "**3.%20Accessibility%20Features**",
+        "prevChunkIds": []
+      },
+      "96": {
+        "chunkId": "daac35",
+        "hash": "519e97e3",
+        "encoded": "-%20%60aria-haspopup=%22dialog%22%60%20verification",
+        "prevChunkIds": []
+      },
+      "97": {
+        "chunkId": "daac35",
+        "hash": "db282b37",
+        "encoded": "-%20Unique%20descriptive%20labels",
+        "prevChunkIds": []
+      },
+      "98": {
+        "chunkId": "daac35",
+        "hash": "813475a3",
+        "encoded": "-%20%60role=%22dialog%22%60%20on%20popovers",
+        "prevChunkIds": []
+      },
+      "99": {
+        "chunkId": "daac35",
+        "hash": "25a8c2e5",
+        "encoded": "-%20%60aria-labelledby%60%20connections",
+        "prevChunkIds": []
+      },
+      "100": {
+        "chunkId": "daac35",
+        "hash": "ecee2683",
+        "encoded": "-%20%60aria-live%60%20regions%20for%20dynamic%20content",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "daac35",
+        "hash": "20f71432",
+        "encoded": "**4.%20Dynamic%20Image%20Loading**",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "daac35",
+        "hash": "207c918f",
+        "encoded": "-%20Handling%20images%20that%20load%20after%20script%20injection",
+        "prevChunkIds": []
+      },
+      "104": {
+        "chunkId": "daac35",
+        "hash": "7d908c10",
+        "encoded": "-%20MutationObserver%20functionality",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "daac35",
+        "hash": "c648c403",
+        "encoded": "####%20Example:",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "daac35",
+        "hash": "19e49c3f",
+        "encoded": "%60%60%60javascript",
+        "prevChunkIds": []
+      },
+      "108": {
+        "chunkId": "daac35",
+        "hash": "96b8d3df",
+        "encoded": "test('should%20create%20button%20with%20correct%20attributes',%20()%20=%3E%20%7B",
+        "prevChunkIds": []
+      },
+      "109": {
+        "chunkId": "daac35",
+        "hash": "3eb460e8",
+        "encoded": "const%20button%20=%20document.querySelector('.ai-alt-info-button');",
+        "prevChunkIds": []
+      },
+      "110": {
+        "chunkId": "daac35",
+        "hash": "e110e72a",
+        "encoded": "expect(button.getAttribute('aria-haspopup')).toBe('dialog');",
+        "prevChunkIds": []
+      },
+      "111": {
+        "chunkId": "daac35",
+        "hash": "223fb782",
+        "encoded": "expect(button.getAttribute('aria-label')).toContain('Generate%20AI%20alt%20text');",
+        "prevChunkIds": []
+      },
+      "112": {
+        "chunkId": "daac35",
+        "hash": "dd6b3e73",
+        "encoded": "%7D);",
+        "prevChunkIds": []
+      },
+      "113": {
+        "chunkId": "daac35",
+        "hash": "61900443",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "115": {
+        "chunkId": "daac35",
+        "hash": "bafbf85f",
+        "encoded": "##%20Manual%20Testing",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "daac35",
+        "hash": "87972ac6",
+        "encoded": "###%20Setup",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "daac35",
+        "hash": "5e39edbf",
+        "encoded": "1.%20**Install%20the%20extension**%20(see%20README.md)",
+        "prevChunkIds": []
+      },
+      "120": {
+        "chunkId": "daac35",
+        "hash": "ce644205",
+        "encoded": "2.%20**Enable%20Chrome%20AI**:",
+        "prevChunkIds": []
+      },
+      "121": {
+        "chunkId": "daac35",
+        "hash": "112527aa",
+        "encoded": "-%20Navigate%20to%20%60chrome://flags%60",
+        "prevChunkIds": []
+      },
+      "122": {
+        "chunkId": "daac35",
+        "hash": "de57e543",
+        "encoded": "-%20Enable%20%22Prompt%20API%20for%20Gemini%20Nano%22",
+        "prevChunkIds": []
+      },
+      "123": {
+        "chunkId": "daac35",
+        "hash": "c3d67639",
+        "encoded": "-%20Restart%20Chrome",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "daac35",
+        "hash": "a5176e00",
+        "encoded": "###%20Test%20Scenarios",
+        "prevChunkIds": []
+      },
+      "127": {
+        "chunkId": "daac35",
+        "hash": "7881f897",
+        "encoded": "####%20Scenario%201:%20Basic%20Functionality",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "daac35",
+        "hash": "fdfa942a",
+        "encoded": "1.%20Navigate%20to%20a%20page%20with%20images%20(e.g.,%20Wikipedia%20article)",
+        "prevChunkIds": []
+      },
+      "130": {
+        "chunkId": "daac35",
+        "hash": "f9a2a1dd",
+        "encoded": "2.%20Click%20the%20extension%20icon",
+        "prevChunkIds": []
+      },
+      "131": {
+        "chunkId": "daac35",
+        "hash": "2986d8c4",
+        "encoded": "3.%20**Expected**:%20Info%20buttons%20appear%20on%20eligible%20images",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "daac35",
+        "hash": "e019457b",
+        "encoded": "4.%20Click%20an%20info%20button",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "daac35",
+        "hash": "ef84fe0e",
+        "encoded": "5.%20**Expected**:%20Popover%20opens,%20loading%20indicator%20appears",
+        "prevChunkIds": []
+      },
+      "134": {
+        "chunkId": "daac35",
+        "hash": "594c8018",
+        "encoded": "6.%20**Expected**:%20Alt%20text%20is%20generated%20and%20displayed",
+        "prevChunkIds": []
+      },
+      "135": {
+        "chunkId": "daac35",
+        "hash": "bb52b936",
+        "encoded": "7.%20Press%20Escape",
+        "prevChunkIds": []
+      },
+      "136": {
+        "chunkId": "daac35",
+        "hash": "b7125c3f",
+        "encoded": "8.%20**Expected**:%20Popover%20closes",
+        "prevChunkIds": []
+      },
+      "138": {
+        "chunkId": "daac35",
+        "hash": "e4c27077",
+        "encoded": "####%20Scenario%202:%20Image%20Size%20Filtering",
+        "prevChunkIds": []
+      },
+      "140": {
+        "chunkId": "daac35",
+        "hash": "9cf867ec",
+        "encoded": "Test%20page%20HTML:",
+        "prevChunkIds": []
+      },
+      "141": {
+        "chunkId": "daac35",
+        "hash": "deefd4ee",
+        "encoded": "%60%60%60html",
+        "prevChunkIds": []
+      },
+      "142": {
+        "chunkId": "daac35",
+        "hash": "82303281",
+        "encoded": "%3Cimg%20src=%22small.jpg%22%20width=%22100%22%20height=%22100%22%3E%20%3C!--%20Should%20be%20ignored%20--%3E",
+        "prevChunkIds": []
+      },
+      "143": {
+        "chunkId": "daac35",
+        "hash": "fee2a4a7",
+        "encoded": "%3Cimg%20src=%22good.jpg%22%20width=%22300%22%20height=%22300%22%3E%20%3C!--%20Should%20get%20button%20--%3E",
+        "prevChunkIds": []
+      },
+      "144": {
+        "chunkId": "daac35",
+        "hash": "f3ec9f9b",
+        "encoded": "%3Cimg%20src=%22huge.jpg%22%20width=%222000%22%20height=%22400%22%3E%20%3C!--%20Should%20be%20ignored%20--%3E",
+        "prevChunkIds": []
+      },
+      "145": {
+        "chunkId": "daac35",
+        "hash": "13d6cf0a",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "147": {
+        "chunkId": "daac35",
+        "hash": "d64d5d32",
+        "encoded": "**Expected**:%20Only%20the%20300%C3%97300%20image%20gets%20a%20button",
+        "prevChunkIds": []
+      },
+      "149": {
+        "chunkId": "daac35",
+        "hash": "23d198bd",
+        "encoded": "####%20Scenario%203:%20Image%20Format%20Filtering",
+        "prevChunkIds": []
+      },
+      "151": {
+        "chunkId": "daac35",
+        "hash": "0b37f94c",
+        "encoded": "Test%20page%20HTML:",
+        "prevChunkIds": []
+      },
+      "152": {
+        "chunkId": "daac35",
+        "hash": "ae412173",
+        "encoded": "%60%60%60html",
+        "prevChunkIds": []
+      },
+      "153": {
+        "chunkId": "daac35",
+        "hash": "02ed1d2d",
+        "encoded": "%3Cimg%20src=%22test.png%22%20width=%22300%22%20height=%22300%22%3E%20%3C!--%20Should%20get%20button%20--%3E",
+        "prevChunkIds": []
+      },
+      "154": {
+        "chunkId": "daac35",
+        "hash": "da8a02b4",
+        "encoded": "%3Cimg%20src=%22test.jpg%22%20width=%22300%22%20height=%22300%22%3E%20%3C!--%20Should%20get%20button%20--%3E",
+        "prevChunkIds": []
+      },
+      "155": {
+        "chunkId": "daac35",
+        "hash": "ac09eadd",
+        "encoded": "%3Cimg%20src=%22test.gif%22%20width=%22300%22%20height=%22300%22%3E%20%3C!--%20Should%20be%20ignored%20--%3E",
+        "prevChunkIds": []
+      },
+      "156": {
+        "chunkId": "daac35",
+        "hash": "e98ab00a",
+        "encoded": "%3Cimg%20src=%22test.svg%22%20width=%22300%22%20height=%22300%22%3E%20%3C!--%20Should%20be%20ignored%20--%3E",
+        "prevChunkIds": []
+      },
+      "157": {
+        "chunkId": "daac35",
+        "hash": "3400feea",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "159": {
+        "chunkId": "daac35",
+        "hash": "53ecb00e",
+        "encoded": "**Expected**:%20Only%20PNG%20and%20JPG%20images%20get%20buttons",
+        "prevChunkIds": []
+      },
+      "161": {
+        "chunkId": "daac35",
+        "hash": "cd5b286e",
+        "encoded": "####%20Scenario%204:%20Keyboard%20Navigation",
+        "prevChunkIds": []
+      },
+      "163": {
+        "chunkId": "daac35",
+        "hash": "3cc16270",
+        "encoded": "1.%20Click%20extension%20icon",
+        "prevChunkIds": []
+      },
+      "164": {
+        "chunkId": "daac35",
+        "hash": "cb825bcc",
+        "encoded": "2.%20Tab%20to%20an%20info%20button",
+        "prevChunkIds": []
+      },
+      "165": {
+        "chunkId": "daac35",
+        "hash": "9c9ff444",
+        "encoded": "3.%20Press%20Enter",
+        "prevChunkIds": []
+      },
+      "166": {
+        "chunkId": "daac35",
+        "hash": "5b7dd8b1",
+        "encoded": "4.%20**Expected**:%20Popover%20opens",
+        "prevChunkIds": []
+      },
+      "167": {
+        "chunkId": "daac35",
+        "hash": "6bec5715",
+        "encoded": "5.%20Press%20Escape",
+        "prevChunkIds": []
+      },
+      "168": {
+        "chunkId": "daac35",
+        "hash": "c9e7b725",
+        "encoded": "6.%20**Expected**:%20Popover%20closes",
+        "prevChunkIds": []
+      },
+      "170": {
+        "chunkId": "daac35",
+        "hash": "f3db91f8",
+        "encoded": "####%20Scenario%205:%20Screen%20Reader%20Compatibility",
+        "prevChunkIds": []
+      },
+      "172": {
+        "chunkId": "daac35",
+        "hash": "d856e820",
+        "encoded": "Using%20a%20screen%20reader%20(NVDA,%20JAWS,%20VoiceOver):",
+        "prevChunkIds": []
+      },
+      "174": {
+        "chunkId": "daac35",
+        "hash": "b8e62275",
+        "encoded": "1.%20Navigate%20to%20an%20info%20button",
+        "prevChunkIds": []
+      },
+      "175": {
+        "chunkId": "daac35",
+        "hash": "015a3e5e",
+        "encoded": "2.%20**Expected**:%20Screen%20reader%20announces:%20%22Generate%20AI%20alt%20text%20for%20image%20%5Bnumber%5D,%20button,%20has%20popup,%20dialog%22",
+        "prevChunkIds": []
+      },
+      "176": {
+        "chunkId": "daac35",
+        "hash": "e062111f",
+        "encoded": "3.%20Activate%20the%20button",
+        "prevChunkIds": []
+      },
+      "177": {
+        "chunkId": "daac35",
+        "hash": "274e2d36",
+        "encoded": "4.%20**Expected**:%20Screen%20reader%20announces%20loading%20state",
+        "prevChunkIds": []
+      },
+      "178": {
+        "chunkId": "daac35",
+        "hash": "81c871c7",
+        "encoded": "5.%20**Expected**:%20Screen%20reader%20announces%20generated%20alt%20text",
+        "prevChunkIds": []
+      },
+      "180": {
+        "chunkId": "daac35",
+        "hash": "4f4f0015",
+        "encoded": "####%20Scenario%206:%20Dynamic%20Images",
+        "prevChunkIds": []
+      },
+      "182": {
+        "chunkId": "daac35",
+        "hash": "473ad8cb",
+        "encoded": "1.%20Click%20extension%20icon",
+        "prevChunkIds": []
+      },
+      "183": {
+        "chunkId": "daac35",
+        "hash": "30e8c76c",
+        "encoded": "2.%20Use%20browser%20console%20to%20add%20a%20new%20eligible%20image:",
+        "prevChunkIds": []
+      },
+      "184": {
+        "chunkId": "daac35",
+        "hash": "53638508",
+        "encoded": "%60%60%60javascript",
+        "prevChunkIds": []
+      },
+      "185": {
+        "chunkId": "daac35",
+        "hash": "98f1a446",
+        "encoded": "const%20img%20=%20document.createElement('img');",
+        "prevChunkIds": []
+      },
+      "186": {
+        "chunkId": "daac35",
+        "hash": "48c5dca6",
+        "encoded": "img.src%20=%20'https://picsum.photos/400/400';",
+        "prevChunkIds": []
+      },
+      "187": {
+        "chunkId": "daac35",
+        "hash": "bc5d2eca",
+        "encoded": "document.body.appendChild(img);",
+        "prevChunkIds": []
+      },
+      "188": {
+        "chunkId": "daac35",
+        "hash": "9c195bb5",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "189": {
+        "chunkId": "daac35",
+        "hash": "a19f8ecf",
+        "encoded": "3.%20**Expected**:%20Button%20appears%20on%20the%20new%20image%20within%201-2%20seconds",
+        "prevChunkIds": []
+      },
+      "191": {
+        "chunkId": "daac35",
+        "hash": "0b07521f",
+        "encoded": "####%20Scenario%207:%20Multiple%20Popovers",
+        "prevChunkIds": []
+      },
+      "193": {
+        "chunkId": "daac35",
+        "hash": "506a3a8f",
+        "encoded": "1.%20Open%20a%20popover",
+        "prevChunkIds": []
+      },
+      "194": {
+        "chunkId": "daac35",
+        "hash": "4a27b008",
+        "encoded": "2.%20While%20it's%20open,%20open%20another%20popover",
+        "prevChunkIds": []
+      },
+      "195": {
+        "chunkId": "daac35",
+        "hash": "8184c817",
+        "encoded": "3.%20**Expected**:%20First%20popover%20closes%20automatically%20(popover=%22auto%22%20behavior)",
+        "prevChunkIds": []
+      },
+      "197": {
+        "chunkId": "daac35",
+        "hash": "50f85e8d",
+        "encoded": "####%20Scenario%208:%20Error%20Handling",
+        "prevChunkIds": []
+      },
+      "199": {
+        "chunkId": "daac35",
+        "hash": "4976b349",
+        "encoded": "Disable%20Chrome%20AI%20or%20test%20without%20the%20flag%20enabled:",
+        "prevChunkIds": []
+      },
+      "201": {
+        "chunkId": "daac35",
+        "hash": "ee89469c",
+        "encoded": "1.%20Click%20an%20info%20button",
+        "prevChunkIds": []
+      },
+      "202": {
+        "chunkId": "daac35",
+        "hash": "18d20853",
+        "encoded": "2.%20**Expected**:%20Error%20message%20appears%20in%20popover%20instead%20of%20alt%20text",
+        "prevChunkIds": []
+      },
+      "204": {
+        "chunkId": "daac35",
+        "hash": "29916091",
+        "encoded": "##%20Accessibility%20Testing%20Checklist",
+        "prevChunkIds": []
+      },
+      "206": {
+        "chunkId": "daac35",
+        "hash": "cc727271",
+        "encoded": "-%20%5B%20%5D%20All%20buttons%20have%20%60aria-label%60",
+        "prevChunkIds": []
+      },
+      "207": {
+        "chunkId": "daac35",
+        "hash": "50261251",
+        "encoded": "-%20%5B%20%5D%20All%20buttons%20have%20unique%20labels",
+        "prevChunkIds": []
+      },
+      "208": {
+        "chunkId": "daac35",
+        "hash": "3d8cf92b",
+        "encoded": "-%20%5B%20%5D%20Buttons%20have%20%60aria-haspopup=%22dialog%22%60",
+        "prevChunkIds": []
+      },
+      "209": {
+        "chunkId": "daac35",
+        "hash": "c65bf63d",
+        "encoded": "-%20%5B%20%5D%20Popovers%20have%20%60role=%22dialog%22%60",
+        "prevChunkIds": []
+      },
+      "210": {
+        "chunkId": "daac35",
+        "hash": "f4b6a6ed",
+        "encoded": "-%20%5B%20%5D%20Popovers%20have%20%60aria-labelledby%60",
+        "prevChunkIds": []
+      },
+      "211": {
+        "chunkId": "daac35",
+        "hash": "a6afc6e6",
+        "encoded": "-%20%5B%20%5D%20Loading%20state%20has%20%60aria-live=%22polite%22%60",
+        "prevChunkIds": []
+      },
+      "212": {
+        "chunkId": "daac35",
+        "hash": "7a0db91a",
+        "encoded": "-%20%5B%20%5D%20Keyboard%20navigation%20works%20(Tab,%20Enter,%20Escape)",
+        "prevChunkIds": []
+      },
+      "213": {
+        "chunkId": "daac35",
+        "hash": "a0fd797f",
+        "encoded": "-%20%5B%20%5D%20Focus%20is%20visible%20on%20all%20interactive%20elements",
+        "prevChunkIds": []
+      },
+      "214": {
+        "chunkId": "daac35",
+        "hash": "5c649b1b",
+        "encoded": "-%20%5B%20%5D%20Screen%20readers%20announce%20all%20state%20changes",
+        "prevChunkIds": []
+      },
+      "215": {
+        "chunkId": "daac35",
+        "hash": "30e82275",
+        "encoded": "-%20%5B%20%5D%20Color%20contrast%20meets%20WCAG%20AA%20standards",
+        "prevChunkIds": []
+      },
+      "216": {
+        "chunkId": "daac35",
+        "hash": "c48f46fb",
+        "encoded": "-%20%5B%20%5D%20Touch%20targets%20are%20at%20least%2024%C3%9724px",
+        "prevChunkIds": []
+      },
+      "218": {
+        "chunkId": "daac35",
+        "hash": "ae3e9feb",
+        "encoded": "##%20Performance%20Testing",
+        "prevChunkIds": []
+      },
+      "220": {
+        "chunkId": "daac35",
+        "hash": "05328fd6",
+        "encoded": "###%20Test%20with%20Many%20Images",
+        "prevChunkIds": []
+      },
+      "222": {
+        "chunkId": "daac35",
+        "hash": "6b7859da",
+        "encoded": "1.%20Navigate%20to%20image-heavy%20page%20(e.g.,%20Pinterest,%20Instagram)",
+        "prevChunkIds": []
+      },
+      "223": {
+        "chunkId": "daac35",
+        "hash": "417f83ba",
+        "encoded": "2.%20Click%20extension%20icon",
+        "prevChunkIds": []
+      },
+      "224": {
+        "chunkId": "daac35",
+        "hash": "ef120cf6",
+        "encoded": "3.%20**Monitor**:%20Page%20performance,%20memory%20usage",
+        "prevChunkIds": []
+      },
+      "225": {
+        "chunkId": "daac35",
+        "hash": "1f81cf04",
+        "encoded": "4.%20**Expected**:%20No%20significant%20lag%20or%20freezing",
+        "prevChunkIds": []
+      },
+      "227": {
+        "chunkId": "daac35",
+        "hash": "5f366e01",
+        "encoded": "###%20Test%20AI%20Generation%20Speed",
+        "prevChunkIds": []
+      },
+      "229": {
+        "chunkId": "daac35",
+        "hash": "25f6b236",
+        "encoded": "1.%20Open%20multiple%20popovers%20sequentially",
+        "prevChunkIds": []
+      },
+      "230": {
+        "chunkId": "daac35",
+        "hash": "8d25a767",
+        "encoded": "2.%20**Monitor**:%20Time%20from%20click%20to%20text%20display",
+        "prevChunkIds": []
+      },
+      "231": {
+        "chunkId": "daac35",
+        "hash": "3e482c2c",
+        "encoded": "3.%20**Expected**:%20Consistent%20performance%20(%3C5%20seconds%20per%20image)",
+        "prevChunkIds": []
+      },
+      "233": {
+        "chunkId": "daac35",
+        "hash": "b9ea7449",
+        "encoded": "##%20Debugging%20Tests",
+        "prevChunkIds": []
+      },
+      "235": {
+        "chunkId": "daac35",
+        "hash": "004201da",
+        "encoded": "###%20Enable%20Verbose%20Output",
+        "prevChunkIds": []
+      },
+      "237": {
+        "chunkId": "daac35",
+        "hash": "3a1797e1",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "238": {
+        "chunkId": "daac35",
+        "hash": "fcc2d7f3",
+        "encoded": "npm%20test%20--%20--verbose",
+        "prevChunkIds": []
+      },
+      "239": {
+        "chunkId": "daac35",
+        "hash": "8ac787af",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "241": {
+        "chunkId": "daac35",
+        "hash": "f9b61f11",
+        "encoded": "###%20Run%20Specific%20Test%20File",
+        "prevChunkIds": []
+      },
+      "243": {
+        "chunkId": "daac35",
+        "hash": "cf4e6f89",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "244": {
+        "chunkId": "daac35",
+        "hash": "3d566aa9",
+        "encoded": "npm%20test%20--%20background.test.js",
+        "prevChunkIds": []
+      },
+      "245": {
+        "chunkId": "daac35",
+        "hash": "a2a3c0f4",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "247": {
+        "chunkId": "daac35",
+        "hash": "bdfca590",
+        "encoded": "###%20Run%20Specific%20Test",
+        "prevChunkIds": []
+      },
+      "249": {
+        "chunkId": "daac35",
+        "hash": "d5562f48",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "250": {
+        "chunkId": "daac35",
+        "hash": "a17d98b5",
+        "encoded": "npm%20test%20--%20-t%20%22should%20inject%20content%20script%22",
+        "prevChunkIds": []
+      },
+      "251": {
+        "chunkId": "daac35",
+        "hash": "f235f25a",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "253": {
+        "chunkId": "daac35",
+        "hash": "16edbe5b",
+        "encoded": "###%20Debug%20with%20Chrome%20DevTools",
+        "prevChunkIds": []
+      },
+      "255": {
+        "chunkId": "daac35",
+        "hash": "34f14a5d",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "256": {
+        "chunkId": "daac35",
+        "hash": "3e1b08de",
+        "encoded": "node%20--inspect-brk%20node_modules/.bin/jest%20--runInBand",
+        "prevChunkIds": []
+      },
+      "257": {
+        "chunkId": "daac35",
+        "hash": "98388c3c",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "259": {
+        "chunkId": "daac35",
+        "hash": "9a81a2ea",
+        "encoded": "Then%20open%20%60chrome://inspect%60%20in%20Chrome.",
+        "prevChunkIds": []
+      },
+      "261": {
+        "chunkId": "daac35",
+        "hash": "25209036",
+        "encoded": "##%20Common%20Issues",
+        "prevChunkIds": []
+      },
+      "263": {
+        "chunkId": "daac35",
+        "hash": "b072ea62",
+        "encoded": "###%20Issue:%20Tests%20fail%20with%20%22chrome%20is%20not%20defined%22",
+        "prevChunkIds": []
+      },
+      "265": {
+        "chunkId": "daac35",
+        "hash": "4f59973b",
+        "encoded": "**Solution**:%20Ensure%20%60__tests__/setup.js%60%20is%20properly%20configured%20in%20%60jest.config.js%60",
+        "prevChunkIds": []
+      },
+      "267": {
+        "chunkId": "daac35",
+        "hash": "b25f0769",
+        "encoded": "###%20Issue:%20JSDOM%20doesn't%20support%20Popover%20API",
+        "prevChunkIds": []
+      },
+      "269": {
+        "chunkId": "daac35",
+        "hash": "5ea7788e",
+        "encoded": "**Solution**:%20This%20is%20expected.%20Manual%20testing%20required%20for%20popover%20interactions.",
+        "prevChunkIds": []
+      },
+      "271": {
+        "chunkId": "daac35",
+        "hash": "3a5aceea",
+        "encoded": "###%20Issue:%20AI%20mock%20doesn't%20return%20expected%20values",
+        "prevChunkIds": []
+      },
+      "273": {
+        "chunkId": "daac35",
+        "hash": "3a1a455b",
+        "encoded": "**Solution**:%20Check%20mock%20setup%20in%20%60setup.js%60%20and%20ensure%20promise%20resolution%20is%20correct.",
+        "prevChunkIds": []
+      },
+      "275": {
+        "chunkId": "daac35",
+        "hash": "42882784",
+        "encoded": "##%20Continuous%20Integration",
+        "prevChunkIds": []
+      },
+      "277": {
+        "chunkId": "daac35",
+        "hash": "eb18a52a",
+        "encoded": "###%20GitHub%20Actions%20Example",
+        "prevChunkIds": []
+      },
+      "279": {
+        "chunkId": "daac35",
+        "hash": "405cbbbd",
+        "encoded": "%60%60%60yaml",
+        "prevChunkIds": []
+      },
+      "280": {
+        "chunkId": "daac35",
+        "hash": "f977160c",
+        "encoded": "name:%20Tests",
+        "prevChunkIds": []
+      },
+      "282": {
+        "chunkId": "daac35",
+        "hash": "9a452fe7",
+        "encoded": "on:%20%5Bpush,%20pull_request%5D",
+        "prevChunkIds": []
+      },
+      "284": {
+        "chunkId": "daac35",
+        "hash": "7cc8a9de",
+        "encoded": "jobs:",
+        "prevChunkIds": []
+      },
+      "285": {
+        "chunkId": "daac35",
+        "hash": "2c19c9af",
+        "encoded": "test:",
+        "prevChunkIds": []
+      },
+      "286": {
+        "chunkId": "daac35",
+        "hash": "6607e9fb",
+        "encoded": "runs-on:%20ubuntu-latest",
+        "prevChunkIds": []
+      },
+      "287": {
+        "chunkId": "daac35",
+        "hash": "a42c37d7",
+        "encoded": "steps:",
+        "prevChunkIds": []
+      },
+      "288": {
+        "chunkId": "daac35",
+        "hash": "7a10702f",
+        "encoded": "-%20uses:%20actions/checkout@v3",
+        "prevChunkIds": []
+      },
+      "289": {
+        "chunkId": "daac35",
+        "hash": "05fbc991",
+        "encoded": "-%20uses:%20actions/setup-node@v3",
+        "prevChunkIds": []
+      },
+      "290": {
+        "chunkId": "daac35",
+        "hash": "fc592cf6",
+        "encoded": "with:",
+        "prevChunkIds": []
+      },
+      "291": {
+        "chunkId": "daac35",
+        "hash": "4ed92f7e",
+        "encoded": "node-version:%20'18'",
+        "prevChunkIds": []
+      },
+      "292": {
+        "chunkId": "daac35",
+        "hash": "11931def",
+        "encoded": "-%20run:%20npm%20install",
+        "prevChunkIds": []
+      },
+      "293": {
+        "chunkId": "daac35",
+        "hash": "170e8588",
+        "encoded": "-%20run:%20npm%20test",
+        "prevChunkIds": []
+      },
+      "294": {
+        "chunkId": "daac35",
+        "hash": "ba84d963",
+        "encoded": "-%20run:%20npm%20run%20test:coverage",
+        "prevChunkIds": []
+      },
+      "295": {
+        "chunkId": "daac35",
+        "hash": "756bebe1",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "297": {
+        "chunkId": "daac35",
+        "hash": "609d7165",
+        "encoded": "##%20Test%20Maintenance",
+        "prevChunkIds": []
+      },
+      "299": {
+        "chunkId": "daac35",
+        "hash": "da19c026",
+        "encoded": "-%20Update%20tests%20when%20functionality%20changes",
+        "prevChunkIds": []
+      },
+      "300": {
+        "chunkId": "daac35",
+        "hash": "1da09c5b",
+        "encoded": "-%20Add%20tests%20for%20new%20features%20before%20implementation%20(TDD)",
+        "prevChunkIds": []
+      },
+      "301": {
+        "chunkId": "daac35",
+        "hash": "616151a1",
+        "encoded": "-%20Keep%20coverage%20above%2080%25",
+        "prevChunkIds": []
+      },
+      "302": {
+        "chunkId": "daac35",
+        "hash": "c1d98bd8",
+        "encoded": "-%20Review%20and%20update%20manual%20test%20scenarios%20quarterly",
+        "prevChunkIds": []
+      },
+      "303": {
+        "chunkId": "daac35",
+        "hash": "c140eb45",
+        "encoded": "-%20Test%20across%20different%20Chrome%20versions",
+        "prevChunkIds": []
+      },
+      "305": {
+        "chunkId": "daac35",
+        "hash": "4f165257",
+        "encoded": "##%20Resources",
+        "prevChunkIds": []
+      },
+      "307": {
+        "chunkId": "daac35",
+        "hash": "a8184efa",
+        "encoded": "-%20%5BJest%20Documentation%5D(https://jestjs.io/docs/getting-started)",
+        "prevChunkIds": []
+      },
+      "308": {
+        "chunkId": "daac35",
+        "hash": "c2d0b41a",
+        "encoded": "-%20%5BJSDOM%20Documentation%5D(https://github.com/jsdom/jsdom)",
+        "prevChunkIds": []
+      },
+      "309": {
+        "chunkId": "daac35",
+        "hash": "b8cbefaa",
+        "encoded": "-%20%5BChrome%20Extension%20Testing%20Guide%5D(https://developer.chrome.com/docs/extensions/mv3/tut_testing/)",
+        "prevChunkIds": []
+      },
+      "310": {
+        "chunkId": "daac35",
+        "hash": "4710b81e",
+        "encoded": "-%20%5BWCAG%202.2%20Guidelines%5D(https://www.w3.org/WAI/WCAG22/quickref/)",
+        "prevChunkIds": []
+      },
+      "312": {
+        "chunkId": "daac35",
+        "hash": "993dbf40",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "314": {
+        "chunkId": "daac35",
+        "hash": "5cbea664",
+        "encoded": "**Questions%20or%20issues%20with%20testing?**%20Open%20an%20issue%20on%20the%20repository.",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

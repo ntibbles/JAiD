@@ -1,0 +1,1602 @@
+{
+  "docs/BUILD.md": {
+    "filename": "BUILD.md",
+    "path": "docs/BUILD.md",
+    "version": "1.2",
+    "contextFile": "84372560-context.json",
+    "chunks": {
+      "e1851a": {
+        "user": "Noel Tibbles",
+        "model": "gpt-4.1",
+        "timestamp": 1790791055,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.4.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "e10d0c11"
+        },
+        "hash": "3569cee8",
+        "messageId": "system_17d78b40-bcf4-11f1-975a-8d43d55b2f29",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Noel Tibbles\n- **model**: gpt-4.1\n- **timestamp**: 9/30/2026, 1:57:35 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "e1851a",
+        "hash": "e3d95f7b",
+        "encoded": "#%20Build%20Guide%20for%20AI-Alt%20Text%20Extension",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "e1851a",
+        "hash": "4e6c6fba",
+        "encoded": "This%20guide%20explains%20how%20to%20build%20and%20package%20the%20AI-Alt%20Text%20Chrome%20extension%20for%20distribution.",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "e1851a",
+        "hash": "689081fa",
+        "encoded": "##%20Quick%20Start",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "e1851a",
+        "hash": "72e42934",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "e1851a",
+        "hash": "35e64434",
+        "encoded": "#%20Build%20the%20extension",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "e1851a",
+        "hash": "dfb9f92e",
+        "encoded": "npm%20run%20build",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "e1851a",
+        "hash": "ed160b54",
+        "encoded": "#%20The%20distributable%20files%20will%20be%20in%20the%20dist/%20folder",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "e1851a",
+        "hash": "be324ff5",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "e1851a",
+        "hash": "b2ce64a4",
+        "encoded": "##%20Build%20Process",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "e1851a",
+        "hash": "76f97c3f",
+        "encoded": "###%20What%20the%20Build%20Does",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "e1851a",
+        "hash": "d567fd0c",
+        "encoded": "The%20build%20script%20(%60build.js%60)%20performs%20the%20following%20operations:",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "e1851a",
+        "hash": "b9a683b2",
+        "encoded": "1.%20**Cleans**%20-%20Removes%20any%20existing%20%60dist/%60%20folder",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "e1851a",
+        "hash": "11ef672c",
+        "encoded": "2.%20**Creates**%20-%20Creates%20a%20fresh%20%60dist/%60%20directory",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "e1851a",
+        "hash": "e1f484a0",
+        "encoded": "3.%20**Copies**%20-%20Copies%20only%20required%20extension%20files%20to%20%60dist/%60",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "e1851a",
+        "hash": "adfb5bda",
+        "encoded": "4.%20**Reports**%20-%20Shows%20file%20sizes%20and%20total%20distribution%20size",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "e1851a",
+        "hash": "da9b2d07",
+        "encoded": "###%20Files%20Included%20in%20Distribution",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "e1851a",
+        "hash": "020287a4",
+        "encoded": "####%20Core%20Extension%20Files",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "e1851a",
+        "hash": "001bc85c",
+        "encoded": "-%20%60manifest.json%60%20-%20Extension%20configuration",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "e1851a",
+        "hash": "53076929",
+        "encoded": "-%20%60background.js%60%20-%20Service%20worker",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "e1851a",
+        "hash": "7eee0167",
+        "encoded": "-%20%60content.js%60%20-%20Content%20script",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "e1851a",
+        "hash": "0265390d",
+        "encoded": "-%20%60styles.css%60%20-%20Styling",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "e1851a",
+        "hash": "e462df8f",
+        "encoded": "####%20Assets",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "e1851a",
+        "hash": "8aa13ca9",
+        "encoded": "-%20%60images/ai-alt-icon.svg%60%20-%20Extension%20icon",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "e1851a",
+        "hash": "ef8f9414",
+        "encoded": "-%20(All%20files%20in%20the%20%60images/%60%20directory)",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "e1851a",
+        "hash": "01888328",
+        "encoded": "###%20Files%20Excluded%20from%20Distribution",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "e1851a",
+        "hash": "0f908659",
+        "encoded": "####%20Development%20Files",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "e1851a",
+        "hash": "7d530820",
+        "encoded": "-%20%60package.json%60%20-%20npm%20configuration",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "e1851a",
+        "hash": "4ed07f31",
+        "encoded": "-%20%60package-lock.json%60%20-%20Dependency%20lock%20file",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "e1851a",
+        "hash": "bc17dd72",
+        "encoded": "-%20%60build.js%60%20-%20Build%20script%20itself",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "e1851a",
+        "hash": "49de4d3b",
+        "encoded": "-%20%60jest.config.js%60%20-%20Test%20configuration",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "e1851a",
+        "hash": "2702628d",
+        "encoded": "-%20%60.gitignore%60%20-%20Git%20ignore%20rules",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "e1851a",
+        "hash": "d978c957",
+        "encoded": "####%20Documentation",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "e1851a",
+        "hash": "341a57d3",
+        "encoded": "-%20%60README.md%60%20-%20User%20documentation",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "e1851a",
+        "hash": "05f1c24c",
+        "encoded": "-%20%60TESTING.md%60%20-%20Testing%20guide",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "e1851a",
+        "hash": "27512daf",
+        "encoded": "-%20%60BUILD.md%60%20-%20This%20file",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "e1851a",
+        "hash": "5467eb39",
+        "encoded": "####%20Test%20Files",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "e1851a",
+        "hash": "3c1a1afc",
+        "encoded": "-%20%60__tests__/%60%20-%20All%20test%20files",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "e1851a",
+        "hash": "394bb1c5",
+        "encoded": "-%20%60*.test.js%60%20-%20Test%20scripts",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "e1851a",
+        "hash": "2b91d447",
+        "encoded": "-%20%60test-page.html%60%20-%20Manual%20testing%20page",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "e1851a",
+        "hash": "10955081",
+        "encoded": "####%20Generated%20Files",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "e1851a",
+        "hash": "7a890aa9",
+        "encoded": "-%20%60node_modules/%60%20-%20Dependencies",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "e1851a",
+        "hash": "4e8e7fd6",
+        "encoded": "-%20%60coverage/%60%20-%20Test%20coverage%20reports",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "e1851a",
+        "hash": "47cb7475",
+        "encoded": "##%20Build%20Commands",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "e1851a",
+        "hash": "85af23e4",
+        "encoded": "###%20Build",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "e1851a",
+        "hash": "d17a2743",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "e1851a",
+        "hash": "169f780a",
+        "encoded": "npm%20run%20build",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "e1851a",
+        "hash": "9bea3682",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "e1851a",
+        "hash": "fdb726e0",
+        "encoded": "Creates%20the%20%60dist/%60%20folder%20with%20production-ready%20files.",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "e1851a",
+        "hash": "44bac9b0",
+        "encoded": "**Output:**",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "e1851a",
+        "hash": "45f8512d",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "e1851a",
+        "hash": "50830fef",
+        "encoded": "%F0%9F%9A%80%20Building%20AI-Alt%20Text%20Extension...",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "e1851a",
+        "hash": "74199d78",
+        "encoded": "%E2%9C%93%20Removed%20existing%20directory:%20dist",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "e1851a",
+        "hash": "c222cde0",
+        "encoded": "%E2%9C%93%20Created%20directory:%20dist",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "e1851a",
+        "hash": "aef13052",
+        "encoded": "%F0%9F%93%A6%20Copying%20files:",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "e1851a",
+        "hash": "f796d595",
+        "encoded": "%E2%9C%93%20manifest.json%20%E2%86%92%20dist/manifest.json%20(0.XX%20KB)",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "e1851a",
+        "hash": "ea2cddb4",
+        "encoded": "%E2%9C%93%20background.js%20%E2%86%92%20dist/background.js%20(0.XX%20KB)",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "e1851a",
+        "hash": "ae430148",
+        "encoded": "%E2%9C%93%20content.js%20%E2%86%92%20dist/content.js%20(X.XX%20KB)",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "e1851a",
+        "hash": "907c732a",
+        "encoded": "%E2%9C%93%20styles.css%20%E2%86%92%20dist/styles.css%20(X.XX%20KB)",
+        "prevChunkIds": []
+      },
+      "82": {
+        "chunkId": "e1851a",
+        "hash": "77bdade3",
+        "encoded": "%F0%9F%93%81%20Copying%20directories:",
+        "prevChunkIds": []
+      },
+      "83": {
+        "chunkId": "e1851a",
+        "hash": "c98b449d",
+        "encoded": "Copying%20images/...",
+        "prevChunkIds": []
+      },
+      "84": {
+        "chunkId": "e1851a",
+        "hash": "5effdad3",
+        "encoded": "%E2%9C%93%20images/ai-alt-icon.svg%20%E2%86%92%20dist/images/ai-alt-icon.svg%20(X.XX%20KB)",
+        "prevChunkIds": []
+      },
+      "86": {
+        "chunkId": "e1851a",
+        "hash": "f97504af",
+        "encoded": "%E2%9C%85%20Build%20completed%20successfully!",
+        "prevChunkIds": []
+      },
+      "87": {
+        "chunkId": "e1851a",
+        "hash": "6abefd2f",
+        "encoded": "%F0%9F%93%8A%20Total%20size:%20XX.XX%20KB",
+        "prevChunkIds": []
+      },
+      "88": {
+        "chunkId": "e1851a",
+        "hash": "6a28d8c1",
+        "encoded": "%F0%9F%93%82%20Distribution%20files%20are%20in:%20./dist/",
+        "prevChunkIds": []
+      },
+      "89": {
+        "chunkId": "e1851a",
+        "hash": "f9db9798",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "91": {
+        "chunkId": "e1851a",
+        "hash": "ad9247f3",
+        "encoded": "###%20Clean",
+        "prevChunkIds": []
+      },
+      "93": {
+        "chunkId": "e1851a",
+        "hash": "d8cb440d",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "94": {
+        "chunkId": "e1851a",
+        "hash": "92afed9f",
+        "encoded": "npm%20run%20clean",
+        "prevChunkIds": []
+      },
+      "95": {
+        "chunkId": "e1851a",
+        "hash": "ea211396",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "97": {
+        "chunkId": "e1851a",
+        "hash": "a427467b",
+        "encoded": "Removes%20the%20%60dist/%60%20folder.",
+        "prevChunkIds": []
+      },
+      "99": {
+        "chunkId": "e1851a",
+        "hash": "ba9cad8b",
+        "encoded": "###%20Rebuild",
+        "prevChunkIds": []
+      },
+      "101": {
+        "chunkId": "e1851a",
+        "hash": "b3afdaff",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "102": {
+        "chunkId": "e1851a",
+        "hash": "186c5762",
+        "encoded": "npm%20run%20rebuild",
+        "prevChunkIds": []
+      },
+      "103": {
+        "chunkId": "e1851a",
+        "hash": "d273f303",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "105": {
+        "chunkId": "e1851a",
+        "hash": "13fb23df",
+        "encoded": "Cleans%20and%20rebuilds%20in%20one%20command.%20Equivalent%20to:",
+        "prevChunkIds": []
+      },
+      "106": {
+        "chunkId": "e1851a",
+        "hash": "cdac4669",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "107": {
+        "chunkId": "e1851a",
+        "hash": "fb1a8817",
+        "encoded": "npm%20run%20clean%20&&%20npm%20run%20build",
+        "prevChunkIds": []
+      },
+      "108": {
+        "chunkId": "e1851a",
+        "hash": "e52b4fee",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "110": {
+        "chunkId": "e1851a",
+        "hash": "57ecd16f",
+        "encoded": "##%20Loading%20the%20Built%20Extension",
+        "prevChunkIds": []
+      },
+      "112": {
+        "chunkId": "e1851a",
+        "hash": "014c01cf",
+        "encoded": "###%20In%20Chrome",
+        "prevChunkIds": []
+      },
+      "114": {
+        "chunkId": "e1851a",
+        "hash": "6275b37b",
+        "encoded": "1.%20Build%20the%20extension:",
+        "prevChunkIds": []
+      },
+      "115": {
+        "chunkId": "e1851a",
+        "hash": "b7c2f408",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "116": {
+        "chunkId": "e1851a",
+        "hash": "1cc07000",
+        "encoded": "npm%20run%20build",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "e1851a",
+        "hash": "ffa9b2a8",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "e1851a",
+        "hash": "e497a188",
+        "encoded": "2.%20Open%20Chrome%20and%20navigate%20to:",
+        "prevChunkIds": []
+      },
+      "120": {
+        "chunkId": "e1851a",
+        "hash": "3cd78f49",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "121": {
+        "chunkId": "e1851a",
+        "hash": "128ee86c",
+        "encoded": "chrome://extensions",
+        "prevChunkIds": []
+      },
+      "122": {
+        "chunkId": "e1851a",
+        "hash": "a04f6dd5",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "e1851a",
+        "hash": "9a42c9d1",
+        "encoded": "3.%20Enable%20**Developer%20mode**%20(toggle%20in%20top-right)",
+        "prevChunkIds": []
+      },
+      "126": {
+        "chunkId": "e1851a",
+        "hash": "8b19a55b",
+        "encoded": "4.%20Click%20**Load%20unpacked**",
+        "prevChunkIds": []
+      },
+      "128": {
+        "chunkId": "e1851a",
+        "hash": "5e3df20c",
+        "encoded": "5.%20Navigate%20to%20and%20select%20the%20%60dist/%60%20folder",
+        "prevChunkIds": []
+      },
+      "130": {
+        "chunkId": "e1851a",
+        "hash": "0765fc9b",
+        "encoded": "6.%20The%20extension%20should%20now%20be%20loaded%20and%20ready%20to%20use",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "e1851a",
+        "hash": "fecf3e1c",
+        "encoded": "###%20Verify%20Installation",
+        "prevChunkIds": []
+      },
+      "134": {
+        "chunkId": "e1851a",
+        "hash": "7b68c295",
+        "encoded": "-%20Extension%20icon%20should%20appear%20in%20the%20toolbar",
+        "prevChunkIds": []
+      },
+      "135": {
+        "chunkId": "e1851a",
+        "hash": "1596b307",
+        "encoded": "-%20Click%20the%20icon%20on%20any%20webpage%20with%20images",
+        "prevChunkIds": []
+      },
+      "136": {
+        "chunkId": "e1851a",
+        "hash": "2c2a39eb",
+        "encoded": "-%20Info%20buttons%20should%20appear%20on%20eligible%20images",
+        "prevChunkIds": []
+      },
+      "138": {
+        "chunkId": "e1851a",
+        "hash": "15196e25",
+        "encoded": "##%20Distribution%20Size",
+        "prevChunkIds": []
+      },
+      "140": {
+        "chunkId": "e1851a",
+        "hash": "fa31b1aa",
+        "encoded": "The%20built%20extension%20is%20typically:",
+        "prevChunkIds": []
+      },
+      "141": {
+        "chunkId": "e1851a",
+        "hash": "b95e6ca1",
+        "encoded": "-%20**Total%20size**:%20~10-15%20KB%20(uncompressed)",
+        "prevChunkIds": []
+      },
+      "142": {
+        "chunkId": "e1851a",
+        "hash": "5a5a980c",
+        "encoded": "-%20**Files**:%204%20JavaScript/CSS%20files%20+%201%20JSON%20+%20images",
+        "prevChunkIds": []
+      },
+      "144": {
+        "chunkId": "e1851a",
+        "hash": "137a15cb",
+        "encoded": "###%20Size%20Breakdown%20(Approximate)",
+        "prevChunkIds": []
+      },
+      "146": {
+        "chunkId": "e1851a",
+        "hash": "25b177e9",
+        "encoded": "%7C%20File%20%7C%20Size%20%7C",
+        "prevChunkIds": []
+      },
+      "147": {
+        "chunkId": "e1851a",
+        "hash": "79670cc0",
+        "encoded": "%7C------%7C------%7C",
+        "prevChunkIds": []
+      },
+      "148": {
+        "chunkId": "e1851a",
+        "hash": "5f654e83",
+        "encoded": "%7C%20manifest.json%20%7C%20~0.5%20KB%20%7C",
+        "prevChunkIds": []
+      },
+      "149": {
+        "chunkId": "e1851a",
+        "hash": "5b6fe823",
+        "encoded": "%7C%20background.js%20%7C%20~0.6%20KB%20%7C",
+        "prevChunkIds": []
+      },
+      "150": {
+        "chunkId": "e1851a",
+        "hash": "89270cc2",
+        "encoded": "%7C%20content.js%20%7C%20~5-7%20KB%20%7C",
+        "prevChunkIds": []
+      },
+      "151": {
+        "chunkId": "e1851a",
+        "hash": "1b52dc92",
+        "encoded": "%7C%20styles.css%20%7C%20~2-3%20KB%20%7C",
+        "prevChunkIds": []
+      },
+      "152": {
+        "chunkId": "e1851a",
+        "hash": "7eb1c744",
+        "encoded": "%7C%20images/ai-alt-icon.svg%20%7C%20~1-2%20KB%20%7C",
+        "prevChunkIds": []
+      },
+      "153": {
+        "chunkId": "e1851a",
+        "hash": "6dc2b58a",
+        "encoded": "%7C%20**Total**%20%7C%20**~10-15%20KB**%20%7C",
+        "prevChunkIds": []
+      },
+      "155": {
+        "chunkId": "e1851a",
+        "hash": "399f0287",
+        "encoded": "##%20Packaging%20for%20Chrome%20Web%20Store",
+        "prevChunkIds": []
+      },
+      "157": {
+        "chunkId": "e1851a",
+        "hash": "1cb1e6fa",
+        "encoded": "###%20Creating%20a%20ZIP%20Archive",
+        "prevChunkIds": []
+      },
+      "159": {
+        "chunkId": "e1851a",
+        "hash": "a02ffc54",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "160": {
+        "chunkId": "e1851a",
+        "hash": "93806276",
+        "encoded": "#%20Build%20the%20extension",
+        "prevChunkIds": []
+      },
+      "161": {
+        "chunkId": "e1851a",
+        "hash": "fcc04a07",
+        "encoded": "npm%20run%20build",
+        "prevChunkIds": []
+      },
+      "163": {
+        "chunkId": "e1851a",
+        "hash": "00b3c6e3",
+        "encoded": "#%20Create%20ZIP%20archive%20(macOS/Linux)",
+        "prevChunkIds": []
+      },
+      "164": {
+        "chunkId": "e1851a",
+        "hash": "20f182b1",
+        "encoded": "cd%20dist",
+        "prevChunkIds": []
+      },
+      "165": {
+        "chunkId": "e1851a",
+        "hash": "9606b3c6",
+        "encoded": "zip%20-r%20../ai-alt-text-v1.0.0.zip%20.",
+        "prevChunkIds": []
+      },
+      "166": {
+        "chunkId": "e1851a",
+        "hash": "e3f324b9",
+        "encoded": "cd%20..",
+        "prevChunkIds": []
+      },
+      "168": {
+        "chunkId": "e1851a",
+        "hash": "17c6b240",
+        "encoded": "#%20Or%20use%207-Zip%20on%20Windows",
+        "prevChunkIds": []
+      },
+      "169": {
+        "chunkId": "e1851a",
+        "hash": "9dea058e",
+        "encoded": "#%207z%20a%20ai-alt-text-v1.0.0.zip%20./dist/*",
+        "prevChunkIds": []
+      },
+      "170": {
+        "chunkId": "e1851a",
+        "hash": "2c35a052",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "172": {
+        "chunkId": "e1851a",
+        "hash": "87e002d3",
+        "encoded": "###%20Publishing%20Checklist",
+        "prevChunkIds": []
+      },
+      "174": {
+        "chunkId": "e1851a",
+        "hash": "3ca45d7c",
+        "encoded": "-%20%5B%20%5D%20Update%20version%20number%20in%20%60manifest.json%60",
+        "prevChunkIds": []
+      },
+      "175": {
+        "chunkId": "e1851a",
+        "hash": "fb4c7746",
+        "encoded": "-%20%5B%20%5D%20Run%20all%20tests:%20%60npm%20test%60",
+        "prevChunkIds": []
+      },
+      "176": {
+        "chunkId": "e1851a",
+        "hash": "d304e392",
+        "encoded": "-%20%5B%20%5D%20Build%20extension:%20%60npm%20run%20build%60",
+        "prevChunkIds": []
+      },
+      "177": {
+        "chunkId": "e1851a",
+        "hash": "adb8d800",
+        "encoded": "-%20%5B%20%5D%20Test%20the%20built%20extension%20manually",
+        "prevChunkIds": []
+      },
+      "178": {
+        "chunkId": "e1851a",
+        "hash": "045f065f",
+        "encoded": "-%20%5B%20%5D%20Create%20ZIP%20archive%20from%20%60dist/%60%20folder",
+        "prevChunkIds": []
+      },
+      "179": {
+        "chunkId": "e1851a",
+        "hash": "d2f1371e",
+        "encoded": "-%20%5B%20%5D%20Upload%20to%20Chrome%20Web%20Store%20Developer%20Dashboard",
+        "prevChunkIds": []
+      },
+      "180": {
+        "chunkId": "e1851a",
+        "hash": "a3c3d02e",
+        "encoded": "-%20%5B%20%5D%20Fill%20in%20store%20listing%20details",
+        "prevChunkIds": []
+      },
+      "181": {
+        "chunkId": "e1851a",
+        "hash": "1e09772c",
+        "encoded": "-%20%5B%20%5D%20Submit%20for%20review",
+        "prevChunkIds": []
+      },
+      "183": {
+        "chunkId": "e1851a",
+        "hash": "b0df848d",
+        "encoded": "##%20Troubleshooting",
+        "prevChunkIds": []
+      },
+      "185": {
+        "chunkId": "e1851a",
+        "hash": "68de6ea8",
+        "encoded": "###%20Build%20Fails%20with%20%22File%20not%20found%22",
+        "prevChunkIds": []
+      },
+      "187": {
+        "chunkId": "e1851a",
+        "hash": "4cb2fb11",
+        "encoded": "**Problem**:%20Build%20script%20can't%20find%20required%20files.",
+        "prevChunkIds": []
+      },
+      "189": {
+        "chunkId": "e1851a",
+        "hash": "d8aee126",
+        "encoded": "**Solution**:%20Ensure%20you're%20running%20the%20build%20from%20the%20project%20root%20directory:",
+        "prevChunkIds": []
+      },
+      "190": {
+        "chunkId": "e1851a",
+        "hash": "24739de3",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "191": {
+        "chunkId": "e1851a",
+        "hash": "582e6802",
+        "encoded": "cd%20/path/to/ai-alt-text",
+        "prevChunkIds": []
+      },
+      "192": {
+        "chunkId": "e1851a",
+        "hash": "25a9d827",
+        "encoded": "npm%20run%20build",
+        "prevChunkIds": []
+      },
+      "193": {
+        "chunkId": "e1851a",
+        "hash": "174c1906",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "195": {
+        "chunkId": "e1851a",
+        "hash": "d620661b",
+        "encoded": "###%20dist/%20Folder%20is%20Empty",
+        "prevChunkIds": []
+      },
+      "197": {
+        "chunkId": "e1851a",
+        "hash": "6b8d2dbc",
+        "encoded": "**Problem**:%20No%20files%20were%20copied%20to%20%60dist/%60.",
+        "prevChunkIds": []
+      },
+      "199": {
+        "chunkId": "e1851a",
+        "hash": "899f0661",
+        "encoded": "**Solution**:%20Check%20that%20all%20required%20files%20exist%20in%20the%20root%20directory:",
+        "prevChunkIds": []
+      },
+      "200": {
+        "chunkId": "e1851a",
+        "hash": "3b5bd9db",
+        "encoded": "-%20%60manifest.json%60",
+        "prevChunkIds": []
+      },
+      "201": {
+        "chunkId": "e1851a",
+        "hash": "ae10e7e9",
+        "encoded": "-%20%60background.js%60",
+        "prevChunkIds": []
+      },
+      "202": {
+        "chunkId": "e1851a",
+        "hash": "1af92bea",
+        "encoded": "-%20%60content.js%60",
+        "prevChunkIds": []
+      },
+      "203": {
+        "chunkId": "e1851a",
+        "hash": "a1db0c52",
+        "encoded": "-%20%60styles.css%60",
+        "prevChunkIds": []
+      },
+      "204": {
+        "chunkId": "e1851a",
+        "hash": "65b07d3d",
+        "encoded": "-%20%60images/ai-alt-icon.svg%60",
+        "prevChunkIds": []
+      },
+      "206": {
+        "chunkId": "e1851a",
+        "hash": "4006a77a",
+        "encoded": "###%20Permission%20Denied%20Error",
+        "prevChunkIds": []
+      },
+      "208": {
+        "chunkId": "e1851a",
+        "hash": "2a285ccd",
+        "encoded": "**Problem**:%20Can't%20write%20to%20%60dist/%60%20folder.",
+        "prevChunkIds": []
+      },
+      "210": {
+        "chunkId": "e1851a",
+        "hash": "cb11056c",
+        "encoded": "**Solution**:",
+        "prevChunkIds": []
+      },
+      "211": {
+        "chunkId": "e1851a",
+        "hash": "101a9bd7",
+        "encoded": "1.%20Check%20folder%20permissions",
+        "prevChunkIds": []
+      },
+      "212": {
+        "chunkId": "e1851a",
+        "hash": "680a27e9",
+        "encoded": "2.%20Try%20running%20with%20appropriate%20permissions",
+        "prevChunkIds": []
+      },
+      "213": {
+        "chunkId": "e1851a",
+        "hash": "e6a2685f",
+        "encoded": "3.%20Manually%20delete%20%60dist/%60%20folder%20and%20try%20again",
+        "prevChunkIds": []
+      },
+      "215": {
+        "chunkId": "e1851a",
+        "hash": "da216648",
+        "encoded": "###%20Extension%20Won't%20Load%20in%20Chrome",
+        "prevChunkIds": []
+      },
+      "217": {
+        "chunkId": "e1851a",
+        "hash": "7b677a97",
+        "encoded": "**Problem**:%20Chrome%20rejects%20the%20extension%20when%20loading%20from%20%60dist/%60.",
+        "prevChunkIds": []
+      },
+      "219": {
+        "chunkId": "e1851a",
+        "hash": "7744962c",
+        "encoded": "**Solution**:",
+        "prevChunkIds": []
+      },
+      "220": {
+        "chunkId": "e1851a",
+        "hash": "ef44617c",
+        "encoded": "1.%20Verify%20%60manifest.json%60%20is%20valid%20JSON",
+        "prevChunkIds": []
+      },
+      "221": {
+        "chunkId": "e1851a",
+        "hash": "918e0db4",
+        "encoded": "2.%20Check%20Chrome%20DevTools%20console%20for%20errors",
+        "prevChunkIds": []
+      },
+      "222": {
+        "chunkId": "e1851a",
+        "hash": "1d765b97",
+        "encoded": "3.%20Ensure%20all%20file%20paths%20in%20manifest%20are%20correct",
+        "prevChunkIds": []
+      },
+      "223": {
+        "chunkId": "e1851a",
+        "hash": "fe87e84b",
+        "encoded": "4.%20Verify%20%60images/ai-alt-icon.svg%60%20exists",
+        "prevChunkIds": []
+      },
+      "225": {
+        "chunkId": "e1851a",
+        "hash": "478da1a7",
+        "encoded": "###%20Old%20Files%20Remain%20in%20dist/",
+        "prevChunkIds": []
+      },
+      "227": {
+        "chunkId": "e1851a",
+        "hash": "b72e97db",
+        "encoded": "**Problem**:%20Deleted%20source%20files%20still%20appear%20in%20%60dist/%60.",
+        "prevChunkIds": []
+      },
+      "229": {
+        "chunkId": "e1851a",
+        "hash": "ffa04377",
+        "encoded": "**Solution**:%20The%20build%20script%20always%20creates%20a%20fresh%20%60dist/%60%20folder.%20If%20you%20see%20old%20files:",
+        "prevChunkIds": []
+      },
+      "230": {
+        "chunkId": "e1851a",
+        "hash": "3ae2a9b2",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "231": {
+        "chunkId": "e1851a",
+        "hash": "b6ee9a5b",
+        "encoded": "npm%20run%20clean",
+        "prevChunkIds": []
+      },
+      "232": {
+        "chunkId": "e1851a",
+        "hash": "742425fb",
+        "encoded": "npm%20run%20build",
+        "prevChunkIds": []
+      },
+      "233": {
+        "chunkId": "e1851a",
+        "hash": "9f4a7485",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "235": {
+        "chunkId": "e1851a",
+        "hash": "8d378029",
+        "encoded": "##%20Advanced%20Build%20Options",
+        "prevChunkIds": []
+      },
+      "237": {
+        "chunkId": "e1851a",
+        "hash": "9ea0a770",
+        "encoded": "###%20Customizing%20the%20Build",
+        "prevChunkIds": []
+      },
+      "239": {
+        "chunkId": "e1851a",
+        "hash": "a2fb0738",
+        "encoded": "Edit%20%60build.js%60%20to%20customize%20what%20gets%20included:",
+        "prevChunkIds": []
+      },
+      "241": {
+        "chunkId": "e1851a",
+        "hash": "7e8de4e3",
+        "encoded": "%60%60%60javascript",
+        "prevChunkIds": []
+      },
+      "242": {
+        "chunkId": "e1851a",
+        "hash": "610ce98e",
+        "encoded": "//%20Add%20more%20files",
+        "prevChunkIds": []
+      },
+      "243": {
+        "chunkId": "e1851a",
+        "hash": "0edccf55",
+        "encoded": "const%20INCLUDE_FILES%20=%20%5B",
+        "prevChunkIds": []
+      },
+      "244": {
+        "chunkId": "e1851a",
+        "hash": "a4422028",
+        "encoded": "'manifest.json',",
+        "prevChunkIds": []
+      },
+      "245": {
+        "chunkId": "e1851a",
+        "hash": "0c6523da",
+        "encoded": "'background.js',",
+        "prevChunkIds": []
+      },
+      "246": {
+        "chunkId": "e1851a",
+        "hash": "d413f093",
+        "encoded": "'content.js',",
+        "prevChunkIds": []
+      },
+      "247": {
+        "chunkId": "e1851a",
+        "hash": "2ac63f3c",
+        "encoded": "'styles.css',",
+        "prevChunkIds": []
+      },
+      "248": {
+        "chunkId": "e1851a",
+        "hash": "dc30337a",
+        "encoded": "'your-new-file.js'%20%20//%20Add%20here",
+        "prevChunkIds": []
+      },
+      "249": {
+        "chunkId": "e1851a",
+        "hash": "ff4049c5",
+        "encoded": "%5D;",
+        "prevChunkIds": []
+      },
+      "251": {
+        "chunkId": "e1851a",
+        "hash": "f465a9ef",
+        "encoded": "//%20Add%20more%20directories",
+        "prevChunkIds": []
+      },
+      "252": {
+        "chunkId": "e1851a",
+        "hash": "6d9c2f37",
+        "encoded": "const%20INCLUDE_DIRS%20=%20%5B",
+        "prevChunkIds": []
+      },
+      "253": {
+        "chunkId": "e1851a",
+        "hash": "464c72e8",
+        "encoded": "'images',",
+        "prevChunkIds": []
+      },
+      "254": {
+        "chunkId": "e1851a",
+        "hash": "7097de7f",
+        "encoded": "'fonts'%20%20//%20Add%20here",
+        "prevChunkIds": []
+      },
+      "255": {
+        "chunkId": "e1851a",
+        "hash": "4fe32b43",
+        "encoded": "%5D;",
+        "prevChunkIds": []
+      },
+      "256": {
+        "chunkId": "e1851a",
+        "hash": "feef7e29",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "258": {
+        "chunkId": "e1851a",
+        "hash": "4ad7c20e",
+        "encoded": "###%20Creating%20Multiple%20Build%20Variants",
+        "prevChunkIds": []
+      },
+      "260": {
+        "chunkId": "e1851a",
+        "hash": "d9aa91d3",
+        "encoded": "You%20can%20create%20different%20build%20configurations:",
+        "prevChunkIds": []
+      },
+      "262": {
+        "chunkId": "e1851a",
+        "hash": "01213466",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "263": {
+        "chunkId": "e1851a",
+        "hash": "2a6d9ff7",
+        "encoded": "#%20Development%20build%20(with%20source%20maps,%20etc.)",
+        "prevChunkIds": []
+      },
+      "264": {
+        "chunkId": "e1851a",
+        "hash": "195fd2f4",
+        "encoded": "npm%20run%20build:dev",
+        "prevChunkIds": []
+      },
+      "266": {
+        "chunkId": "e1851a",
+        "hash": "6f6ee7ef",
+        "encoded": "#%20Production%20build%20(minified,%20optimized)",
+        "prevChunkIds": []
+      },
+      "267": {
+        "chunkId": "e1851a",
+        "hash": "0f25eac1",
+        "encoded": "npm%20run%20build:prod",
+        "prevChunkIds": []
+      },
+      "268": {
+        "chunkId": "e1851a",
+        "hash": "86fe91be",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "270": {
+        "chunkId": "e1851a",
+        "hash": "63623ef0",
+        "encoded": "*(Not%20implemented%20yet%20-%20future%20enhancement)*",
+        "prevChunkIds": []
+      },
+      "272": {
+        "chunkId": "e1851a",
+        "hash": "7a6ffa6b",
+        "encoded": "##%20Automated%20Build%20Testing",
+        "prevChunkIds": []
+      },
+      "274": {
+        "chunkId": "e1851a",
+        "hash": "4da7324d",
+        "encoded": "The%20build%20script%20has%20its%20own%20unit%20tests:",
+        "prevChunkIds": []
+      },
+      "276": {
+        "chunkId": "e1851a",
+        "hash": "5e6d8344",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "277": {
+        "chunkId": "e1851a",
+        "hash": "8d85c8d7",
+        "encoded": "#%20Run%20build%20tests",
+        "prevChunkIds": []
+      },
+      "278": {
+        "chunkId": "e1851a",
+        "hash": "087066d7",
+        "encoded": "npm%20test%20--%20build.test.js",
+        "prevChunkIds": []
+      },
+      "279": {
+        "chunkId": "e1851a",
+        "hash": "bbe409e4",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "281": {
+        "chunkId": "e1851a",
+        "hash": "12fcaaf5",
+        "encoded": "Tests%20verify:",
+        "prevChunkIds": []
+      },
+      "282": {
+        "chunkId": "e1851a",
+        "hash": "40961ce8",
+        "encoded": "-%20%E2%9C%85%20Required%20files%20list%20is%20correct",
+        "prevChunkIds": []
+      },
+      "283": {
+        "chunkId": "e1851a",
+        "hash": "1dacb4ee",
+        "encoded": "-%20%E2%9C%85%20Excluded%20files%20are%20not%20included",
+        "prevChunkIds": []
+      },
+      "284": {
+        "chunkId": "e1851a",
+        "hash": "b8d6521e",
+        "encoded": "-%20%E2%9C%85%20File%20copy%20operations%20work",
+        "prevChunkIds": []
+      },
+      "285": {
+        "chunkId": "e1851a",
+        "hash": "609e6f2b",
+        "encoded": "-%20%E2%9C%85%20Directory%20copying%20is%20recursive",
+        "prevChunkIds": []
+      },
+      "286": {
+        "chunkId": "e1851a",
+        "hash": "828fcfcb",
+        "encoded": "-%20%E2%9C%85%20npm%20scripts%20are%20properly%20defined",
+        "prevChunkIds": []
+      },
+      "288": {
+        "chunkId": "e1851a",
+        "hash": "39218565",
+        "encoded": "##%20Continuous%20Integration",
+        "prevChunkIds": []
+      },
+      "290": {
+        "chunkId": "e1851a",
+        "hash": "a6e56b1d",
+        "encoded": "###%20GitHub%20Actions%20Example",
+        "prevChunkIds": []
+      },
+      "292": {
+        "chunkId": "e1851a",
+        "hash": "d80ae841",
+        "encoded": "%60%60%60yaml",
+        "prevChunkIds": []
+      },
+      "293": {
+        "chunkId": "e1851a",
+        "hash": "6cd95b3d",
+        "encoded": "name:%20Build%20and%20Test",
+        "prevChunkIds": []
+      },
+      "295": {
+        "chunkId": "e1851a",
+        "hash": "ffe3ce0e",
+        "encoded": "on:%20%5Bpush,%20pull_request%5D",
+        "prevChunkIds": []
+      },
+      "297": {
+        "chunkId": "e1851a",
+        "hash": "3f9f3d64",
+        "encoded": "jobs:",
+        "prevChunkIds": []
+      },
+      "298": {
+        "chunkId": "e1851a",
+        "hash": "030610f7",
+        "encoded": "build:",
+        "prevChunkIds": []
+      },
+      "299": {
+        "chunkId": "e1851a",
+        "hash": "cb0bea63",
+        "encoded": "runs-on:%20ubuntu-latest",
+        "prevChunkIds": []
+      },
+      "300": {
+        "chunkId": "e1851a",
+        "hash": "64368fe5",
+        "encoded": "steps:",
+        "prevChunkIds": []
+      },
+      "301": {
+        "chunkId": "e1851a",
+        "hash": "bc93c2b7",
+        "encoded": "-%20uses:%20actions/checkout@v3",
+        "prevChunkIds": []
+      },
+      "302": {
+        "chunkId": "e1851a",
+        "hash": "9c8f8ab7",
+        "encoded": "-%20uses:%20actions/setup-node@v3",
+        "prevChunkIds": []
+      },
+      "303": {
+        "chunkId": "e1851a",
+        "hash": "93b9ebf2",
+        "encoded": "with:",
+        "prevChunkIds": []
+      },
+      "304": {
+        "chunkId": "e1851a",
+        "hash": "524a6689",
+        "encoded": "node-version:%20'18'",
+        "prevChunkIds": []
+      },
+      "305": {
+        "chunkId": "e1851a",
+        "hash": "315c2342",
+        "encoded": "-%20run:%20npm%20install",
+        "prevChunkIds": []
+      },
+      "306": {
+        "chunkId": "e1851a",
+        "hash": "1d72ccac",
+        "encoded": "-%20run:%20npm%20test",
+        "prevChunkIds": []
+      },
+      "307": {
+        "chunkId": "e1851a",
+        "hash": "815a721d",
+        "encoded": "-%20run:%20npm%20run%20build",
+        "prevChunkIds": []
+      },
+      "308": {
+        "chunkId": "e1851a",
+        "hash": "990dc4c7",
+        "encoded": "-%20uses:%20actions/upload-artifact@v3",
+        "prevChunkIds": []
+      },
+      "309": {
+        "chunkId": "e1851a",
+        "hash": "3e5dd1c0",
+        "encoded": "with:",
+        "prevChunkIds": []
+      },
+      "310": {
+        "chunkId": "e1851a",
+        "hash": "9dbdb876",
+        "encoded": "name:%20extension-dist",
+        "prevChunkIds": []
+      },
+      "311": {
+        "chunkId": "e1851a",
+        "hash": "7d00236b",
+        "encoded": "path:%20dist/",
+        "prevChunkIds": []
+      },
+      "312": {
+        "chunkId": "e1851a",
+        "hash": "05a8717e",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "314": {
+        "chunkId": "e1851a",
+        "hash": "e9216442",
+        "encoded": "##%20Best%20Practices",
+        "prevChunkIds": []
+      },
+      "316": {
+        "chunkId": "e1851a",
+        "hash": "aac7a001",
+        "encoded": "1.%20**Always%20test%20before%20building**",
+        "prevChunkIds": []
+      },
+      "317": {
+        "chunkId": "e1851a",
+        "hash": "1fbc27ff",
+        "encoded": "%60%60%60bash",
+        "prevChunkIds": []
+      },
+      "318": {
+        "chunkId": "e1851a",
+        "hash": "79afb777",
+        "encoded": "npm%20test%20&&%20npm%20run%20build",
+        "prevChunkIds": []
+      },
+      "319": {
+        "chunkId": "e1851a",
+        "hash": "d82b9d3f",
+        "encoded": "%60%60%60",
+        "prevChunkIds": []
+      },
+      "321": {
+        "chunkId": "e1851a",
+        "hash": "6345bf4b",
+        "encoded": "2.%20**Verify%20the%20build%20manually**",
+        "prevChunkIds": []
+      },
+      "322": {
+        "chunkId": "e1851a",
+        "hash": "81c73563",
+        "encoded": "-%20Load%20the%20%60dist/%60%20folder%20in%20Chrome",
+        "prevChunkIds": []
+      },
+      "323": {
+        "chunkId": "e1851a",
+        "hash": "b2d56e49",
+        "encoded": "-%20Test%20core%20functionality",
+        "prevChunkIds": []
+      },
+      "324": {
+        "chunkId": "e1851a",
+        "hash": "d1e6d8cd",
+        "encoded": "-%20Check%20file%20sizes",
+        "prevChunkIds": []
+      },
+      "326": {
+        "chunkId": "e1851a",
+        "hash": "3e27db45",
+        "encoded": "3.%20**Version%20your%20releases**",
+        "prevChunkIds": []
+      },
+      "327": {
+        "chunkId": "e1851a",
+        "hash": "c82fef02",
+        "encoded": "-%20Update%20%60version%60%20in%20%60manifest.json%60",
+        "prevChunkIds": []
+      },
+      "328": {
+        "chunkId": "e1851a",
+        "hash": "ad81afc2",
+        "encoded": "-%20Tag%20releases%20in%20Git",
+        "prevChunkIds": []
+      },
+      "329": {
+        "chunkId": "e1851a",
+        "hash": "b0b943a2",
+        "encoded": "-%20Keep%20a%20changelog",
+        "prevChunkIds": []
+      },
+      "331": {
+        "chunkId": "e1851a",
+        "hash": "ca5315fb",
+        "encoded": "4.%20**Keep%20dist/%20out%20of%20version%20control**",
+        "prevChunkIds": []
+      },
+      "332": {
+        "chunkId": "e1851a",
+        "hash": "2b19e522",
+        "encoded": "-%20Already%20in%20%60.gitignore%60",
+        "prevChunkIds": []
+      },
+      "333": {
+        "chunkId": "e1851a",
+        "hash": "d95cef06",
+        "encoded": "-%20Build%20on-demand%20or%20in%20CI/CD",
+        "prevChunkIds": []
+      },
+      "335": {
+        "chunkId": "e1851a",
+        "hash": "74ae4993",
+        "encoded": "5.%20**Document%20any%20build%20changes**",
+        "prevChunkIds": []
+      },
+      "336": {
+        "chunkId": "e1851a",
+        "hash": "3140c60e",
+        "encoded": "-%20Update%20this%20file%20if%20you%20modify%20%60build.js%60",
+        "prevChunkIds": []
+      },
+      "337": {
+        "chunkId": "e1851a",
+        "hash": "b2ce68e0",
+        "encoded": "-%20Note%20breaking%20changes%20in%20release%20notes",
+        "prevChunkIds": []
+      },
+      "339": {
+        "chunkId": "e1851a",
+        "hash": "6025389b",
+        "encoded": "##%20File%20Size%20Optimization",
+        "prevChunkIds": []
+      },
+      "341": {
+        "chunkId": "e1851a",
+        "hash": "9b32557b",
+        "encoded": "###%20Current%20Approach",
+        "prevChunkIds": []
+      },
+      "342": {
+        "chunkId": "e1851a",
+        "hash": "d8de637c",
+        "encoded": "-%20No%20minification%20(for%20readability%20and%20debugging)",
+        "prevChunkIds": []
+      },
+      "343": {
+        "chunkId": "e1851a",
+        "hash": "5678b863",
+        "encoded": "-%20No%20bundling%20(not%20needed%20for%20small%20extension)",
+        "prevChunkIds": []
+      },
+      "344": {
+        "chunkId": "e1851a",
+        "hash": "b6559905",
+        "encoded": "-%20Clean%20code%20structure",
+        "prevChunkIds": []
+      },
+      "346": {
+        "chunkId": "e1851a",
+        "hash": "b23c5e18",
+        "encoded": "###%20Future%20Optimizations",
+        "prevChunkIds": []
+      },
+      "347": {
+        "chunkId": "e1851a",
+        "hash": "215e3bb9",
+        "encoded": "-%20Minify%20JavaScript%20and%20CSS",
+        "prevChunkIds": []
+      },
+      "348": {
+        "chunkId": "e1851a",
+        "hash": "069311d2",
+        "encoded": "-%20Remove%20comments%20from%20production%20build",
+        "prevChunkIds": []
+      },
+      "349": {
+        "chunkId": "e1851a",
+        "hash": "e84a0795",
+        "encoded": "-%20Optimize%20SVG%20files",
+        "prevChunkIds": []
+      },
+      "350": {
+        "chunkId": "e1851a",
+        "hash": "c8dad251",
+        "encoded": "-%20Enable%20compression",
+        "prevChunkIds": []
+      },
+      "352": {
+        "chunkId": "e1851a",
+        "hash": "3a327ead",
+        "encoded": "*Estimated%20reduction:%2030-40%25%20with%20minification*",
+        "prevChunkIds": []
+      },
+      "354": {
+        "chunkId": "e1851a",
+        "hash": "ea6a43db",
+        "encoded": "##%20Resources",
+        "prevChunkIds": []
+      },
+      "356": {
+        "chunkId": "e1851a",
+        "hash": "d6fa641c",
+        "encoded": "-%20%5BChrome%20Extension%20Development%20Guide%5D(https://developer.chrome.com/docs/extensions/mv3/)",
+        "prevChunkIds": []
+      },
+      "357": {
+        "chunkId": "e1851a",
+        "hash": "3c9bc3ff",
+        "encoded": "-%20%5BChrome%20Web%20Store%20Publishing%5D(https://developer.chrome.com/docs/webstore/publish/)",
+        "prevChunkIds": []
+      },
+      "358": {
+        "chunkId": "e1851a",
+        "hash": "c32c1490",
+        "encoded": "-%20%5BExtension%20Package%20Format%5D(https://developer.chrome.com/docs/extensions/mv3/linux_hosting/)",
+        "prevChunkIds": []
+      },
+      "360": {
+        "chunkId": "e1851a",
+        "hash": "d47a1988",
+        "encoded": "---",
+        "prevChunkIds": []
+      },
+      "362": {
+        "chunkId": "e1851a",
+        "hash": "cc1e64fb",
+        "encoded": "**Questions%20about%20the%20build%20process?**%20Open%20an%20issue%20on%20the%20repository.",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

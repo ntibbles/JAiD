@@ -1,0 +1,187 @@
+{
+  "manifest.json": {
+    "filename": "manifest.json",
+    "path": "manifest.json",
+    "version": "1.2",
+    "contextFile": "c1324614-context.json",
+    "chunks": {
+      "b4ca46": {
+        "user": "Noel Tibbles",
+        "model": "gpt-4.1",
+        "timestamp": 1790788773,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.4.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "5fa31f09"
+        },
+        "hash": "3cac3072",
+        "messageId": "system_0754d170-bcf3-11f1-975a-8d43d55b2f29",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Noel Tibbles\n- **model**: gpt-4.1\n- **timestamp**: 9/30/2026, 1:19:33 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "b4ca46",
+        "hash": "47009686",
+        "encoded": "%7B",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "b4ca46",
+        "hash": "6a65f34c",
+        "encoded": "%22manifest_version%22:%203,",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "b4ca46",
+        "hash": "c77120db",
+        "encoded": "%22name%22:%20%22AI-Alt%20Text%22,",
+        "prevChunkIds": []
+      },
+      "3": {
+        "chunkId": "b4ca46",
+        "hash": "7f2d2bbd",
+        "encoded": "%22version%22:%20%221.0.0%22,",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "b4ca46",
+        "hash": "3c058595",
+        "encoded": "%22description%22:%20%22Automatically%20generate%20AI-powered%20alt%20text%20for%20images%20on%20web%20pages%20using%20Chrome's%20built-in%20AI%22,",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "b4ca46",
+        "hash": "63987141",
+        "encoded": "%22permissions%22:%20%5B",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "b4ca46",
+        "hash": "a0d6bd37",
+        "encoded": "%22activeTab%22,",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "b4ca46",
+        "hash": "4c31b3b9",
+        "encoded": "%22scripting%22",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "b4ca46",
+        "hash": "818ed0d6",
+        "encoded": "%5D,",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "b4ca46",
+        "hash": "df5a2e23",
+        "encoded": "%22host_permissions%22:%20%5B",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "b4ca46",
+        "hash": "aea73b0b",
+        "encoded": "%22%3Call_urls%3E%22",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "b4ca46",
+        "hash": "fe6dcf4a",
+        "encoded": "%5D,",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "b4ca46",
+        "hash": "c67a872a",
+        "encoded": "%22action%22:%20%7B",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "b4ca46",
+        "hash": "1b60fa0d",
+        "encoded": "%22default_icon%22:%20%7B",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "b4ca46",
+        "hash": "220c9b6d",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "b4ca46",
+        "hash": "b5247304",
+        "encoded": "%22default_title%22:%20%22AI-Alt%20Text%20Generator%22",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "b4ca46",
+        "hash": "0b42153b",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "b4ca46",
+        "hash": "c0a98071",
+        "encoded": "%22background%22:%20%7B",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "b4ca46",
+        "hash": "9da04e44",
+        "encoded": "%22service_worker%22:%20%22background.js%22",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "b4ca46",
+        "hash": "6d666e52",
+        "encoded": "%7D,",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "b4ca46",
+        "hash": "a254feb4",
+        "encoded": "%22icons%22:%20%7B",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "b4ca46",
+        "hash": "2daa1219",
+        "encoded": "%2216%22:%20%22images/ai-alt-icon.svg%22,",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "b4ca46",
+        "hash": "a83e59e0",
+        "encoded": "%2248%22:%20%22images/ai-alt-icon.svg%22,",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "b4ca46",
+        "hash": "f99db67a",
+        "encoded": "%22128%22:%20%22images/ai-alt-icon.svg%22",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "b4ca46",
+        "hash": "a7947416",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "b4ca46",
+        "hash": "46b23985",
+        "encoded": "%7D",
+        "prevChunkIds": []
+      }
+    },
+    "_prevLineCount": 29
+  }
+}

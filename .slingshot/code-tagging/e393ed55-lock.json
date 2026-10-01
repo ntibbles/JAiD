@@ -1,0 +1,150 @@
+{
+  "jest.config.js": {
+    "filename": "jest.config.js",
+    "path": "jest.config.js",
+    "version": "1.2",
+    "contextFile": "e393ed55-context.json",
+    "chunks": {
+      "32c296": {
+        "user": "Noel Tibbles",
+        "model": "gpt-4.1",
+        "timestamp": 1790788849,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "3.4.0",
+        "source": "agent",
+        "type": "agentWriteTool",
+        "extraContext": {
+          "promptMessage": "5fa31f09"
+        },
+        "hash": "a75faad8",
+        "messageId": "system_0754d170-bcf3-11f1-975a-8d43d55b2f29",
+        "codeBlockId": null,
+        "isActive": true,
+        "hoverData": "\n### Slingshot Generated Code\n\n- **user**: Noel Tibbles\n- **model**: gpt-4.1\n- **timestamp**: 9/30/2026, 1:20:49 PM\n- **source**: agent\n- **type**: agentWriteTool\n"
+      }
+    },
+    "lines": {
+      "0": {
+        "chunkId": "32c296",
+        "hash": "48c76aad",
+        "encoded": "/**",
+        "prevChunkIds": []
+      },
+      "1": {
+        "chunkId": "32c296",
+        "hash": "1a69384d",
+        "encoded": "*%20Jest%20configuration%20for%20AI-Alt%20Text%20extension",
+        "prevChunkIds": []
+      },
+      "2": {
+        "chunkId": "32c296",
+        "hash": "fe772869",
+        "encoded": "*/",
+        "prevChunkIds": []
+      },
+      "4": {
+        "chunkId": "32c296",
+        "hash": "80f97d15",
+        "encoded": "module.exports%20=%20%7B",
+        "prevChunkIds": []
+      },
+      "5": {
+        "chunkId": "32c296",
+        "hash": "f3b8ff4b",
+        "encoded": "testEnvironment:%20'jsdom',",
+        "prevChunkIds": []
+      },
+      "6": {
+        "chunkId": "32c296",
+        "hash": "4f23caaf",
+        "encoded": "coverageDirectory:%20'coverage',",
+        "prevChunkIds": []
+      },
+      "7": {
+        "chunkId": "32c296",
+        "hash": "4dbec142",
+        "encoded": "collectCoverageFrom:%20%5B",
+        "prevChunkIds": []
+      },
+      "8": {
+        "chunkId": "32c296",
+        "hash": "32a2a620",
+        "encoded": "'*.js',",
+        "prevChunkIds": []
+      },
+      "9": {
+        "chunkId": "32c296",
+        "hash": "08ac1f17",
+        "encoded": "'!jest.config.js',",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "32c296",
+        "hash": "708e7baf",
+        "encoded": "'!coverage/**',",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "32c296",
+        "hash": "d4bef2c3",
+        "encoded": "'!node_modules/**'",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "32c296",
+        "hash": "40872abb",
+        "encoded": "%5D,",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "32c296",
+        "hash": "9d5b17e6",
+        "encoded": "testMatch:%20%5B",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "32c296",
+        "hash": "63fbb4de",
+        "encoded": "'**/__tests__/**/*.test.js',",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "32c296",
+        "hash": "0fb51f83",
+        "encoded": "'**/?(*.)+(spec%7Ctest).js'",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "32c296",
+        "hash": "8d0f862f",
+        "encoded": "%5D,",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "32c296",
+        "hash": "4088b9d3",
+        "encoded": "setupFilesAfterEnv:%20%5B'%3CrootDir%3E/__tests__/setup.js'%5D,",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "32c296",
+        "hash": "9c194de8",
+        "encoded": "moduleFileExtensions:%20%5B'js',%20'json'%5D,",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "32c296",
+        "hash": "ea79796e",
+        "encoded": "verbose:%20true",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "32c296",
+        "hash": "d5064c2c",
+        "encoded": "%7D;",
+        "prevChunkIds": []
+      }
+    }
+  }
+}
