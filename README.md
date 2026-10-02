@@ -1,6 +1,6 @@
-# AI-Alt Text Chrome Extension
+# JAiD Chrome Extension
 
-A Chrome extension that uses Google Chrome's built-in AI (Nano) to automatically generate descriptive alt text for images on web pages, making the web more accessible.
+**JAiD** (Just AI image descriptions) - A Chrome extension that uses Google Chrome's built-in AI (Nano) to automatically generate descriptive alt text for images on web pages, making the web more accessible.
 
 ## Features
 
@@ -71,7 +71,7 @@ v
 
 ## Usage
 
-1. **Activate the Extension**: Click the AI-Alt Text icon in your Chrome toolbar
+1. **Activate the Extension**: Click the JAiD icon in your Chrome toolbar
 
 2. **View Eligible Images**: The extension will scan the page and add small info buttons (ℹ️) to the bottom-left corner of eligible images
 
@@ -256,7 +256,7 @@ The build process excludes:
    ```
 3. Reload the extension in Chrome:
    - Go to `chrome://extensions`
-   - Click the reload icon on the AI-Alt Text extension
+   - Click the reload icon on the JAiD extension
 4. Test manually on web pages
 
 ### Code Structure

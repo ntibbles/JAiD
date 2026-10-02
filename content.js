@@ -1,6 +1,6 @@
 /**
- * Content script for AI-Alt Text extension
- * Finds eligible images and adds interactive buttons for alt text generation
+ * Content script for JAiD (Just AI image descriptions) extension
+ * Scans for eligible images, creates UI elements, generates alt text using Chrome AI
  */
 
 (function() {

@@ -1,6 +1,6 @@
 /**
- * Build script for AI-Alt Text Chrome Extension
- * Copies only required files to dist folder for distribution
+ * Build script for JAiD (Just AI image descriptions) Chrome Extension
+ * Creates a clean distribution package with only production files
  */
 
 const fs = require('fs');
@@ -73,7 +73,7 @@ function copyDir(src, dest) {
  * Main build function
  */
 function build() {
-  console.log('\n🚀 Building AI-Alt Text Extension...\n');
+  console.log('\n🚀 Building JAiD Extension...\n');
   
   // Remove existing dist folder
   removeDir(DIST_DIR);

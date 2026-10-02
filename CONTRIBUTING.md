@@ -1,6 +1,6 @@
-# Contributing to AI-Alt Text Extension
+# Contributing to JAiD Extension
 
-Thank you for your interest in contributing! This document provides guidelines for contributing to the AI-Alt Text Chrome extension.
+Thank you for your interest in contributing! This document provides guidelines for contributing to the JAiD (Just AI image descriptions) Chrome extension.
 
 ## Getting Started
 

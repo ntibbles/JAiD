@@ -1,5 +1,5 @@
 /**
- * Jest configuration for AI-Alt Text extension
+ * Jest configuration for JAiD (Just AI image descriptions) extension
  */
 
 module.exports = {

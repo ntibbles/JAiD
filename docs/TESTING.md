@@ -1,6 +1,6 @@
-# Testing Guide for AI-Alt Text Extension
+# Testing Guide for JAiD Extension
 
-This document provides comprehensive information about testing the AI-Alt Text Chrome extension.
+This document provides comprehensive information about testing the JAiD (Just AI image descriptions) Chrome extension.
 
 ## Test Suite Overview
 

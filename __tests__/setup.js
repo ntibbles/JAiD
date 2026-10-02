@@ -1,5 +1,5 @@
 /**
- * Jest setup file for AI-Alt Text extension tests
+ * Jest setup file for JAiD (Just AI image descriptions) extension tests
  */
 
 // Mock Chrome API

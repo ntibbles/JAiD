@@ -1,6 +1,6 @@
 /**
- * Background service worker for AI-Alt Text extension
- * Handles extension icon clicks and injects content script
+ * Background service worker for JAiD (Just AI image descriptions) extension
+ * Handles extension icon clicks and injects content script + styles
  */
 
 chrome.action.onClicked.addListener(async (tab) => {
