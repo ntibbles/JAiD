@@ -49,6 +49,12 @@
     },
     "7931caaa": {
       "value": "Create a function that generates a random number from 1 to 100, and places that number at the beginning of all the image URLs. For example, \"https://picsum.photos/<random_number>/300/300\"."
+    },
+    "8eb1f384": {
+      "value": "Update all files to remove the phrase \"AI-Alt Text\" and replace it with \"JAiD\". It's an accronym for \"Just AI image descriptions\"."
+    },
+    "8f21b6c9": {
+      "value": "Nano seems to misidentify some of the photos and then creates incorrect alt text. What ways can we improve the output? Can the image be passed to Nano as a base 64 to avoid misinterpretation?"
     }
   },
   "localPrompts": {},

@@ -6,6 +6,9 @@
   "promptMessage": {
     "fd1f98d7": {
       "value": "Update the image check functionality to check for both the natural width and the rendered width."
+    },
+    "8eb1f384": {
+      "value": "Update all files to remove the phrase \"AI-Alt Text\" and replace it with \"JAiD\". It's an accronym for \"Just AI image descriptions\"."
     }
   },
   "localPrompts": {},

@@ -40,6 +40,9 @@
     },
     "5f40902a": {
       "value": "On the test page, the extension is only adding the icon to webp images and none of the others. Investigate and fix."
+    },
+    "8eb1f384": {
+      "value": "Update all files to remove the phrase \"AI-Alt Text\" and replace it with \"JAiD\". It's an accronym for \"Just AI image descriptions\"."
     }
   },
   "localPrompts": {},

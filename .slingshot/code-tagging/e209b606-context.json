@@ -22,6 +22,9 @@
   "promptMessage": {
     "0b9c2e39": {
       "value": "The script needs to be updated for a use case where the image may be a child (or sub-child) of an anchor element or button element. Interactive elements can't be nested. The icon needs to be placed outside of an anchor or button (but still on top of the image) to prevent the interatcive element from activating the anchor or button for the image."
+    },
+    "8eb1f384": {
+      "value": "Update all files to remove the phrase \"AI-Alt Text\" and replace it with \"JAiD\". It's an accronym for \"Just AI image descriptions\"."
     }
   },
   "localPrompts": {},
