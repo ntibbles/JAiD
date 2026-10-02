@@ -94,67 +94,82 @@
   async function generateAltText(img, progressCallback = null) {
     try {
       const available = await LanguageModel.availability();
-      console.log("AI: ", available);
-      
-      // Check if the AI API is available
-      // if (!window.ai || !window.ai.languageModel) {
-      //   throw new Error('Chrome AI is not available. Please ensure you have Chrome Canary with AI features enabled.');
-      // }
-
-      // // Check if the Prompt API is available
-      // const capabilities = await window.ai.languageModel.capabilities();
-      // const available = capabilities.available;
       
       if (available === 'unavailable') {
         throw new Error('Gemini Nano is not available on this device');
       }
 
       // Handle downloading state
-      if (available === 'after-download') {
-        console.log('Gemini Nano model needs to be downloaded...');
+      // if (available === 'after-download') {
+      //   console.log('Gemini Nano model needs to be downloaded...');
         
-        if (progressCallback) {
-          progressCallback('Downloading AI model...');
-        }
+      //   if (progressCallback) {
+      //     progressCallback('Downloading AI model...');
+      //   }
         
-        // Create session which triggers download
-        const session = await LanguageModel.create({
-          monitor(m) {
-            // Monitor download progress
-            m.addEventListener('downloadprogress', (e) => {
-              const percent = Math.round((e.loaded / e.total) * 100);
-              console.log(`Model download progress: ${percent}%`);
-              if (progressCallback) {
-                progressCallback(`Downloading AI model: ${percent}%`);
-              }
-            });
-          }
-        });
+      //   // Create session which triggers download
+      //   const session = await LanguageModel.create({
+      //     monitor(m) {
+      //       // Monitor download progress
+      //       m.addEventListener('downloadprogress', (e) => {
+      //         const percent = Math.round((e.loaded / e.total) * 100);
+      //         console.log(`Model download progress: ${percent}%`);
+      //         if (progressCallback) {
+      //           progressCallback(`Downloading AI model: ${percent}%`);
+      //         }
+      //       });
+      //     }
+      //   });
         
-        // Continue with session after download completes
-        const imageSrc = img.src;
-        const imageContext = `Image URL: ${imageSrc}\nImage dimensions: ${img.naturalWidth}x${img.naturalHeight}px`;
+      //   // Continue with session after download completes
+      //   const imageSrc = img.src;
+      //   const imageContext = `Image URL: ${imageSrc}\nImage dimensions: ${img.naturalWidth}x${img.naturalHeight}px`;
         
-        const prompt = `Generate a concise, descriptive alt text for an image. The alt text should describe what's visible in the image in a way that would be helpful for screen reader users. Keep it under 125 characters. Do not include phrases like "image of" or "picture of". Just describe what you see.\n\n${imageContext}`;
+      //   const prompt = `Generate a concise, descriptive alt text for an image. The alt text should describe what's visible in the image in a way that would be helpful for screen reader users. Keep it under 125 characters. Do not include phrases like "image of" or "picture of". Just describe what you see.\n\n${imageContext}`;
         
-        const result = await session.prompt(prompt);
-        session.destroy();
+      //   const result = await session.prompt(prompt);
+      //   session.destroy();
         
-        return result || 'Image description unavailable';
-      }
+      //   return result || 'Image description unavailable';
+      // }
 
       // Model is readily available
       const session = await LanguageModel.create({
+        systemPrompt: `You are an expert accessibility specialist. Your task is to write comprehensive, accurate, and descriptive alt text for images to be read by screen readers. 
+        Rules:
+        - Focus on the most important details, the context, and transcribe any visible text.
+        - Describe the subject, setting, and mood.
+        - NEVER start with 'A picture of' or 'An image of'. Start directly with the description.`,
         expectedInputs: [{ type: 'image' }, { type: 'text', languages: ["en"] }]
       });
       
-      // Get image context
-      const imageSrc = img.src;
-      const imageContext = `Image URL: ${imageSrc}\nImage dimensions: ${img.naturalWidth}x${img.naturalHeight}px`;
+      const response = await fetch(img.src);
+      const imageSource = await response.blob();
+      let imageBitmap;
+      try {
+        imageBitmap = imageSource instanceof ImageBitmap 
+          ? imageSource 
+          : await createImageBitmap(imageSource);
+      } catch (err) {
+        throw new Error("Failed to convert the provided image into an ImageBitmap: " + err.message);
+      }
       
-      const prompt = `Generate descriptive alt text for an image. The alt text should describe what's visible in the image in a way that would be helpful for screen reader users. If the image contains embedded text, include that text in the output. Do not include phrases like "image of" or "picture of". Just describe what you see.\n\n${imageContext}`;
-      
-      const result = await session.prompt(prompt);
+      const prompt = "Analyze this image and provide the highly accurate alt text following your system instructions.";
+      const result = await session.prompt([
+        {
+          role: "user",
+          content: [
+            { 
+              type: "text", 
+              value: prompt 
+            },
+            { 
+              type: "image", 
+              value: imageBitmap
+            }
+          ]
+        }
+      ]);
       session.destroy();
       
       return result || 'Image description unavailable';

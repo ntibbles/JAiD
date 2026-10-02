@@ -1,18 +1,12 @@
 {
-  "name": "ai-alt-text",
+  "name": "accessibility-audit",
   "version": "1.0.0",
-  "description": "Chrome extension for AI-powered alt text generation",
+  "description": "WCAG 2.2 AA Accessibility Audit",
+  "main": "accessibility-audit.js",
   "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
-    "build": "node build.js",
-    "clean": "rm -rf dist",
-    "rebuild": "npm run clean && npm run build"
+    "audit": "node accessibility-audit.js"
   },
-  "devDependencies": {
-    "@jest/globals": "^29.7.0",
-    "jest": "^29.7.0",
-    "jest-environment-jsdom": "^29.7.0"
+  "dependencies": {
+    "playwright": "^1.40.0"
   }
 }

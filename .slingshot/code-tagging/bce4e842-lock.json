@@ -2853,12 +2853,6 @@
           "cf0680"
         ]
       },
-      "347": {
-        "chunkId": "8b17ab",
-        "hash": "f13f58d2",
-        "encoded": "%3Cimg%20src=%22https://picsum.photos/seed/$%7BdynamicSeed%7D/350/350%22%20alt=%22Dynamic%20image%20$%7BdynamicImageCount%7D%22%3E",
-        "prevChunkIds": []
-      },
       "348": {
         "chunkId": "8b17ab",
         "hash": "eebdf056",
